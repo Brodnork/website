@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+html {
+	
+}
 body {
   padding:1em;
   padding-top:2em;
-    background-color: #BF5069;
-  color: #FFD671;
+    background-color: #FDEEBB;
+  color: #4D293B;
 	font-family: 'Arvo', sans-serif;
 	font-size: 1.4em;
 	background-attachment: fixed;
+    cursor: url("http://bumblebee.city/wormquest/cursornormal.png"), default;
     
-
 }
 main {
   padding:1.5em;
@@ -26,27 +29,27 @@ header {
 	padding-top: 10px;
 	text-align: center;
   display: inline-block;
-	text-shadow: 2px 2px 4px #5C2E4F;
 	font-weight: bold; 
 }
 
 
 /* unvisited link */
 a:link {
-  color: #FF9CC2;
+  color: #BA2A63;
   text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-  color: #FF9CC2;
+  color: #BA2A63;
 	text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
-  color: white;
+  color: #FF2F75;
 	text-decoration: none;
+    cursor: url("http://bumblebee.city/wormquest/cursorclick.png"), default;
 }
 
 /* selected link */
@@ -64,7 +67,6 @@ a:active {
   font-size: 1.8em;
   font-weight:bold;
   cursor: pointer;
-  text-shadow: 2px 2px 4px #5C2E4F;
   width:10%;
 }
 .writing{
@@ -74,18 +76,27 @@ a:active {
     color: #4D293B;
     padding: 2em;
     font-size: 0.9em;
-    border-radius: 15px;
 }
 
 .frogsongButton{
 	text-indent: 60px;
     text-align: justify;
     background-color: #FDEEBB;
-background-image: url(/streamHeader.png);
+background-image: url("https://raw.githubusercontent.com/Brodnork/website/main/wormquest/wormquestwakeup.png");
 background-position: center;
 background-size: cover;
     color: #4D293B;
     padding: 2em;
     font-size: 0.9em;
     border-radius: 15px;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #FDEEBB;
+  background: #EE5990;
+}
+
+::selection {
+  color: #FDEEBB;
+  background: #EE5990;
 }
