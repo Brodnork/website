@@ -2,7 +2,7 @@
 body {
     padding:1em;
     //background-color: #BF5069;
-	background-image: linear-gradient(#DF696D, #BF5069);
+	background: linear-gradient(#DF696D, #BF5069);
     color: #FFD671;
 	font-family: 'Arvo', sans-serif;
 	font-size: 1.5em;
