@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 body {
-    padding:1em;
+  padding:1em;
     //background-color: #BF5069;
 	background: linear-gradient(#DF696D, #BF5069);
-    color: #FFD671;
+  color: #FFD671;
 	font-family: 'Arvo', sans-serif;
 	font-size: 1.5em;
+	background-attachment: fixed;
 
 }
 
@@ -20,6 +21,20 @@ header {
   display: inline-block;
 	text-shadow: 2px 2px 4px #5C2E4F;
 	font-weight: bold; 
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  border-radius:22px
+  color: white;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.69em;
+  font-weight:bold;
+  cursor: pointer;
 }
 
 
