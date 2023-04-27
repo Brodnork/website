@@ -81,7 +81,7 @@ a:active {
 	text-indent: 60px;
     text-align: justify;
     background-color: #FDEEBB;
-background-image: url("https://raw.githubusercontent.com/Brodnork/website/main/wormquest/wormquestwakeup.png");
+background-image: url(/streamHeader.png);
 background-position: center;
 background-size: cover;
     color: #4D293B;
