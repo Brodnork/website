@@ -11,6 +11,7 @@ body {
 	font-size: 1.4em;
 	background-attachment: fixed;
     cursor: url("http://bumblebee.city/wormquest/cursornormal.png"), default;
+	line-height: 1.69;
     
 }
 main {
