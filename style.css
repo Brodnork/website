@@ -1,10 +1,8 @@
-main {
-    padding:1em;
-    background-color: #696969;
-    color: white;
-    padding-bottom:2em;
-    line-height:1.5;
-    //text-shadow:0.075em 0.1em 0.05em var(--blue-dark);
+body {
+    padding:25em;
+    background-color: #0011ff;
+    color: #ff0000;
+
 }
 
 footer{
