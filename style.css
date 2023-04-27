@@ -3,8 +3,10 @@ html {
 	
 }
 body {
-  padding:2em;
+  padding:1em;
   padding-top:2em;
+	padding-left:3em;
+	padding-right:3em;
     background-color: #FDEEBB;
   color: #4D293B;
 	font-family: 'Arvo', sans-serif;
@@ -15,7 +17,7 @@ body {
     
 }
 main {
-  padding:2em;
+  padding:1em;
   padding-top:1em;
   margin-right: 16em;
   margin-left: 16em;
