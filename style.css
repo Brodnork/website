@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 body {
     padding:25em;
-    background-color: #FDEEBB;
-    color: #4D293A;
+    background-color: #D4628B;
+    color: #FFE989;
 	font-family: 'Arvo', sans-serif;
-	font-size: 1.69em;
+	font-size: 1.5em;
 
 }
 
@@ -17,4 +17,25 @@ header {
 	padding-top: 10px;
 	text-align: center;
     display: inline-block;
+}
+
+
+/* unvisited link */
+a:link {
+  color: #7EFFD1;
+}
+
+/* visited link */
+a:visited {
+  color: #7EFFD1;
+}
+
+/* mouse over link */
+a:hover {
+  color: #BAFFE7;
+}
+
+/* selected link */
+a:active {
+  color: white;
 }
