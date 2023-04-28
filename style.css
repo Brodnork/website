@@ -94,7 +94,7 @@ a:hover img.default {
   color: #4D293B;
   padding: 2.3em;
   font-size: 0.9em;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .frogsongButton{
@@ -107,7 +107,7 @@ a:hover img.default {
   color: #4D293B;
   padding: 2em;
   font-size: 0.9em;
-  border-radius: 15px;
+  border-radius: 12px;
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -127,6 +127,57 @@ h1{
 
 .logo{
   width: 700px;
+}
+
+.statusUpdates{
+  background-color: #fff6d9;
+  color: #4D293B;
+  padding: 0.5em;
+  font-size: 1em;
+  width: 50%;
+  height:200px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  border-radius: 0px 0px 20px 20px;
+}
+.statusHeader{
+  background-color: #EBB9A3;
+  color: #4D293B;
+  padding: 0.5em;
+  padding-bottom: 1.2em;
+  font-size: 1em;
+  width: 50%;
+  height:25px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Itim', sans-serif;
+  font-size: 1em;
+  border-radius: 20px 20px 0px 0px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #BA2A63; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4D293B; 
+}
+
+hr.solid {
+  border-top: 2px solid #EBB9A3;
 }
 
 }
@@ -242,6 +293,57 @@ h1{
 
   .logo{
     width: 82%;
+  }
+
+  .statusUpdates{
+    background-color: #fff6d9;
+    color: #4D293B;
+    padding: 0.5em;
+    font-size: 1em;
+    width: 70%;
+    height:100px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    border-radius: 0px 0px 20px 20px;
+  }
+  .statusHeader{
+    background-color: #EBB9A3;
+    color: #4D293B;
+    padding: 0.5em;
+    padding-bottom: 1em;
+    font-size: 1em;
+    width: 70%;
+    height:20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Itim', sans-serif;
+    font-size: 1em;
+    border-radius: 20px 20px 0px 0px;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 5px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #BA2A63; 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4D293B; 
+  }
+  
+  hr.solid {
+    border-top: 2px solid #EBB9A3;
   }
   
 
