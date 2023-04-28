@@ -6,12 +6,13 @@ body {
   padding:1em;
   padding-top:2em;
   background-color: #FDEEBB;
-  background-image: url("http://bumblebee.city/starsbg.png");
+  background-image: url("diamondbg.png");
   color: #4D293B;
 	font-family: 'Arvo', sans-serif;
 	font-size: 1.4em;
 	background-attachment: fixed;
-  cursor: url("http://bumblebee.city/wormquest/cursornormal.png"), default;
+  background-position: center;
+  cursor: url("http://bumblebee.city/beeCursor.png"), default;
 	line-height: 1.69;
     
 }
@@ -60,16 +61,32 @@ a:active {
 	text-decoration: none;
 }
 
+a img.hover {
+  display: none;
+  vertical-align: sub;
+}
+a img.default {
+  display: inherit;
+  vertical-align: sub;
+}
+a:hover img.hover {
+  display: inherit;
+  vertical-align: sub;
+}
+a:hover img.default {
+  display: none;
+  vertical-align: sub;
+}
+
 .headbutton {
   color: #FF9CC2;
-  padding: 0.5em;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  padding-left: 1em;
+  padding-right: 1em;
   font-size: 1.8em;
   font-weight:bold;
   cursor: pointer;
-  width:10%;
+  width:20%;
+
 }
 .writing{
 	text-indent: 60px;
