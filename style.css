@@ -23,6 +23,7 @@ main {
   padding-top:1em;
   margin-right: 22%;
   margin-left: 22%;
+  cursor: url("http://bumblebee.city/wormquest/cursornormal.png"), default;
 }
 
 footer{
