@@ -13,7 +13,7 @@ body {
 	font-size: 1.4em;
 	background-attachment: fixed;
   background-position: center;
-  cursor: url("http://bumblebee.city/wormquest/cursornormal.png"), default;
+  cursor: url("http://bumblebee.city/beeCursor.png"), default;
 	line-height: 1.69;
   margin-top: 1.3%;
     
@@ -23,7 +23,7 @@ main {
   padding-top:1em;
   margin-right: 22%;
   margin-left: 22%;
-  cursor: url("http://bumblebee.city/wormquest/cursornormal.png"), default;
+
 }
 
 footer{
