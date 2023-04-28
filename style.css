@@ -5,12 +5,13 @@ html {
 body {
   padding:1em;
   padding-top:2em;
-    background-color: #FDEEBB;
+  background-color: #FDEEBB;
+  background-image: url("http://bumblebee.city/starsbg.png");
   color: #4D293B;
 	font-family: 'Arvo', sans-serif;
 	font-size: 1.4em;
 	background-attachment: fixed;
-    cursor: url("http://bumblebee.city/wormquest/cursornormal.png"), default;
+  cursor: url("http://bumblebee.city/wormquest/cursornormal.png"), default;
 	line-height: 1.69;
     
 }
@@ -72,24 +73,25 @@ a:active {
 }
 .writing{
 	text-indent: 60px;
-    text-align: justify;
-    background-color: #fff6d9;
-    color: #4D293B;
-    padding: 2.3em;
-    font-size: 0.9em;
+  text-align: justify;
+  background-color: #fff6d9;
+  color: #4D293B;
+  padding: 2.3em;
+  font-size: 0.9em;
+  border-radius: 8px;
 }
 
 .frogsongButton{
 	text-indent: 60px;
-    text-align: justify;
-    background-color: #FDEEBB;
-background-image: url("https://raw.githubusercontent.com/Brodnork/website/main/wormquest/wormquestwakeup.png");
-background-position: center;
-background-size: cover;
-    color: #4D293B;
-    padding: 2em;
-    font-size: 0.9em;
-    border-radius: 15px;
+  text-align: justify;
+  background-color: #FDEEBB;
+  background-image: url("https://raw.githubusercontent.com/Brodnork/website/main/wormquest/wormquestwakeup.png");
+  background-position: center;
+  background-size: cover;
+  color: #4D293B;
+  padding: 2em;
+  font-size: 0.9em;
+  border-radius: 15px;
 }
 
 ::-moz-selection { /* Code for Firefox */
