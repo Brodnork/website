@@ -6,28 +6,6 @@
 	<title>Welcome to Bumblebee City</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("myImg");
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-        }
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-        modal.style.display = "none";
-}
-</script>
 </head>
 <body>
 	<center><a href="http://bumblebee.city"><img class="logo" src="brandonbraunlogo.png"></a></center>
@@ -38,21 +16,172 @@
 	<a href="about.html" class="headbutton"><img class="default" src="iconAbout.png" width="55"><img class="hover" src="iconAboutHover.png" width="55">About</a></center>
 	<main>
     <center><div class="gallery">
-        <a href="#img1"><img src="art/octoBee.png" class="gallery-image"></a><a href="#" class="lightbox" id="img1">
-        <span style="background-image: url('art/octoBee.png')"></span></a>
-        <a href="#img2"><img src="art/nefelwyrm.png" class="gallery-image"></a><a href="#" class="lightbox" id="img2">
-        <span style="background-image: url('art/nefelwyrm.png')"></span></a>
-        <a href="#img2"><img src="art/nefelwyrm.png" class="gallery-image"></a><a href="#" class="lightbox" id="img2">
-            <span style="background-image: url('art/nefelwyrm.png')"></span></a>
-    </div></center>
+        </div></center>
+<center>
+<!-- Images used to open the lightbox -->
+<div class="row">
+    <img src="art/pupbee.png" alt="" onclick="openModal();currentSlide(22)" class="hover-shadow">
+    <img src="art/herothing.png" alt="" onclick="openModal();currentSlide(21)" class="hover-shadow">
+    <img src="art/gasGiant2.png" alt="" onclick="openModal();currentSlide(20)" class="hover-shadow">
+    <img src="art/SnackTime.png" alt="Snack time!" onclick="openModal();currentSlide(19)" class="hover-shadow">
+    <img src="art/citrussweetheart.png" alt="Drawing of a My Little Pony toy I had for a day as a kid before I got rid of it because I was embarrassed for liking ''girl stuff''. It smelled like oranges :)" onclick="openModal();currentSlide(18)" class="hover-shadow">
+    <img src="art/smallFryStinger.png" alt="Stinger from Salmon Run but a baby??" onclick="openModal();currentSlide(17)" class="hover-shadow">
+    <img src="art/salmonrunstinger.png" alt="Stinger from Salmon Run" onclick="openModal();currentSlide(16)" class="hover-shadow">
+    <img src="art/octoBee.png" alt="Splatoon fanart" onclick="openModal();currentSlide(15)" class="hover-shadow">
+    <img src="art/flowerWyrm.png" alt="The Flower Wyrm, a homebrewed D&D monster." onclick="openModal();currentSlide(14)" class="hover-shadow">
+    <img src="art/beeee meeeeeee.png" alt="It's me!" onclick="openModal();currentSlide(13)" class="hover-shadow">
+    <img src="art/foundFootageIcon.png" alt="" onclick="openModal();currentSlide(12)" class="hover-shadow">
+    <img src="art/PigDreamJr.png" alt="" onclick="openModal();currentSlide(11)" class="hover-shadow">
+    <img src="art/nefelwyrm.png" alt="Nefelwyrm" onclick="openModal();currentSlide(10)" class="hover-shadow">
+    <img src="art/Mielle.png" alt="Princess Mielle" onclick="openModal();currentSlide(9)" class="hover-shadow">
+    <img src="art/comet island.png" alt="Comet Island" onclick="openModal();currentSlide(8)" class="hover-shadow">
+    <img src="art/cometquestknight.png" alt="" onclick="openModal();currentSlide(7)" class="hover-shadow" >
+    <img src="art/pumpkin knight.png" alt="Pumpkin Knight" onclick="openModal();currentSlide(6)" class="hover-shadow" >
+    <img src="art/halloweenfrog.jpg" alt="" onclick="openModal();currentSlide(5)" class="hover-shadow" >
+    <img src="art/captaingecko2020.png" alt="Redesign of a superhero I made as a kid, Captain Gecko." onclick="openModal();currentSlide(4)" class="hover-shadow" >
+    <img src="art/THK.png" alt="Hollow Knight fanart" onclick="openModal();currentSlide(3)" class="hover-shadow" >
+    <img src="art/eraserhead.jpg" alt="Eraserhead Baby" onclick="openModal();currentSlide(2)" class="hover-shadow" >
+    <img src="art/Video Game.png" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow" >
+  </div>
+</center>
+
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <center>
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+        <div class="mySlides">
+            <img src="art/Video Game.png" class="galleryDisplay">
+        </div>
+        <div class="mySlides">
+            <img src="art/eraserhead.jpg" class="galleryDisplay">
+        </div>
+        <div class="mySlides">
+            <img src="art/THK.png" class="galleryDisplay">
+        </div>
+    <div class="mySlides">
+        <img src="art/captaingecko2020.png" class="galleryDisplay">
+    </div>
+     <div class="mySlides">
+        <img src="art/halloweenfrog.jpg" class="galleryDisplay">
+        </div>
+    <div class="mySlides">
+        <img src="art/pumpkin knight.png" class="galleryDisplay">
+        </div>
+      <div class="mySlides">
+        <img src="art/cometquestknight.png" class="galleryDisplay">
+      </div>
+
+      <div class="mySlides">
+        <img src="art/comet island.png" class="galleryDisplay">
+      </div>
+      <div class="mySlides">
+        <img src="art/Mielle.png" class="galleryDisplay">
+      </div>
+      <div class="mySlides">
+        <img src="art/nefelwyrm.png" class="galleryDisplay">
+      </div>
+      <div class="mySlides">
+        <img src="art/PigDreamJr.png" class="galleryDisplay">
+      </div>
+      <div class="mySlides">
+        <img src="art/foundFootageIcon.png" class="galleryDisplay">
+      </div>
+      <div class="mySlides">
+        <img src="art/beeee meeeeeee.png" class="galleryDisplay">
+      </div>
+      <div class="mySlides">
+        <img src="art/flowerWyrm.png" class="galleryDisplay">
+      </div>
+      <div class="mySlides">
+        <img src="art/octoBee.png" class="galleryDisplay">
+      </div>
+      <div class="mySlides">
+        <img src="art/salmonrunstinger.png" class="galleryDisplay">
+      </div>
+      <div class="mySlides">
+        <img src="art/smallFryStinger.png" class="galleryDisplay">
+      </div>
+      <div class="mySlides">
+        <img src="art/citrussweetheart.png" class="galleryDisplay">
+      </div>
+      <div class="mySlides">
+        <img src="art/SnackTime.png" class="galleryDisplay">
+      </div>
+      <div class="mySlides">
+        <img src="art/gasGiant2.png" class="galleryDisplay">
+      </div>
+      <div class="mySlides">
+        <img src="art/herothing.png" class="galleryDisplay">
+      </div>
+      <div class="mySlides">
+        <img src="art/pupbee.png" class="galleryDisplay">
+      </div>
+       <!-- Caption text -->
+       <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    </center>
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+     
+ 
+    </div>
+    
+  </div>
 
     <!-- Trigger the Modal -->
-<img id="myImg" src="art/octoBee.png" alt="Snow" style="width:100%;max-width:300px">
-<div id="myModal" class="modal">
-<span class="close">&times;</span>
-<img class="modal-content" id="img01">
-<div id="caption"></div>
+
 </div>
+
+<script>
+    // Open the Modal
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    // Close the Modal
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    function setCaption(){
+        let greeting = document.getElementById("greeting");
+    }
+    
+    var slideIndex = 0;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n * -1);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("hover-shadow");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slides.length - slideIndex].alt;
+    }
+    </script>
 </main>
 </body>	
 	

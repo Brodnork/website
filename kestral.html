@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+	<title>Welcome to Bumblebee City</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+	<center><a href="http://bumblebee.city/"><img class="logo" src="brandonbraunlogo.png"></a></center>
+	
+    <center><a href="projects.html" class="headbutton" ><img class="default" src="projectsicon.png" width="55"><img class="hover" src="projectsiconHover.png" width="55">Projects</a>
+    <a href="art.html" class="headbutton"><img class="default" src="iconArt.png" width="55"><img class="hover" src="iconArtHover.png" width="55">Art</a>
+    <a href="stories.html" class="headbutton"><img class="default" src="iconStories.png" width="55"><img class="hover" src="iconStoriesHover.png" width="55">Stories</a>
+	<a href="about.html" class="headbutton"><img class="default" src="iconAbout.png" width="55"><img class="hover" src="iconAboutHover.png" width="55">About</a></center>
+	<main>
+    <h1>The Kestral: An Ancient World</h1>
+    <center><video width="800" controls><source src="projects/derelictvideo.mp4" type="video/mp4"></video></center>
+    <center>
+        <!-- Images used to open the lightbox -->
+        <div class="row">
+            <img src="projects/kestral/kestralss1.png" alt="(image brightened to improve visibility)" onclick="openModal();currentSlide(4)" class="hover-shadow-project" >
+            <img src="projects/kestral/kestralss2.png" alt="(image brightened to improve visibility)" onclick="openModal();currentSlide(3)" class="hover-shadow-project" >
+            <img src="projects/kestral/shuckminimage.png" alt="Shuckmin" onclick="openModal();currentSlide(2)" class="hover-shadow-project" >
+            <img src="projects/kestral/dustwalkerimage.png" alt="Dustwalker" onclick="openModal();currentSlide(1)" class="hover-shadow-project" >
+          </div>
+        </center>
+    <p>The Kestral: An Ancient World was a Minecraft mod I started working on back in 2020 that adds a desolate and lonely new dimension to explore full of strange and terrifying creatures. The project was inspired by the feelings that beta Minecraft gave me, exploring an empty and sometimes unnerving world.</p> 
+        <p>I haven't worked on it in quite a while, but would like to pick it back up again some day.</p>
+    <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <center>
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+        <div class="mySlides">
+            <img src="projects/kestral/dustwalkerimage.png" class="galleryDisplay">
+        </div>
+        <div class="mySlides">
+            <img src="projects/kestral/shuckminimage.png" class="galleryDisplay">
+        </div>
+        <div class="mySlides">
+            <img src="projects/kestral/kestralss2.png" class="galleryDisplay">
+        </div>
+        <div class="mySlides">
+            <img src="projects/kestral/kestralss1.png" class="galleryDisplay">
+        </div>
+       <!-- Caption text -->
+       <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    </center>
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+     
+ 
+    </div>
+    
+  </div>
+  <script>
+    // Open the Modal
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    // Close the Modal
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    function setCaption(){
+        let greeting = document.getElementById("greeting");
+    }
+    
+    var slideIndex = 0;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n * -1);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("hover-shadow-project");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slides.length - slideIndex].alt;
+    }
+    </script>
+</main>
+</body>	
+</html>
