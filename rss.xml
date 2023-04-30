@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+    <title>Welcome to Bumble Bee City!</title>
+    <link>http://bumblebee.city/</link>
+    <description>Brandon Braun's personal website.</description>
+    <item>
+        <title>Site online!</title>
+        <link>http://bumblebee.city/</link>
+        <guid>bumblebeeRSS1</guid>
+        <pubDate>Sat, 29 April 2023 00:00:00 GMT</pubDate>
+        <description>The RSS feed is online now! More stuff coming soon.</description>
+    </item>
+</channel>
+</rss>

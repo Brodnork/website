@@ -142,8 +142,9 @@ h1{
   height:25px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 5%;
   font-family: 'Itim', sans-serif;
-  font-size: 1em;
+  font-size: 1.5em;
   border-radius: 20px 20px 0px 0px;
 }
 
@@ -596,7 +597,7 @@ img.hover-shadow-project {
   padding: 0em;
   font-size: 1em;
   width: 100%;
-  height:300px;
+  height:400px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 20px 20px 20px 20px;
@@ -606,11 +607,11 @@ img.hover-shadow-project {
 .projectText{
   color: #fff6d9;
   padding: 1em;
-  font-size: 1em;
-  margin-left: 5em;
-  margin-right: 5em;
-  opacity: 0;
+  font-size: 0.9em;
+  margin-left: 0em;
+  margin-right: 0em;
   text-align: justify;
+  background-color: rgba(77, 41, 59, 0.9);
 }
 
 
@@ -625,18 +626,17 @@ img.hover-shadow-project {
   background-repeat: no-repeat;
   position: absolute;
   width: 100%;
-  height: 218px;
+  height: 318px;
   z-index: -1;
   border-radius: 0px 0px 20px 20px;
 }
 
 .project:hover{
-  background-color: rgba(77, 41, 59, 0.9);
   color: #fff6d9;
   padding: 0em;
   font-size: 1em;
   width: 100%;
-  height:300px;
+  height:400px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 20px 20px 20px 20px;
@@ -658,20 +658,24 @@ img.hover-shadow-project {
 
 .project-title {
   color: #4D293B;
-  font-size: 0.9em;
+  font-size: 0.7em;
   text-align: left;
   float: left;
-  margin-left: 40px;
+  margin-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .project-date {
   color: #4D293B;
-  font-size: 0.67em;
+  font-size: 0.5em;
   text-align: right;
   float: right;
-  line-height: 1.25;
-  margin-right: 40px;
+  line-height: 1.2;
+  margin-right: 15px;
   font-style: italic;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 
@@ -808,8 +812,8 @@ img.demo {
 
 img.hover-shadow {
   transition: 0s;
-  height: 300px;
-  width: 300px;
+  height: 100px;
+  width: 100px;
   object-fit: cover;
 }
 
@@ -820,8 +824,8 @@ img.hover-shadow {
 
 img.hover-shadow-project {
   transition: 0s;
-  height: 200px;
-  width: 200px;
+  height: 75px;
+  width: 75px;
   object-fit: cover;
 }
 
