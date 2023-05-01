@@ -31,7 +31,7 @@ main {
 footer{
   margin-top: 2em;
   padding-top:auto;
-  padding-bottom:0;
+  padding-bottom:2em;
   font-size: 1.2em;
   text-align: center;
   cursor: url("http://bumblebee.city/beeCursor.png"), default;
