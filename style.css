@@ -44,6 +44,13 @@ footer-text{
   cursor: url("http://bumblebee.city/beeCursor.png"), default;
 }
 
+.footerGlunch{
+  position: fixed;
+  bottom: -15px;
+  left: 15px;
+  height: 69px;
+}
+
 .footerIcon{
   padding:1%;
 }
@@ -455,7 +462,7 @@ img.hover-shadow-project {
     font-size: 0.9em;
     background-attachment: fixed;
     background-position: center;
-    cursor: url("http://bumblebee.city/wormquest/cursornormal.png"), default;
+    cursor: url("http://bumblebee.city/beeCursor.png"), default;
     line-height: 1.69;
     margin-top: 1.3%;
       
@@ -468,11 +475,33 @@ img.hover-shadow-project {
   }
   
   footer{
-    font-size: 0.9em;
+    margin-top: 3em;
+    padding-top:auto;
+    padding-bottom:0;
+    font-size: 1.7em;
     text-align: center;
+    cursor: url("http://bumblebee.city/beeCursor.png"), default;
+  }
+
+  .footerGlunch{
+    float: right;
+    margin-right: 15px;
+  }
+
+  footer-text{
+    margin-top: 2em;
+    padding-top:2em;
+    font-size: 0.6em;
+    text-align: center;
+    cursor: url("http://bumblebee.city/beeCursor.png"), default;
+  }
+  
+  .footerIcon{
+    padding:1%;
   }
   header {
     padding-top: 10em;
+    padding-bottom: 10em;
   }
   
   
@@ -535,6 +564,7 @@ img.hover-shadow-project {
     cursor: pointer;
     width:20%;
     display: inline-grid;
+    padding-bottom: 1em;
   
   }
   .writing{
@@ -757,7 +787,7 @@ img.hover-shadow-project {
   position: absolute;
   top: 10px;
   right: 25px;
-  font-size: 55px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -771,6 +801,7 @@ img.hover-shadow-project {
 /* Hide the slides by default */
 .mySlides {
   display: none;
+  padding-top: 20px;
 }
 
 /* Next & previous buttons */
@@ -778,13 +809,13 @@ img.hover-shadow-project {
 .next {
   cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
   position: absolute;
-  top: 50%;
+  top: 82%;
   width: auto;
-  padding: 32px;
+  padding: 10px;
   margin-top: -50px;
   color: #FDEEBB;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 50px;
   transition: 0s ease;
   border-radius: 10px;
   user-select: none;
@@ -800,7 +831,7 @@ img.hover-shadow-project {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  
 }
 
 /* Number text (1/3 etc) */
@@ -841,8 +872,8 @@ img.hover-shadow {
 
 img.hover-shadow-project {
   transition: 0s;
-  height: 75px;
-  width: 75px;
+  height: 70px;
+  width: 70px;
   object-fit: cover;
 }
 
