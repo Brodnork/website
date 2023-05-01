@@ -109,6 +109,78 @@
 </body>	
 <footer>
 	<a href="https://twitter.com/brodnork" class="footerIcon"><i class="fa-brands fa-twitter"></i></a> <a href="https://store.steampowered.com/search/?developer=Frogteam%20Games" class="footerIcon"><i class="fa-brands fa-steam"></i></a> <a href="https://brodnork.itch.io" class="footerIcon"><i class="fa-brands fa-itch-io"></i></a> <a href="mailto:brandonbraun1999@gmail.com" class="footerIcon"><i class="fa-solid fa-envelope"></i></a> <a href="https://en.wikipedia.org/wiki/Shrimp" class="footerIcon"><i class="fa-solid fa-shrimp"></i></a> <a href="rss.xml" class="footerIcon"><i class="fa-solid fa-rss"></i></a>
+  <br>
+	<footer-text>
+		<b> 
+			<a onclick="toggleDarkMode()" id="dark-mode-toggle">Dark mode: off</a>  
+		</b>
+	</footer-text>
+	<footer-text>
+		<b>
+			<a onclick="toggleFont()" id="font-toggle">Font: default</a>
+		</b>
+	</footer-text>
 </footer>
 <script src="https://kit.fontawesome.com/9a983606e7.js" crossorigin="anonymous"></script>
+<script>
+	const darkMode = localStorage.getItem('dark') ? localStorage.getItem('dark') : null;
+	var darkModeCurrent = "false";
+	
+	const fontMode = localStorage.getItem('font') ? localStorage.getItem('font') : null;
+	var fontModeCurrent = "false";
+
+
+	if (darkMode) {
+			if (darkMode == 'true') {darkOn()} else {darkOff()}
+	}
+	function toggleDarkMode() {
+		if (darkModeCurrent == 'true'){
+			darkOff();
+		}else{
+			darkOn();
+		}
+	}
+
+	function toggleFont() {
+	   if (fontModeCurrent == 'true'){
+			fontOff();
+		}else{
+			fontOn();
+		}
+	}
+
+	function darkOn() {
+		darkModeCurrent = "true";
+		var element = document.body;
+		element.classList.add("dark");
+		document.getElementById('dark-mode-toggle').innerHTML = "Dark mode: on";
+		localStorage.setItem('dark', 'true');
+		
+	}
+	function darkOff() {
+		darkModeCurrent = "false";
+		var element = document.body;
+		element.classList.remove("dark");
+		document.getElementById('dark-mode-toggle').innerHTML = "Dark mode: off";
+		localStorage.setItem('dark', 'false');
+	}
+
+	if (fontMode) {
+			if (fontMode == 'true') {fontOn()} else {fontOff()}
+	}
+	function fontOn() {
+		fontModeCurrent = "true";
+		var element = document.body;
+		element.classList.add("dyslexic");
+		document.getElementById('font-toggle').innerHTML = "Font: OpenDyslexic";
+		localStorage.setItem('font', 'true');
+	}
+	function fontOff() {
+		fontModeCurrent = "false";
+		var element = document.body;
+		element.classList.remove("dyslexic");
+		document.getElementById('font-toggle').innerHTML = "Font: default";
+		localStorage.setItem('font', 'false');
+	}
+	</script>
 </html>

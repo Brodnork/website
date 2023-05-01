@@ -2,6 +2,10 @@
 html {
 	cursor: url("http://bumblebee.city/beeCursor.png"), default;
 }
+@font-face{
+  font-family: "OpenDyslexic";
+  src: url("OpenDyslexic-Regular.otf");
+}
 @media (min-width: 800px) {
 body {
   padding:1em;
@@ -31,7 +35,7 @@ main {
 footer{
   margin-top: 2em;
   padding-top:auto;
-  padding-bottom:2em;
+  padding-bottom:0.5em;
   font-size: 1.2em;
   text-align: center;
   cursor: url("http://bumblebee.city/beeCursor.png"), default;
@@ -39,10 +43,14 @@ footer{
 footer-text{
   margin-top: 2em;
   padding-top:2em;
+  padding-left: 1em;
+  padding-right: 1em;
   font-size: 0.6em;
   text-align: center;
   cursor: url("http://bumblebee.city/beeCursor.png"), default;
+  color: #BA2A63;
 }
+
 
 .footerGlunch{
   position: fixed;
@@ -168,7 +176,6 @@ h1{
   margin-right: auto;
   margin-top: 5%;
   font-family: 'Itim', sans-serif;
-  font-size: 1.5em;
   border-radius: 20px 20px 0px 0px;
 }
 
@@ -445,6 +452,135 @@ img.hover-shadow-project {
 
 }
 
+
+.dyslexic {
+  font-family: 'OpenDyslexic', sans-serif;
+}
+
+.dyslexic .statusHeader{
+  background-color: #EBB9A3;
+  color: #4D293B;
+  padding: 0.5em;
+  padding-bottom: 1.2em;
+  font-size: 1em;
+  width: 50%;
+  height:25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  font-family: 'OpenDyslexic', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.dark {
+  background-color: #4D293B;
+  background-image: url("diamondbgDARK.png");
+  color: #FDEEBB;
+}
+
+.dark .statusUpdates{
+  color: #fff6d9;
+  background-color: #2B1420;
+  padding: 0.5em;
+  font-size: 1em;
+  width: 50%;
+  height:200px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  border-radius: 0px 0px 20px 20px;
+}
+.dark .statusHeader{
+  color: #fff6d9;
+  background-color: #402131;
+  padding: 0.5em;
+  padding-bottom: 1.2em;
+  font-size: 1em;
+  width: 50%;
+  height:25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  font-family: 'Itim', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.dyslexic.dark .statusHeader{
+  color: #fff6d9;
+  background-color: #402131;
+  padding: 0.5em;
+  padding-bottom: 1.2em;
+  font-size: 1em;
+  width: 50%;
+  height:25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  font-family: 'OpenDyslexic', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.dyslexic h1{
+  font-family: 'OpenDyslexic', sans-serif;
+  font-size: 2.5em;
+  margin-top: 0;
+}
+
+
+.dark .project-header{
+  background-color: #402131;
+  color: #fff6d9;
+  font-size: 2em;
+  width: 100%;
+  height:82px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Itim', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.dark .project-title {
+  color: #fff6d9;
+  font-size: 0.9em;
+  text-align: left;
+  float: left;
+  margin-left: 40px;
+}
+
+.dark .project-date {
+  color: #fff6d9;
+  font-size: 0.67em;
+  text-align: right;
+  float: right;
+  line-height: 1.25;
+  margin-right: 40px;
+  font-style: italic;
+}
+
+.dyslexic .project-header{
+  background-color: #EBB9A3;
+  color: #4D293B;
+  font-size: 2em;
+  width: 100%;
+  height:82px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'OpenDyslexic', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.dyslexic.dark .project-header{
+  background-color: #402131;
+  color: #fff6d9;
+  font-size: 2em;
+  width: 100%;
+  height:82px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'OpenDyslexic', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+}
+
 }
 
 
@@ -494,6 +630,7 @@ img.hover-shadow-project {
     font-size: 0.6em;
     text-align: center;
     cursor: url("http://bumblebee.city/beeCursor.png"), default;
+    color: #BA2A63;
   }
   
   .footerIcon{
@@ -891,6 +1028,198 @@ img.hover-shadow-project {
 
 }
 
+.dyslexic {
+  font-family: 'OpenDyslexic', sans-serif;
+}
 
+.dyslexic .statusHeader{
+  background-color: #EBB9A3;
+  color: #4D293B;
+  padding: 0.5em;
+  padding-bottom: 1.2em;
+  font-size: 1em;
+  width: 50%;
+  height:25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  font-family: 'OpenDyslexic', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.dark {
+  background-color: #4D293B;
+  background-image: url("diamondbgDARK.png");
+  color: #FDEEBB;
+}
+
+.dark .statusUpdates{
+  color: #fff6d9;
+  background-color: #2B1420;
+  padding: 0.5em;
+  font-size: 1em;
+  width: 50%;
+  height:200px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  border-radius: 0px 0px 20px 20px;
+}
+.dark .statusHeader{
+  color: #fff6d9;
+  background-color: #402131;
+  padding: 0.5em;
+  padding-bottom: 1.2em;
+  font-size: 1em;
+  width: 50%;
+  height:25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  font-family: 'Itim', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.dyslexic.dark .statusHeader{
+  color: #fff6d9;
+  background-color: #402131;
+  padding: 0.5em;
+  padding-bottom: 1.2em;
+  font-size: 1em;
+  width: 50%;
+  height:25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  font-family: 'OpenDyslexic', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.dyslexic h1{
+  font-family: 'OpenDyslexic', sans-serif;
+  font-size: 2.5em;
+  margin-top: 0;
+}
+
+
+.dark .project-header{
+  background-color: #402131;
+  color: #fff6d9;
+  font-size: 2em;
+  width: 100%;
+  height:82px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Itim', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.dark .project-title {
+  color: #fff6d9;
+  font-size: 0.9em;
+  text-align: left;
+  float: left;
+  margin-left: 40px;
+}
+
+.dark .project-date {
+  color: #fff6d9;
+  font-size: 0.67em;
+  text-align: right;
+  float: right;
+  line-height: 1.25;
+  margin-right: 40px;
+  font-style: italic;
+}
+
+.dyslexic .project-header{
+  background-color: #EBB9A3;
+  color: #4D293B;
+  font-size: 2em;
+  width: 100%;
+  height:82px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'OpenDyslexic', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.dyslexic.dark .project-header{
+  background-color: #402131;
+  color: #fff6d9;
+  font-size: 2em;
+  width: 100%;
+  height:82px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'OpenDyslexic', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.dark .project-title {
+  color: #fff6d9;
+  font-size: 0.7em;
+  text-align: left;
+  float: left;
+  margin-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dark .project-date {
+  color: #fff6d9;
+  font-size: 0.5em;
+  text-align: right;
+  float: right;
+  line-height: 1.2;
+  margin-right: 15px;
+  font-style: italic;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dyslexic .project-title {
+  color: #4D293B;
+  font-size: 0.7em;
+  text-align: left;
+  float: left;
+  margin-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dyslexic .project-date {
+  color: #4D293B;
+  font-size: 0.4em;
+  text-align: right;
+  float: right;
+  line-height: 1.2;
+  margin-right: 15px;
+  font-style: italic;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dyslexic.dark .project-title {
+  color: #fff6d9;
+  font-size: 0.7em;
+  text-align: left;
+  float: left;
+  margin-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dyslexic.dark .project-date {
+  color: #fff6d9;
+  font-size: 0.4em;
+  text-align: right;
+  float: right;
+  line-height: 1.2;
+  margin-right: 15px;
+  font-style: italic;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 }
