@@ -581,6 +581,34 @@ img.hover-shadow-project {
   border-radius: 20px 20px 0px 0px;
 }
 
+/* unvisited link */
+.dark a:link {
+  color: #FF2F75;
+  text-decoration: none;
+}
+
+/* visited link */
+.dark a:visited {
+  color: #FF2F75;
+	text-decoration: none;
+}
+
+/* mouse over link */
+.dark a:hover {
+  color: #FF489C;
+	text-decoration: none;
+  cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+}
+
+.dark   footer-text{
+  margin-top: 2em;
+  padding-top:2em;
+  font-size: 0.6em;
+  text-align: center;
+  cursor: url("http://bumblebee.city/beeCursor.png"), default;
+  color: #FF2F75;;
+}
+
 }
 
 
