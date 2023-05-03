@@ -1,0 +1,6 @@
+A large sci-fi-ish shipwreck
+
+TREASURES TO BE FOUND:
+-ANCIENT SPROCKET
+-VORTEX CORE
+-

@@ -1,0 +1,3 @@
+-Doors you need keys for
+-number Password (could be for the secret under the city)
+-Riddle?

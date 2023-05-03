@@ -1,0 +1,170 @@
+{
+  "main": {
+    "id": "fdd917c809300700",
+    "type": "split",
+    "children": [
+      {
+        "id": "063086afb2ac3373",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "36dfc05a42c1f326",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "MAP.canvas",
+                "viewState": {
+                  "x": 297.71182801578686,
+                  "y": -128.96939779878804,
+                  "zoom": -1.258933968011056
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a6dd5e3df55f62cd",
+    "type": "split",
+    "children": [
+      {
+        "id": "1330296a867fe05e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c9960b983b361769",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1a7351e2059e05d9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d062e793ec36e60e",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "be3033f1f7de84a4",
+    "type": "split",
+    "children": [
+      {
+        "id": "c8fcc24020a9d41d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ec0bb0a263f45537",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Outpost.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "431ef6716e521aa5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Outpost.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a086f3492ebb8c5d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "a182c2c42df2a682",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Outpost.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "36dfc05a42c1f326",
+  "lastOpenFiles": [
+    "Outpost.md",
+    "The Beach.md",
+    "Sprout City.md",
+    "Secret Under the City.md",
+    "PUZZLE IDEAS.md",
+    "Large Shipwreck.md",
+    "Mountain Caves.md",
+    "Mountain Peak.md",
+    "North - Mt Curmudgeon.md",
+    "MAP.canvas",
+    "West - Gilder's Pass.md",
+    "Untitled 1.canvas",
+    "Untitled 2.canvas",
+    "2023-05-02.md",
+    "East - The Great Tangle.md"
+  ]
+}

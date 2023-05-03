@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"type":"file","file":"Sprout City.md","id":"0ade8e332cd42ca3","x":-180,"y":71,"width":355,"height":400,"color":"6"},
+		{"type":"file","file":"West - Gilder's Pass.md","id":"6871e53e5f3e0a2e","x":-757,"y":-203,"width":400,"height":183,"color":"3"},
+		{"type":"file","file":"East - The Great Tangle.md","id":"b9b03c85e03f3775","x":500,"y":-180,"width":400,"height":160,"color":"4"},
+		{"type":"file","file":"North - Mt Curmudgeon.md","id":"5329bc9e13fcfea8","x":-225,"y":-480,"width":400,"height":170,"color":"5"},
+		{"id":"8552fb5392568e5f","x":-60,"y":-1073,"width":400,"height":306,"color":"5","type":"file","file":"Mountain Peak.md"},
+		{"type":"file","file":"Mountain Caves.md","id":"e8ff55a56999b484","x":-549,"y":-925,"width":385,"height":317,"color":"5"},
+		{"type":"file","file":"Secret Under the City.md","id":"ffaddde762539e06","x":-161,"y":640,"width":336,"height":340},
+		{"type":"file","file":"The Beach.md","id":"096abf5ff985e8c2","x":-1260,"y":-248,"width":400,"height":274,"color":"3"},
+		{"type":"file","file":"Large Shipwreck.md","id":"3f0c368cb581b06d","x":-1260,"y":160,"width":400,"height":400,"color":"3"},
+		{"id":"a52e65360da8c6ab","x":-1060,"y":-510,"width":400,"height":200,"color":"3","type":"file","file":"Outpost.md"}
+	],
+	"edges":[
+		{"id":"4de0abc27fdd59ab","fromNode":"0ade8e332cd42ca3","fromSide":"top","toNode":"6871e53e5f3e0a2e","toSide":"right"},
+		{"id":"902fd0d8cac7b6c0","fromNode":"0ade8e332cd42ca3","fromSide":"top","toNode":"b9b03c85e03f3775","toSide":"left"},
+		{"id":"c960a7d5fd31b9ce","fromNode":"0ade8e332cd42ca3","fromSide":"top","toNode":"5329bc9e13fcfea8","toSide":"bottom"},
+		{"id":"e1fad96caa2740d8","fromNode":"6871e53e5f3e0a2e","fromSide":"left","toNode":"096abf5ff985e8c2","toSide":"right"},
+		{"id":"12fafffdd33f9f63","fromNode":"096abf5ff985e8c2","fromSide":"bottom","toNode":"3f0c368cb581b06d","toSide":"top"},
+		{"id":"55e87c4cb1ffe8fd","fromNode":"0ade8e332cd42ca3","fromSide":"bottom","toNode":"ffaddde762539e06","toSide":"top"},
+		{"id":"053efeaf64217f73","fromNode":"5329bc9e13fcfea8","fromSide":"top","toNode":"e8ff55a56999b484","toSide":"bottom"},
+		{"id":"11806488751288d3","fromNode":"5329bc9e13fcfea8","fromSide":"top","toNode":"8552fb5392568e5f","toSide":"bottom"},
+		{"id":"0afb8a5e783ed0b4","fromNode":"a52e65360da8c6ab","fromSide":"bottom","toNode":"6871e53e5f3e0a2e","toSide":"top"}
+	]
+}
