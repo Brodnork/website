@@ -8,16 +8,16 @@
         "type": "tabs",
         "children": [
           {
-            "id": "36dfc05a42c1f326",
+            "id": "30774178e707618c",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
                 "file": "MAP.canvas",
                 "viewState": {
-                  "x": 381.47342159553017,
-                  "y": 0.2627751528159479,
-                  "zoom": -1.258933968011056
+                  "x": 122.82817047817048,
+                  "y": 19.230145530145535,
+                  "zoom": -1.231128352088495
                 }
               }
             }
@@ -67,6 +67,14 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "632598b6db413df2",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -88,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Outpost.md",
+                "file": "MAP.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Outpost.md",
+                "file": "MAP.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Outpost.md"
+                "file": "MAP.canvas"
               }
             }
           }
@@ -149,22 +157,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "36dfc05a42c1f326",
+  "active": "30774178e707618c",
   "lastOpenFiles": [
+    "East - The Great Tangle.md",
+    "PUZZLE IDEAS.md",
+    "MAP.canvas",
+    "Large Shipwreck.md",
     "Outpost.md",
     "The Beach.md",
     "Sprout City.md",
     "Secret Under the City.md",
-    "PUZZLE IDEAS.md",
-    "Large Shipwreck.md",
     "Mountain Caves.md",
     "Mountain Peak.md",
     "North - Mt Curmudgeon.md",
-    "MAP.canvas",
     "West - Gilder's Pass.md",
     "Untitled 1.canvas",
     "Untitled 2.canvas",
-    "2023-05-02.md",
-    "East - The Great Tangle.md"
+    "2023-05-02.md"
   ]
 }

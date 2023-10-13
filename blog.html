@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:image" content="http://bumblebee.city/preview.png" />
+	<meta property="og:title" content="Brandon Braun" />
+	<meta property="og:site_name" content="Brandon Braun" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://bumblebee.city/" />
+	<meta property="og:description" content="">
+<head>
+	<title>Welcome to Bumblebee City</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+	<center><a href="http://bumblebee.city"><img class="logo" src="brandonbraunlogo.png"></a></center>
+	
+    <center><a href="projects.html" class="headbutton" ><img class="default" src="projectsicon.png" width="55"><img class="hover" src="projectsiconHover.png" width="55">Projects</a>
+    <a href="art.html" class="headbutton"><img class="default" src="iconArt.png" width="55"><img class="hover" src="iconArtHover.png" width="55">Art</a>
+    <a href="stories.html" class="headbutton"><img class="default" src="iconStories.png" width="55"><img class="hover" src="iconStoriesHover.png" width="55">Stories</a>
+	<a href="about.html" class="headbutton"><img class="default" src="iconAbout.png" width="55"><img class="hover" src="iconAboutHover.png" width="55">About</a></center>
+	<main>
+
+		<center><iframe src="https://cohost.org/brodnork" allowtranspareny="true" frameborder="0" class="cohost-posts" scrolling="yes" style="z-index:1;" width="100%" height="800"></iframe></center>
+</main>
+</body>	
+<footer>
+	<a href="https://twitter.com/brodnork" class="footerIcon"><i class="fa-brands fa-twitter"></i></a> <a href="https://store.steampowered.com/search/?developer=Frogteam%20Games" class="footerIcon"><i class="fa-brands fa-steam"></i></a> <a href="https://brodnork.itch.io" class="footerIcon"><i class="fa-brands fa-itch-io"></i></a> <a href="mailto:brandonbraun1999@gmail.com" class="footerIcon"><i class="fa-solid fa-envelope"></i></a> <a href="https://en.wikipedia.org/wiki/Shrimp" class="footerIcon"><i class="fa-solid fa-shrimp"></i></a> <a href="rss.xml" class="footerIcon"><i class="fa-solid fa-rss"></i></a>
+	<br>
+	<footer-text>
+		<b> 
+			<a onclick="toggleDarkMode()" id="dark-mode-toggle">Dark mode: off</a>  
+		</b>
+	</footer-text>
+	<footer-text>
+		<b>
+			<a onclick="toggleFont()" id="font-toggle">Font: default</a>
+		</b>
+	</footer-text>
+</footer>
+<script src="https://kit.fontawesome.com/9a983606e7.js" crossorigin="anonymous"></script>
+<script>
+	const darkMode = localStorage.getItem('dark') ? localStorage.getItem('dark') : null;
+	var darkModeCurrent = "false";
+	
+	const fontMode = localStorage.getItem('font') ? localStorage.getItem('font') : null;
+	var fontModeCurrent = "false";
+
+
+	if (darkMode) {
+			if (darkMode == 'true') {darkOn()} else {darkOff()}
+	}
+	function toggleDarkMode() {
+		if (darkModeCurrent == 'true'){
+			darkOff();
+		}else{
+			darkOn();
+		}
+	}
+
+	function toggleFont() {
+	   if (fontModeCurrent == 'true'){
+			fontOff();
+		}else{
+			fontOn();
+		}
+	}
+
+	function darkOn() {
+		darkModeCurrent = "true";
+		var element = document.body;
+		element.classList.add("dark");
+		document.getElementById('dark-mode-toggle').innerHTML = "Dark mode: on";
+		localStorage.setItem('dark', 'true');
+		
+	}
+	function darkOff() {
+		darkModeCurrent = "false";
+		var element = document.body;
+		element.classList.remove("dark");
+		document.getElementById('dark-mode-toggle').innerHTML = "Dark mode: off";
+		localStorage.setItem('dark', 'false');
+	}
+
+	if (fontMode) {
+			if (fontMode == 'true') {fontOn()} else {fontOff()}
+	}
+	function fontOn() {
+		fontModeCurrent = "true";
+		var element = document.body;
+		element.classList.add("dyslexic");
+		document.getElementById('font-toggle').innerHTML = "Font: OpenDyslexic";
+		localStorage.setItem('font', 'true');
+	}
+	function fontOff() {
+		fontModeCurrent = "false";
+		var element = document.body;
+		element.classList.remove("dyslexic");
+		document.getElementById('font-toggle').innerHTML = "Font: default";
+		localStorage.setItem('font', 'false');
+	}
+	</script>
+</html>
