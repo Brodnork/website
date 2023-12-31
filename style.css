@@ -123,7 +123,7 @@ a:hover img.default {
 }
 .writing{
 	text-indent: 20px;
-  text-align: center;
+  text-align: justify;
   background-color: #fff6d9;
   color: #4D293B;
   padding: 2.3em;
@@ -133,13 +133,9 @@ a:hover img.default {
 
 .writing h2{
   font-family: 'Itim', sans-serif;
-  text-indent: 20px;
-  text-align: left;
-  background-color: #fff6d9;
+  text-align: center;
   color: #4D293B;
-  padding: 2.3em;
   font-size: 2.0em;
-  border-radius: 10px;
 }
 
 
