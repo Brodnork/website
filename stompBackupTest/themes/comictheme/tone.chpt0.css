@@ -1,0 +1,122 @@
+/*! Background */
+body {
+  color: #000;
+  background-color: #000000;
+}
+
+/*! Follow links */
+.follow a {
+  color: #3366ff;
+  text-decoration: none;
+}
+.follow a:hover, .follow a:focus {
+  color: #ffef95 !important;
+  text-decoration: none;
+}
+/* Mozilla based browsers */
+::-moz-selection {
+background-color: #F0E100;
+color: #000;
+}
+
+/* Works in Safari */
+::selection {
+background-color: #F0E100;
+color: #FFF;
+}
+
+/* Works in Opera */
+::-o-selection {
+background-color: #F0E100;
+color: #FFF;
+}
+::-ms-selection {
+background-color: #F0E100;
+color: #FFF;
+}
+
+/* Works in Internet Explorer */
+::-webkit-selection {
+background-color: #F0E100;
+color: #FFF;
+}
+
+/*! Main container */
+.wrap {
+  color: #F0E100;
+}
+h2 {
+  color:#F0E100;
+}
+}
+h1 {
+  color:#F0E100;
+}
+}
+h3 {
+  color:#F0E100;
+}
+/*! Links */
+a {
+  color: #F0E100;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: #ffef95;
+  text-decoration: none;
+}
+
+/*! Menu colors */
+#menu {
+  color: #F0E100;
+}
+#menu a {
+  color: #F0E100;
+  text-decoration: none;
+}
+#menu a:hover, #menu a:focus {
+  color: #ffef95;
+  text-decoration: none;
+}
+
+/*! Mobile menu widget */
+#menu-widget {
+  color: #F0E100;
+  background-color: #000000;
+}
+#menu-widget a {
+  color: #F0E100;
+  text-decoration: none;
+}
+#menu-widget a:hover, #menu-widget a:focus {
+  color: #F0E100;
+  text-decoration: none;
+}
+
+/*! Comic & archive nav buttons */
+a.navlink {
+  color: #F0E100 !important;
+  text-decoration: none !important;
+}
+a.navlink:hover, a.navlink:focus {
+  color: #ffef95 !important;
+  text-decoration: none !important;
+}
+
+/*! Footer colors */
+#site-foot {
+  color: #F0E100;
+}
+#site-foot a {
+  color: #F0E100;
+  text-decoration: none;
+}
+#site-foot a:hover, #site-foot a:focus {
+  color: #ffef95 !important;
+  text-decoration: none;
+}
+
+
+
+
+

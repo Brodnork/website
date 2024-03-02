@@ -1,0 +1,97 @@
+/*! Background */
+body {
+  color: #000;
+  background-color: #FB9698;
+
+}
+
+/*! Follow links */
+.follow a {
+  color: #3366ff;
+  text-decoration: none;
+}
+.follow a:hover, .follow a:focus {
+  color: #ffef95 !important;
+  text-decoration: none;
+}
+
+/*! Main container */
+.wrap {
+  color: #660300;
+{
+    background-image: url("http://stompwebcomic.com/themes/comictheme/nobwogheads.png");
+    background-repeat: no-repeat;
+    background-attachment: bottom;
+    background-position: top; 
+}
+}
+
+/*! Links */
+a {
+  color: #660300;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: #bbaae0;
+  text-decoration: none;
+}
+h1 {
+  color:#660300;
+}
+h2 {
+  color:#660300;
+}
+h3 {
+  color:#660300;
+
+}
+
+/*! Menu colors */
+#menu {
+  color: #922F30;
+}
+#menu a {
+  color: #922F30;
+  text-decoration: none;
+}
+#menu a:hover, #menu a:focus {
+  color: #ffef95;
+  text-decoration: none;
+}
+
+/*! Mobile menu widget */
+#menu-widget {
+  color: #660300;
+  background-color: #102354;
+}
+#menu-widget a {
+  color: #660300;
+  text-decoration: none;
+}
+#menu-widget a:hover, #menu-widget a:focus {
+  color: #660300;
+  text-decoration: none;
+}
+
+/*! Comic & archive nav buttons */
+a.navlink {
+  color: #660300 !important;
+  text-decoration: none !important;
+}
+a.navlink:hover, a.navlink:focus {
+  color: #ffef95 !important;
+  text-decoration: none !important;
+}
+
+/*! Footer colors */
+#site-foot {
+  color: #660300;
+}
+#site-foot a {
+  color: #922F30;
+  text-decoration: none;
+}
+#site-foot a:hover, #site-foot a:focus {
+  color: #6666cc !important;
+  text-decoration: none;
+}

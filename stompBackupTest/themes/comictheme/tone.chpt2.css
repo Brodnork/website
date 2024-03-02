@@ -1,0 +1,93 @@
+/*! Background */
+body {
+  color: #000;
+  background-color: #463b2c;
+}
+
+/*! Follow links */
+.follow a {
+  color: #3366ff;
+  text-decoration: none;
+}
+.follow a:hover, .follow a:focus {
+  color: #ffef95 !important;
+  text-decoration: none;
+}
+
+/*! Main container */
+.wrap {
+  color: #aa8973;
+}
+
+/*! Links */
+a {
+  color: #aa8973;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: #ffef95;
+  text-decoration: none;
+}
+h1 {
+  color:#aa8973;
+}
+h2 {
+  color:#aa8973;
+}
+h3 {
+  color:#aa8973;
+}
+/*! Menu colors */
+#menu {
+  color: #aa8973;
+}
+#menu a {
+  color: #aa8973;
+  text-decoration: none;
+}
+#menu a:hover, #menu a:focus {
+  color: #ffef95;
+  text-decoration: none;
+}
+
+/*! Mobile menu widget */
+#menu-widget {
+  color: #aa8973;
+  background-color: #251800;
+}
+#menu-widget a {
+  color: #aa8973;
+  text-decoration: none;
+}
+#menu-widget a:hover, #menu-widget a:focus {
+  color: #aa8973;
+  text-decoration: none;
+}
+
+/*! Comic & archive nav buttons */
+a.navlink {
+  color: #aa8973 !important;
+  text-decoration: none !important;
+}
+a.navlink:hover, a.navlink:focus {
+  color: #ffef95 !important;
+  text-decoration: none !important;
+}
+
+/*! Footer colors */
+#site-foot {
+  color: #DED88D;
+}
+#site-foot a {
+  color: #DED88D;
+  text-decoration: none;
+}
+#site-foot a:hover, #site-foot a:focus {
+  color: #ffef95 !important;
+  text-decoration: none;
+}
+
+
+
+
+
