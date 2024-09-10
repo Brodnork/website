@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>Bee&#x27;s Blog</title>
+    <link href="https://bumblebee.city/blog/feed.xml" rel="self" />
+    <link href="https://bumblebee.city/blog" />
+    <updated>2024-09-10T14:39:51-07:00</updated>
+    <author>
+        <name>Bee</name>
+    </author>
+    <id>https://bumblebee.city/blog</id>
+
+    <entry>
+        <title>Test test test</title>
+        <author>
+            <name>Bee</name>
+        </author>
+        <link href="https://bumblebee.city/blog/test-test-test.html"/>
+        <id>https://bumblebee.city/blog/test-test-test.html</id>
+
+        <updated>2024-09-10T14:36:20-07:00</updated>
+            <summary>
+                <![CDATA[
+                    Hi!! This is a test post! Yippie chevrotain moment Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac molestie magna. Morbi lobortis, mauris suscipit dignissim condimentum, est libero hendrerit tellus, a condimentum est nunc at turpis. Nullam ultricies nibh vel laoreet mattis. Aliquam convallis&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Hi!! This is a test post! Yippie</p>
+<figure class="post__image"><img loading="lazy"  src="https://bumblebee.city/blog/media/posts/1/chev.webp" alt="" width="333" height="333" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://bumblebee.city/blog/media/posts/1/responsive/chev-xs.webp 640w ,https://bumblebee.city/blog/media/posts/1/responsive/chev-sm.webp 768w ,https://bumblebee.city/blog/media/posts/1/responsive/chev-md.webp 1024w ,https://bumblebee.city/blog/media/posts/1/responsive/chev-lg.webp 1366w ,https://bumblebee.city/blog/media/posts/1/responsive/chev-xl.webp 1600w ,https://bumblebee.city/blog/media/posts/1/responsive/chev-2xl.webp 1920w"></figure>
+<p>chevrotain moment</p>
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac molestie magna. Morbi lobortis, mauris suscipit dignissim condimentum, est libero hendrerit tellus, a condimentum est nunc at turpis. Nullam ultricies nibh vel laoreet mattis. Aliquam convallis ligula quam, id eleifend nibh viverra eget. Nulla sed risus eu lacus aliquam eleifend a vitae arcu. Vivamus ac urna et ipsum euismod gravida. Morbi imperdiet a eros sit amet porta. Nullam tincidunt eros et nibh molestie, nec hendrerit tortor volutpat. Vivamus ut tortor at est suscipit vulputate. Sed non convallis lacus. Fusce a urna at neque pharetra interdum.<br><br>Integer gravida sem nisi, et condimentum urna aliquet at. Nulla et ultrices sapien. Donec pharetra vitae purus ut rhoncus. Phasellus congue pretium sodales. Integer laoreet velit neque, sed lobortis felis auctor sed. Praesent metus sapien, scelerisque id lacinia eu, auctor eget leo. Nunc quis orci eget risus tempor consectetur. Pellentesque egestas tristique arcu, at sollicitudin mi egestas vitae. Mauris iaculis consequat velit id vestibulum. Pellentesque in turpis hendrerit, rutrum metus eu, scelerisque nibh. </p>
+            ]]>
+        </content>
+    </entry>
+</feed>
