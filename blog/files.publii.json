@@ -2,7 +2,7 @@
     {
         "path": "404.html",
         "type": "file",
-        "md5": "270aabd27d874e831ebebcd8d6a7a050"
+        "md5": "266712e87bc56b54348b77249b9ff799"
     },
     {
         "path": "assets",
@@ -107,22 +107,22 @@
     {
         "path": "/authors/bee/index.html",
         "type": "file",
-        "md5": "1a0d204667f159a79e1aa1a41b131379"
+        "md5": "19a41bec44122dc60d8ca5a5574a63f2"
     },
     {
         "path": "feed.json",
         "type": "file",
-        "md5": "06991dd94a7c0f6b987f1969261cc18e"
+        "md5": "196821a7dfd19e3ebc01f6233192e3a5"
     },
     {
         "path": "feed.xml",
         "type": "file",
-        "md5": "9334fedd20e84dfe3417ecfd1df8efe7"
+        "md5": "826319690f7e43f0183e1e89ad4b011f"
     },
     {
         "path": "index.html",
         "type": "file",
-        "md5": "b814dd274773cfc912a5f3eaddaa1d85"
+        "md5": "09f0cf77408eac9c23b17450bbb18b20"
     },
     {
         "path": "media",
@@ -130,64 +130,19 @@
         "md5": false
     },
     {
-        "path": "media/posts",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "media/posts/1",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/media/posts/1/chev.webp",
-        "type": "file",
-        "md5": "d06f999450c9e450af39f165a6bff2ff"
-    },
-    {
-        "path": "media/posts/1/responsive",
-        "type": "directory",
-        "md5": false
-    },
-    {
-        "path": "/media/posts/1/responsive/chev-2xl.webp",
-        "type": "file",
-        "md5": "d2655b80a78530d42c95640118d0262a"
-    },
-    {
-        "path": "/media/posts/1/responsive/chev-lg.webp",
-        "type": "file",
-        "md5": "d2655b80a78530d42c95640118d0262a"
-    },
-    {
-        "path": "/media/posts/1/responsive/chev-md.webp",
-        "type": "file",
-        "md5": "d2655b80a78530d42c95640118d0262a"
-    },
-    {
-        "path": "/media/posts/1/responsive/chev-sm.webp",
-        "type": "file",
-        "md5": "5d28662df20d01d7310943fa4e135a95"
-    },
-    {
-        "path": "/media/posts/1/responsive/chev-xl.webp",
-        "type": "file",
-        "md5": "d2655b80a78530d42c95640118d0262a"
-    },
-    {
-        "path": "/media/posts/1/responsive/chev-xs.webp",
-        "type": "file",
-        "md5": "65e977d4d1814fcb49f9064464699069"
-    },
-    {
         "path": "media/website",
         "type": "directory",
         "md5": false
     },
     {
-        "path": "/media/website/bumblebeecitylogo.png",
+        "path": "/media/website/blogLogo.png",
         "type": "file",
-        "md5": "ce0b3f5a7465c73b3d8d7e3c7c0d7b5a"
+        "md5": "79b58c6cbbfdba9c2cf093d30c1d32f7"
+    },
+    {
+        "path": "/media/website/favicon.png",
+        "type": "file",
+        "md5": "09beee9bc980785f4e8c075762b01c6d"
     },
     {
         "path": "media/website/responsive",
@@ -195,34 +150,64 @@
         "md5": false
     },
     {
-        "path": "/media/website/responsive/bumblebeecitylogo-2xl.png",
+        "path": "/media/website/responsive/blogLogo-2xl.png",
         "type": "file",
-        "md5": "39571e386556c8aa0ebbc8d5fbe6bf9e"
+        "md5": "a7f7616bd695271e801ccaa4395690a2"
     },
     {
-        "path": "/media/website/responsive/bumblebeecitylogo-lg.png",
+        "path": "/media/website/responsive/blogLogo-lg.png",
         "type": "file",
-        "md5": "39571e386556c8aa0ebbc8d5fbe6bf9e"
+        "md5": "a7f7616bd695271e801ccaa4395690a2"
     },
     {
-        "path": "/media/website/responsive/bumblebeecitylogo-md.png",
+        "path": "/media/website/responsive/blogLogo-md.png",
         "type": "file",
-        "md5": "39571e386556c8aa0ebbc8d5fbe6bf9e"
+        "md5": "a7f7616bd695271e801ccaa4395690a2"
     },
     {
-        "path": "/media/website/responsive/bumblebeecitylogo-sm.png",
+        "path": "/media/website/responsive/blogLogo-sm.png",
         "type": "file",
-        "md5": "39571e386556c8aa0ebbc8d5fbe6bf9e"
+        "md5": "a7f7616bd695271e801ccaa4395690a2"
     },
     {
-        "path": "/media/website/responsive/bumblebeecitylogo-xl.png",
+        "path": "/media/website/responsive/blogLogo-xl.png",
         "type": "file",
-        "md5": "39571e386556c8aa0ebbc8d5fbe6bf9e"
+        "md5": "a7f7616bd695271e801ccaa4395690a2"
     },
     {
-        "path": "/media/website/responsive/bumblebeecitylogo-xs.png",
+        "path": "/media/website/responsive/blogLogo-xs.png",
         "type": "file",
-        "md5": "bae87b1f4e772cd2cd5a3a6ea8fcac3c"
+        "md5": "a7f7616bd695271e801ccaa4395690a2"
+    },
+    {
+        "path": "/media/website/responsive/favicon-2xl.png",
+        "type": "file",
+        "md5": "f45f4a6118e9ba2d96a7fcceb4aad5f7"
+    },
+    {
+        "path": "/media/website/responsive/favicon-lg.png",
+        "type": "file",
+        "md5": "f45f4a6118e9ba2d96a7fcceb4aad5f7"
+    },
+    {
+        "path": "/media/website/responsive/favicon-md.png",
+        "type": "file",
+        "md5": "f45f4a6118e9ba2d96a7fcceb4aad5f7"
+    },
+    {
+        "path": "/media/website/responsive/favicon-sm.png",
+        "type": "file",
+        "md5": "f45f4a6118e9ba2d96a7fcceb4aad5f7"
+    },
+    {
+        "path": "/media/website/responsive/favicon-xl.png",
+        "type": "file",
+        "md5": "f45f4a6118e9ba2d96a7fcceb4aad5f7"
+    },
+    {
+        "path": "/media/website/responsive/favicon-xs.png",
+        "type": "file",
+        "md5": "f45f4a6118e9ba2d96a7fcceb4aad5f7"
     },
     {
         "path": "robots.txt",
@@ -232,7 +217,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "b389ed137c84c6b9e4f100560cbc98f0"
+        "md5": "7c34b79b7e32f1d4f7666e94e80108c0"
     },
     {
         "path": "sitemap.xsl",
@@ -247,11 +232,6 @@
     {
         "path": "/tags/index.html",
         "type": "file",
-        "md5": "248f56631438c91cf29161fb29b91516"
-    },
-    {
-        "path": "test-test-test.html",
-        "type": "file",
-        "md5": "237f6e8bd57a6d3c72f7f04e63e0c2a4"
+        "md5": "157c615048a8555598b8be3eedfe8554"
     }
 ]
