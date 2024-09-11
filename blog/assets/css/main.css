@@ -17,6 +17,7 @@ main,
 nav,
 section {
   display: block;
+  cursor: url("http://bumblebee.city/beeCursor.png"), default;
 }
 
 li {
@@ -55,6 +56,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  cursor: url("http://bumblebee.city/beeCursor.png"), default;
 }
 html.no-scroll {
   overflow: hidden;
@@ -62,6 +64,7 @@ html.no-scroll {
 }
 
 body {
+  cursor: url("http://bumblebee.city/beeCursor.png"), default;
   background: #4D293B;
   color: #FDF8E6;
   font-family: "Atkinson Hyperlegible", sans-serif;
@@ -82,6 +85,7 @@ a {
 }
 a:hover {
   color: var(--link-color-hover);
+  cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
 }
 a:active {
   color: var(--link-color-hover);
