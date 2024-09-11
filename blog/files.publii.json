@@ -107,27 +107,82 @@
     {
         "path": "/authors/bee/index.html",
         "type": "file",
-        "md5": "1a655645167be0fbf4a5cfed0482531f"
+        "md5": "b771601d604d4163853be5a86d8eb2cb"
+    },
+    {
+        "path": "eggbugs-obituary-goodbye-cohost.html",
+        "type": "file",
+        "md5": "1ccf8ab17985638ecdfafb0d6edfa96e"
     },
     {
         "path": "feed.json",
         "type": "file",
-        "md5": "f6f66583be7c0b7c44b1e3f1c89bd484"
+        "md5": "5ae7300d0870d37af8dda8150d897ac2"
     },
     {
         "path": "feed.xml",
         "type": "file",
-        "md5": "41534c3228376be37ed77832a2fd627c"
+        "md5": "782195d4b120e0cb095581136b06c87c"
     },
     {
         "path": "index.html",
         "type": "file",
-        "md5": "2845e2710194317f36a568fefe25872b"
+        "md5": "5f7aa4229e82f1379c9ed4be08a1c925"
     },
     {
         "path": "media",
         "type": "directory",
         "md5": false
+    },
+    {
+        "path": "media/posts",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "media/posts/3",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/3/eggbug.png",
+        "type": "file",
+        "md5": "555cfe39f3bd4ddfa5e1e010b2e68249"
+    },
+    {
+        "path": "media/posts/3/responsive",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/posts/3/responsive/eggbug-2xl.png",
+        "type": "file",
+        "md5": "9f1b546b1b1ccc59d90c23e4928c1f95"
+    },
+    {
+        "path": "/media/posts/3/responsive/eggbug-lg.png",
+        "type": "file",
+        "md5": "8767812441aaf182fb4c1853246326da"
+    },
+    {
+        "path": "/media/posts/3/responsive/eggbug-md.png",
+        "type": "file",
+        "md5": "219b4f9d25c2e1bc91ecdf3d6b685b15"
+    },
+    {
+        "path": "/media/posts/3/responsive/eggbug-sm.png",
+        "type": "file",
+        "md5": "78a68d7925d211d85034e5a5478f4bf2"
+    },
+    {
+        "path": "/media/posts/3/responsive/eggbug-xl.png",
+        "type": "file",
+        "md5": "f3cbb8b1fde74233143c79952a0d1761"
+    },
+    {
+        "path": "/media/posts/3/responsive/eggbug-xs.png",
+        "type": "file",
+        "md5": "b22856cecdcefdda214692232e86aeac"
     },
     {
         "path": "media/website",
@@ -217,7 +272,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "67d4d437c410efee1810719e8ebe6410"
+        "md5": "e022f7895095c09c8e8dacf831fd4a53"
     },
     {
         "path": "sitemap.xsl",
@@ -257,6 +312,6 @@
     {
         "path": "the-heros-journey-or-how-going-to-a-furry-convention-fixed-my-brain.html",
         "type": "file",
-        "md5": "936128d47344b3b363300c2c35fe5462"
+        "md5": "7d8086cc67faacd276b82de797626f46"
     }
 ]
