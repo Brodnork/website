@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 *,
 *:before,
 *:after {
@@ -63,7 +64,7 @@ html.no-scroll {
 body {
   background: #4D293B;
   color: #FDF8E6;
-  font-family: var(--body-font);
+  font-family: "Atkinson Hyperlegible", sans-serif;
   font-variation-settings: "wght" var(--font-weight-normal);
   letter-spacing: var(--letter-spacing);
   line-height: var(--line-height);
@@ -186,7 +187,7 @@ blockquote {
   border-top: 2px solid var(--dark);
   border-bottom: 2px solid var(--dark);
   color: #FDEEBB;
-  font-family: var(--heading-font);
+  font-family: "Atkinson Hyperlegible", sans-serif;
   font-style: italic;
   font-variation-settings: "wght" var(--font-weight-bold);
   padding: calc(var(--baseline) * 6 + 1vw) 2rem;
@@ -340,7 +341,7 @@ button {
   color: var(--dark);
   cursor: pointer;
   display: inline-flex;
-  font-family: var(--menu-font);
+  font-family: "Atkinson Hyperlegible", sans-serif;
   font-size: 0.8239746086rem;
   font-variation-settings: "wght" var(--font-weight-bold);
   overflow: hidden;
@@ -1452,7 +1453,7 @@ textarea {
 }
 .content__tag {
   margin: 0;
-  font-family: var(--menu-font);
+  font-family: "Atkinson Hyperlegible", sans-serif;
   font-size: 0.8239746086rem;
 }
 .content__tag > li {
