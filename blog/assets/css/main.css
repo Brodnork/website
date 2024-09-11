@@ -598,7 +598,7 @@ textarea {
   }
 }
 .top.sticky {
-  background: var(--page-bg);
+  background: #4D293B;
   position: sticky;
   top: -100px;
   -webkit-animation: slideDown 0.5s cubic-bezier(0.17, 0.67, 0, 1) forwards;
