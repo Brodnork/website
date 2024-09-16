@@ -25,5 +25,12 @@
         <pubDate>Tues, 10 September 2024 00:00:00 GMT</pubDate>
         <description>I totally forgot to update this thing in over a year oops. Check the Updates section on the home page for things you may have missed!</description>
     </item>
+    <item>
+        <title>Updated some visuals of the site</title>
+        <link>http://bumblebee.city/</link>
+        <guid>bumblebeeRSS4</guid>
+        <pubDate>Mon, 16 September 2024 00:00:00 GMT</pubDate>
+        <description>Slight update to the visuals of the site, including the addition of a little interactive Fennel in the corner, as well as holiday themes.</description>
+    </item>
 </channel>
 </rss>
