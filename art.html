@@ -7,8 +7,9 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
 </head>
+<div class="christmasLights" id="christmasLights"></div>
 <body>
-	<center><a href="http://bumblebee.city"><img class="logo" src="bumblebeecitylogo.png"></a></center>
+	<center><a href="https://bumblebee.city"><img class="logo" src="bumblebeecitylogo.png" id="logo"></a></center>
     <center>
 		<a href="projects" class="headbutton" ><img class="default" src="projectsicon.png" width="55"><img class="hover" src="projectsiconHover.png" width="55">Projects</a>
    		<a href="art" class="headbutton"><img class="default" src="iconArt.png" width="55"><img class="hover" src="iconArtHover.png" width="55">Art</a>
@@ -238,6 +239,7 @@
 	</footer-text>
 </footer>
 <script src="https://kit.fontawesome.com/9a983606e7.js" crossorigin="anonymous"></script>
+<script src="scripts.js"></script>
 <script>
 	const darkMode = localStorage.getItem('dark') ? localStorage.getItem('dark') : null;
 	var darkModeCurrent = "false";
@@ -266,17 +268,19 @@
 	}
 
 	function darkOn() {
+		setDarkMode();
 		darkModeCurrent = "true";
-		var element = document.body;
-		element.classList.add("dark");
+		//var element = document.body;
+		//element.classList.add("dark");
 		document.getElementById('dark-mode-toggle').innerHTML = "Dark mode: on";
 		localStorage.setItem('dark', 'true');
 		
 	}
 	function darkOff() {
+		setLightMode();
 		darkModeCurrent = "false";
-		var element = document.body;
-		element.classList.remove("dark");
+		//var element = document.body;
+		//element.classList.remove("dark");
 		document.getElementById('dark-mode-toggle').innerHTML = "Dark mode: off";
 		localStorage.setItem('dark', 'false');
 	}
