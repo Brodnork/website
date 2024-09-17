@@ -3,6 +3,10 @@ plook = 1;
 var r = document.querySelector(':root');
 var fenSounds = Array("audio/baa.wav", "audio/bark1.wav", "audio/deepBark.wav", "audio/minecraftDog.wav", "audio/minecraftSheep.wav");
 
+var aprilFools = false;
+
+var fenScale = 1;
+
 function plookClick() {
     if (plook == 1){
         document.getElementById("plookClickable").src = "plook1.gif";
@@ -18,6 +22,16 @@ function fenClick() {
     var selectedSound = fenSounds[~~(fenSounds.length * Math.random())]
     var audio = new Audio(selectedSound);
     document.getElementById("fen").src = "fenYap.webp";
+
+    audio.playbackRate = 1.2
+    if(aprilFools){
+        audio.mozPreservesPitch = false;
+        audio.preservesPitch = false
+        audio.playbackRate = 1.2 - (fenScale * 0.1);
+        
+        fenScale = fenScale + 0.09;
+        setCSS("--fen-scale-mult", fenScale.toString());
+    }
     audio.play();
 }
 
@@ -26,7 +40,14 @@ function getLightBG(){
     var today = new Date();
     var theDate = Array(today.getMonth(), today.getDate());
 
-    //theDate = Array(8,30); //override date for testing. remember months start at 0
+    theDate = Array(3,1); //override date for testing. remember months start at 0
+
+    if(theDate[0] == 3 && theDate[1] == 1){ 
+        aprilFools = true;
+        //setCSS("--bg-image", "url('chevrotaincube.gif')");
+        //setCSS("--background-scale", "100px");
+        document.getElementById("logo").style="transform: rotate(-180deg)";
+    }
 
     //birthday
     if(theDate[0] == 8 && theDate[1] == 25) {

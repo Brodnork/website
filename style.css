@@ -8,6 +8,8 @@
   --header: #EBB9A3;
   --status-bg: #fff6d9;
   --link-hover: #FF489C;
+  --fen-scale-mult: 1;
+  --background-scale: auto;
 }
 
 html {
@@ -23,6 +25,7 @@ body {
   padding-top:2em;
   background-color: var(--bg-color);
   background-image: var(--bg-image);
+  background-size: var(--background-scale);
   color: var(--font-color);
 	font-family: 'Arvo', sans-serif;
 	font-size: 1.4em;
@@ -650,9 +653,10 @@ img.hover-shadow-project {
   position: fixed;
   bottom: 1%;
   left: 5%;
-  width: 9%;
+  width: calc(9% * var(--fen-scale-mult));
   cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
   filter: drop-shadow(5px 5px 6px #00000057);
+  transition: 0.2s;
 }
 
 .fennelPlatform{
@@ -1323,7 +1327,7 @@ img.hover-shadow-project {
   position: fixed;
   bottom: 1%;
   left: 1%;
-  width: 17%;
+  width: calc(18% * var(--fen-scale-mult));
   cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
 }
 
