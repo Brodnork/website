@@ -10,11 +10,14 @@
   --link-hover: #FF489C;
   --fen-scale-mult: 1;
   --background-scale: auto;
+  --shadow-color: #00000051;
 }
 
 html {
 	cursor: url("http://bumblebee.city/beeCursor.png"), default;
+  text-shadow: 2px 2px 4px var(--shadow-color);
 }
+
 @font-face{
   font-family: "OpenDyslexic";
   src: url("OpenDyslexic-Regular.otf");
@@ -190,7 +193,10 @@ h1{
   margin-left: auto;
   margin-right: auto;
   overflow: auto;
+  positio;
   border-radius: 0px 0px 20px 20px;
+  -webkit-box-shadow: 5px 5px 9px 0px var(--shadow-color); 
+  box-shadow: 5px 5px 9px 0px var(--shadow-color);
 }
 .statusHeader{
   background-color: var(--header);
@@ -205,6 +211,8 @@ h1{
   margin-top: 5%;
   font-family: 'Itim', sans-serif;
   border-radius: 20px 20px 0px 0px;
+  -webkit-box-shadow: 5px 5px 9px 0px var(--shadow-color); 
+  box-shadow: 5px 5px 9px 0px var(--shadow-color);
 }
 
 ::-webkit-scrollbar {
@@ -242,6 +250,9 @@ hr.solid {
   margin-right: auto;
   border-radius: 20px 20px 20px 20px;
   position: relative;
+  -webkit-box-shadow: 5px 5px 9px 0px var(--shadow-color); 
+  box-shadow: 5px 5px 9px 0px var(--shadow-color);
+  transition: 0.3s;
 }
 
 .projectText{
@@ -252,12 +263,14 @@ hr.solid {
   margin-right: 5em;
   opacity: 0;
   text-align: justify;
+  transition: 0.2s;
 }
 
 
 .project:hover .projectText {
   visibility: visible;
   opacity: 1;
+  transition: 0.3s;
 }
 
 .project-bg{
@@ -269,6 +282,8 @@ hr.solid {
   height: 218px;
   z-index: -1;
   border-radius: 0px 0px 20px 20px;
+  -webkit-box-shadow: 5px 5px 9px 0px var(--shadow-color); 
+  box-shadow: 5px 5px 9px 0px var(--shadow-color);
 }
 
 .project:hover{
@@ -283,6 +298,7 @@ hr.solid {
   border-radius: 20px 20px 20px 20px;
   position: relative;
   cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+  transition: 0.3s;
 }
 
 .character{
@@ -304,15 +320,16 @@ hr.solid {
 
 .project-title {
   color: var(--font-color);
-  font-size: 0.9em;
+  font-size: 0.7em;
   text-align: left;
   float: left;
+  margin-top: 1.25%;
   margin-left: 40px;
 }
 
 .project-date {
   color: var(--font-color);
-  font-size: 0.67em;
+  font-size: 0.6em;
   text-align: right;
   float: right;
   line-height: 1.25;
@@ -457,6 +474,8 @@ img.hover-shadow {
   height: 300px;
   width: 300px;
   object-fit: cover;
+  -webkit-box-shadow: 5px 5px 9px 0px var(--shadow-color); 
+  box-shadow: 5px 5px 9px 0px var(--shadow-color);
 }
 
 .hover-shadow:hover {
@@ -482,6 +501,8 @@ img.hover-shadow-project {
   max-width: 82vw;
   margin-left: auto;
   margin-right: auto;
+  -webkit-box-shadow: 5px 5px 9px 0px black; 
+  box-shadow: 5px 5px 9px 0px black;
 
 }
 
@@ -657,6 +678,7 @@ img.hover-shadow-project {
   cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
   filter: drop-shadow(5px 5px 6px #00000057);
   transition: 0.2s;
+  z-index: 20;
 }
 
 .fennelPlatform{
@@ -815,6 +837,8 @@ body {
 
   .logo{
     width: 82%;
+    
+  
   }
 
   .statusUpdates{
@@ -1329,6 +1353,7 @@ img.hover-shadow-project {
   left: 1%;
   width: calc(18% * var(--fen-scale-mult));
   cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+  z-index: 20;
 }
 
 .fennelPlatform{
