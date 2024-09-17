@@ -40,7 +40,7 @@ function getLightBG(){
     var today = new Date();
     var theDate = Array(today.getMonth(), today.getDate());
 
-    theDate = Array(3,1); //override date for testing. remember months start at 0
+    //theDate = Array(3,1); //override date for testing. remember months start at 0
 
     if(theDate[0] == 3 && theDate[1] == 1){ 
         aprilFools = true;
