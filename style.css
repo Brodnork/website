@@ -689,6 +689,33 @@ img.hover-shadow-project {
   display: none;
 }
 
+code{
+  font-size: 0.9em;
+}
+
+.codeBlock{
+  background-color: var(--status-bg);
+  color: var(--font-color);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  font-size: 1em;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: scroll;
+  text-wrap: nowrap;
+  overflow-y: hidden;
+  border-radius: 20px 20px 20px 20px;
+  -webkit-box-shadow: inset 5px 5px 9px 0px var(--shadow-color); 
+  box-shadow: inset 5px 5px 9px 0px var(--shadow-color);
+}
+
+.buttonsContainer{
+  margin-top: 2em;
+  margin-bottom: -2em;
+}
 
 
 }
