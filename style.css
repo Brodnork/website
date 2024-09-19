@@ -11,11 +11,13 @@
   --fen-scale-mult: 1;
   --background-scale: auto;
   --shadow-color: #00000051;
+  --animation-mult: 1;
 }
 
 html {
 	cursor: url("http://bumblebee.city/beeCursor.png"), default;
   text-shadow: 2px 2px 4px var(--shadow-color);
+  scrollbar-color: var(--font-highlight) var(--header);
 }
 
 @font-face{
@@ -141,8 +143,10 @@ a:hover img.default {
   font-weight:bold;
   cursor: pointer;
   width:20%;
-
 }
+
+
+
 
 .writing h2{
   font-family: 'Itim', sans-serif;
@@ -181,6 +185,13 @@ h1{
 
 .logo{
   width: 540px;
+  transform: scale(1);
+  transition: calc(0.2s * var(--animation-mult));
+}
+
+.logo:hover{
+  transform: scale(1.06);
+  transition: calc(0.2s * var(--animation-mult));
 }
 
 .statusUpdates{
@@ -241,7 +252,7 @@ hr.solid {
 
 
 .project{
-  background-color: rgba(186, 42, 99, 0);
+  background-color: var(--font-color);
   padding: 0em;
   font-size: 1em;
   width: 100%;
@@ -252,42 +263,48 @@ hr.solid {
   position: relative;
   -webkit-box-shadow: 5px 5px 9px 0px var(--shadow-color); 
   box-shadow: 5px 5px 9px 0px var(--shadow-color);
-  transition: 0.3s;
+  transition: calc(0.2s * var(--animation-mult));
 }
 
 .projectText{
-  color: #fff6d9;
+  color: var(--bg-color);
   padding: 1em;
   font-size: 1em;
   margin-left: 5em;
   margin-right: 5em;
   opacity: 0;
   text-align: justify;
-  transition: 0.2s;
+
 }
 
 
 .project:hover .projectText {
   visibility: visible;
   opacity: 1;
-  transition: 0.3s;
+  transition: calc(0.2s * var(--animation-mult));
 }
 
 .project-bg{
+  background-color: var(--font-color);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
   width: 100%;
   height: 218px;
-  z-index: -1;
   border-radius: 0px 0px 20px 20px;
   -webkit-box-shadow: 5px 5px 9px 0px var(--shadow-color); 
   box-shadow: 5px 5px 9px 0px var(--shadow-color);
+  transition: calc(0.2s * var(--animation-mult));
+}
+
+.project:hover .project-bg{
+  opacity: 0.1;
+  transition: calc(0.2s * var(--animation-mult));
 }
 
 .project:hover{
-  background-color: rgba(77, 41, 59, 0.9);
+  background-color: var(--font-color);
   color: #fff6d9;
   padding: 0em;
   font-size: 1em;
@@ -298,8 +315,10 @@ hr.solid {
   border-radius: 20px 20px 20px 20px;
   position: relative;
   cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
-  transition: 0.3s;
+  transition: calc(0.2s * var(--animation-mult));
+  transform: scale(1.05,1.05 );
 }
+
 
 .character{
   position: absolute;
@@ -383,6 +402,7 @@ hr.solid {
   height: 100%;
   overflow: auto;
   background-color: rgba(12, 10, 24, 0.9);
+  z-index: 100;
 }
 
 /* Modal Content */
@@ -431,6 +451,7 @@ hr.solid {
   border-radius: 10px;
   user-select: none;
   -webkit-user-select: none;
+  z-index: 200;
 }
 
 /* Position the "next button" to the right */
@@ -680,6 +701,11 @@ img.hover-shadow-project {
   filter: drop-shadow(5px 5px 6px #00000057);
   transition: 0.2s;
   z-index: 20;
+
+}
+
+.fennel:hover{
+  transition: 0.2s;
 }
 
 .fennelPlatform{
@@ -688,6 +714,12 @@ img.hover-shadow-project {
   left: -5%;
   width: 20%;
   display: none;
+}
+
+@keyframes squish {
+  0% {transform: scale(1,1);}
+  50% {transform: scale(1.06,1.06);}
+  100% {transform: scale(1,1);}
 }
 
 code{
@@ -716,6 +748,14 @@ code{
 .buttonsContainer{
   margin-top: 2em;
   margin-bottom: -2em;
+}
+
+.project-title img {
+  position: absolute;
+  width: 35%;
+  top: -1em;
+  filter: drop-shadow(5px 5px 6px #00000057);
+  z-index: 10;
 }
 
 
@@ -927,11 +967,12 @@ body {
   padding: 0em;
   font-size: 1em;
   width: 100%;
-  height:400px;
+  min-height: 200px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 20px 20px 20px 20px;
   position: relative;
+  padding-bottom: 12em;
 }
 
 .projectText{
@@ -941,22 +982,21 @@ body {
   margin-left: 0em;
   margin-right: 0em;
   text-align: justify;
-  background-color: rgba(77, 41, 59, 0.9);
+  background-color: rgb(77, 41, 59);
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 
-.project:hover .projectText {
-  visibility: visible;
-  opacity: 1;
-}
 
 .project-bg{
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
+  background-attachment: local;
   position: absolute;
   width: 100%;
-  height: 318px;
+  height: 300px;
   z-index: -1;
   border-radius: 0px 0px 20px 20px;
 }
@@ -966,22 +1006,22 @@ body {
   padding: 0em;
   font-size: 1em;
   width: 100%;
-  height:400px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 20px 20px 20px 20px;
   position: relative;
   cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+  padding-bottom: 12em;
 }
 
 .project-header{
   background-color: #EBB9A3;
   color: #4D293B;
-  font-size: 2em;
+  font-size: 1.8em;
   width: 100%;
-  height:82px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 0.5em;
   font-family: 'Itim', sans-serif;
   border-radius: 20px 20px 0px 0px;
 }
@@ -989,23 +1029,17 @@ body {
 .project-title {
   color: #4D293B;
   font-size: 0.7em;
-  text-align: left;
-  float: left;
-  margin-left: 15px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  text-align: center;
+
+  text-size-adjust: 30%;
 }
 
 .project-date {
   color: #4D293B;
   font-size: 0.5em;
-  text-align: right;
-  float: right;
+  text-align: center;
   line-height: 1.2;
-  margin-right: 15px;
   font-style: italic;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 
@@ -1054,6 +1088,7 @@ body {
   height: 100%;
   overflow: auto;
   background-color: rgba(12, 10, 24, 0.9);
+  z-index: 100;
 }
 
 /* Modal Content */
@@ -1095,7 +1130,7 @@ body {
   top: 82%;
   width: auto;
   padding: 10px;
-  margin-top: -50px;
+  margin-top: -50%;
   color: #FDEEBB;
   font-weight: bold;
   font-size: 50px;
@@ -1130,6 +1165,7 @@ body {
 .caption-container {
   text-align: center;
   color: #FDEEBB;
+  z-index: 100;
 }
 
 img.demo {
@@ -1168,9 +1204,10 @@ img.hover-shadow-project {
 
 .galleryDisplay{
   max-height: 800px;
-  max-width: 100%;
+  max-width: 80%;
   margin-left: auto;
   margin-right: auto;
+  z-index: 100;
 
 }
 
@@ -1400,7 +1437,7 @@ img.hover-shadow-project {
   padding-top: 0.2em;
   padding-bottom: 0.2em;
   font-size: 1em;
-  width: 50%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   overflow-x: scroll;

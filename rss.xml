@@ -3,16 +3,16 @@
 <channel>
     <title>Welcome to Bumble Bee City!</title>
     <link>http://bumblebee.city/</link>
-    <description>Brandon Braun's personal website.</description>
+    <description>Bee's personal website.</description>
     <item>
-        <title>Site online!</title>
+        <title>Site updates!</title>
         <link>http://bumblebee.city/</link>
         <guid>bumblebeeRSS1</guid>
         <pubDate>Mon, 25 March 2024 00:00:00 GMT</pubDate>
         <description>Updated the projects and art pages!</description>
     </item>
     <item>
-        <title>Site online!</title>
+        <title>RSS feed is up!</title>
         <link>http://bumblebee.city/</link>
         <guid>bumblebeeRSS2</guid>
         <pubDate>Sat, 29 April 2023 00:00:00 GMT</pubDate>
@@ -31,6 +31,13 @@
         <guid>bumblebeeRSS4</guid>
         <pubDate>Mon, 16 September 2024 00:00:00 GMT</pubDate>
         <description>Slight update to the visuals of the site, including the addition of a little interactive Fennel in the corner, as well as holiday themes.</description>
+    </item>
+    <item>
+        <title>More slight updates!</title>
+        <link>http://bumblebee.city/</link>
+        <guid>bumblebeeRSS5</guid>
+        <pubDate>Thurs, 19 September 2024 00:00:00 GMT</pubDate>
+        <description>More updates to the visuals, mainly some simple animations. I'm also adding buttons to the About page.</description>
     </item>
 </channel>
 </rss>
