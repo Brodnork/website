@@ -4,7 +4,13 @@
     <title>Welcome to Bumble Bee City!</title>
     <link>http://bumblebee.city/</link>
     <description>Bee's personal website.</description>
-    <lastBuildDate>Thurs, 19 September 2024 00:00:00 GMT</lastBuildDate>
+    <item>
+        <title>More slight updates!</title>
+        <link>http://bumblebee.city/</link>
+        <guid>bumblebeeRSS5</guid>
+        <pubDate>Thurs, 19 September 2024 00:00:00 GMT</pubDate>
+        <description>More updates to the visuals, mainly some simple animations. I'm also adding buttons to the About page.</description>
+    </item>
     <item>
         <title>Site updates!</title>
         <link>http://bumblebee.city/</link>
@@ -33,12 +39,6 @@
         <pubDate>Mon, 16 September 2024 00:00:00 GMT</pubDate>
         <description>Slight update to the visuals of the site, including the addition of a little interactive Fennel in the corner, as well as holiday themes.</description>
     </item>
-    <item>
-        <title>More slight updates!</title>
-        <link>http://bumblebee.city/</link>
-        <guid>bumblebeeRSS5</guid>
-        <pubDate>Thurs, 19 September 2024 00:00:00 GMT</pubDate>
-        <description>More updates to the visuals, mainly some simple animations. I'm also adding buttons to the About page.</description>
-    </item>
+    
 </channel>
 </rss>
