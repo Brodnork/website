@@ -12,10 +12,7 @@
 <body>
 	<center><a href="https://bumblebee.city"><img class="logo" src="bumblebeecitylogo.png" id="logo"></a></center>
     <center>
-		<a href="projects" class="headbutton" ><img class="default" src="projectsicon.png" width="55"><img class="hover" src="projectsiconHover.png" width="55">Projects</a>
-   		<a href="art" class="headbutton"><img class="default" src="iconArt.png" width="55"><img class="hover" src="iconArtHover.png" width="55">Art</a>
-    	<a href="blog" class="headbutton"><img class="default" src="iconStories.png" width="55"><img class="hover" src="iconStoriesHover.png" width="55">Blog</a>
-		<a href="about" class="headbutton"><img class="default" src="iconAbout.png" width="55"><img class="hover" src="iconAboutHover.png" width="55">About</a>
+		<script src="header.js"></script>
 	</center>
 	<main>
     <center><h1>Major Projects</h1></center>
@@ -95,83 +92,8 @@
     </div></a>
 	</main>
 </body>	
-<footer>
-	<a href="https://twitter.com/brodnork" class="footerIcon"><i class="fa-brands fa-twitter"></i></a> <a href="https://store.steampowered.com/search/?developer=Bee%20Braun" class="footerIcon"><i class="fa-brands fa-steam"></i></a> <a href="https://brodnork.itch.io" class="footerIcon"><i class="fa-brands fa-itch-io"></i></a> <a href="mailto:brandonbraun1999@gmail.com" class="footerIcon"><i class="fa-solid fa-envelope"></i></a> <a href="https://en.wikipedia.org/wiki/Shrimp" class="footerIcon"><i class="fa-solid fa-shrimp"></i></a> <a href="rss.xml" class="footerIcon"><i class="fa-solid fa-rss"></i></a>
-    <br>
-	<footer-text>
-		<b> 
-			<a onclick="toggleDarkMode()" id="dark-mode-toggle">Dark mode: off</a>  
-		</b>
-	</footer-text>
-	<footer-text>
-		<b>
-			<a onclick="toggleFont()" id="font-toggle">Font: default</a>
-		</b>
-	</footer-text>
-</footer>
+<script src="footer.js"></script>
 <script src="https://kit.fontawesome.com/9a983606e7.js" crossorigin="anonymous"></script>
 <script src="scripts.js"></script>
-<script>
-	const darkMode = localStorage.getItem('dark') ? localStorage.getItem('dark') : null;
-	var darkModeCurrent = "false";
-	
-	const fontMode = localStorage.getItem('font') ? localStorage.getItem('font') : null;
-	var fontModeCurrent = "false";
 
-
-	if (darkMode) {
-			if (darkMode == 'true') {darkOn()} else {darkOff()}
-	}
-	function toggleDarkMode() {
-		if (darkModeCurrent == 'true'){
-			darkOff();
-		}else{
-			darkOn();
-		}
-	}
-
-	function toggleFont() {
-	   if (fontModeCurrent == 'true'){
-			fontOff();
-		}else{
-			fontOn();
-		}
-	}
-
-	function darkOn() {
-		setDarkMode();
-		darkModeCurrent = "true";
-		//var element = document.body;
-		//element.classList.add("dark");
-		document.getElementById('dark-mode-toggle').innerHTML = "Dark mode: on";
-		localStorage.setItem('dark', 'true');
-		
-	}
-	function darkOff() {
-		setLightMode();
-		darkModeCurrent = "false";
-		//var element = document.body;
-		//element.classList.remove("dark");
-		document.getElementById('dark-mode-toggle').innerHTML = "Dark mode: off";
-		localStorage.setItem('dark', 'false');
-	}
-
-	if (fontMode) {
-			if (fontMode == 'true') {fontOn()} else {fontOff()}
-	}
-	function fontOn() {
-		fontModeCurrent = "true";
-		var element = document.body;
-		element.classList.add("dyslexic");
-		document.getElementById('font-toggle').innerHTML = "Font: OpenDyslexic";
-		localStorage.setItem('font', 'true');
-	}
-	function fontOff() {
-		fontModeCurrent = "false";
-		var element = document.body;
-		element.classList.remove("dyslexic");
-		document.getElementById('font-toggle').innerHTML = "Font: default";
-		localStorage.setItem('font', 'false');
-	}
-	</script>
 </html>

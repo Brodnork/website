@@ -5,6 +5,13 @@
     <link>http://bumblebee.city/</link>
     <description>Bee's personal website.</description>
     <item>
+        <title>More  updates!</title>
+        <link>http://bumblebee.city/</link>
+        <guid>bumblebeeRSS6</guid>
+        <pubDate>Mon, 23 September 2024 00:00:00 GMT</pubDate>
+        <description> Added a bunch of updates to the site including a Links page and a bunch of updates to the About page. I also redid a bunch of the code to make new pages easier to make and old pages easier to update.</description>
+    </item>
+    <item>
         <title>More slight updates!</title>
         <link>http://bumblebee.city/</link>
         <guid>bumblebeeRSS5</guid>

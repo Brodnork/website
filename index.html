@@ -18,15 +18,14 @@
 <body>
 	<center><a href="https://bumblebee.city"><img class="logo" src="bumblebeecitylogo.png" id="logo"></a></center>
     <center>
-		<a href="projects" class="headbutton" ><img class="default" src="projectsicon.png" width="55"><img class="hover" src="projectsiconHover.png" width="55">Projects</a>
-   		<a href="art" class="headbutton"><img class="default" src="iconArt.png" width="55"><img class="hover" src="iconArtHover.png" width="55">Art</a>
-    	<a href="blog" class="headbutton"><img class="default" src="iconStories.png" width="55"><img class="hover" src="iconStoriesHover.png" width="55">Blog</a>
-		<a href="about" class="headbutton"><img class="default" src="iconAbout.png" width="55"><img class="hover" src="iconAboutHover.png" width="55">About</a>
+		<script src="header.js"></script>
 	</center>
 	<main>
 		
 		<div class="statusHeader"><center><b>UPDATES</b></center></div>
 		<div class="statusUpdates">
+			<p><b>★ 09/23/24</b> Added a bunch of updates to the site including a <a href="links">Links</a> page and a bunch of updates to the <a href="about">About</a> page. I also redid a bunch of the code to make new pages easier to make and old pages easier to update.</p>
+			<hr class="solid">
 			<p><b>★ 09/19/24</b> More small visual updates including some simple animations. I'm also adding buttons to the <a href="about">About</a> page!</p>
 			<hr class="solid">
 			<p><b>★ 09/17/24</b> Added drop shadows cuz drop shadows are cool</p>
@@ -48,89 +47,14 @@
 			<p><b>★ 05/01/23</b> bumblebee.city is now online!</p>
 			<!--<hr class="solid">-->
 		</div>
+		<p>Hi there! I'm <b>Bee</b>! I'm an artist, animator, and game developer who likes telling uplifing stories and drawing cute characters and creatures.</p>
 	<p>Welcome! This is my personal website, created to be a hub for my various projects. The icons below will take you anywhere else you can find me. There's even an RSS feed you can follow to stay updated through this site.</p>
 	<p>I hope you enjoy looking around!</p>
 </main>
 
 </body>	
-<footer>
-	<a href="https://twitter.com/brodnork" class="footerIcon"><i class="fa-brands fa-twitter"></i></a> <a href="https://store.steampowered.com/search/?developer=Bee%20Braun" class="footerIcon"><i class="fa-brands fa-steam"></i></a> <a href="https://brodnork.itch.io" class="footerIcon"><i class="fa-brands fa-itch-io"></i></a> <a href="mailto:brandonbraun1999@gmail.com" class="footerIcon"><i class="fa-solid fa-envelope"></i></a> <a href="https://en.wikipedia.org/wiki/Shrimp" class="footerIcon"><i class="fa-solid fa-shrimp"></i></a> <a href="rss.xml" class="footerIcon"><i class="fa-solid fa-rss"></i></a>
-	<br>
-	<footer-text>
-		<b> 
-			<a onclick="toggleDarkMode()" id="dark-mode-toggle">Dark mode: off</a>  
-		</b>
-	</footer-text>
-	<footer-text>
-		<b>
-			<a onclick="toggleFont()" id="font-toggle">Font: default</a>
-		</b>
-	</footer-text>
-</footer>
+<script src="footer.js"></script>
 <script src="https://kit.fontawesome.com/9a983606e7.js" crossorigin="anonymous"></script>
 <script src="scripts.js"></script>
-<script>
-	const darkMode = localStorage.getItem('dark') ? localStorage.getItem('dark') : null;
-	var darkModeCurrent = "false";
-	
-	const fontMode = localStorage.getItem('font') ? localStorage.getItem('font') : null;
-	var fontModeCurrent = "false";
-
-
-	if (darkMode) {
-			if (darkMode == 'true') {darkOn()} else {darkOff()}
-	}
-	function toggleDarkMode() {
-		if (darkModeCurrent == 'true'){
-			darkOff();
-		}else{
-			darkOn();
-		}
-	}
-
-	function toggleFont() {
-	   if (fontModeCurrent == 'true'){
-			fontOff();
-		}else{
-			fontOn();
-		}
-	}
-
-	function darkOn() {
-		setDarkMode();
-		darkModeCurrent = "true";
-		//var element = document.body;
-		//element.classList.add("dark");
-		document.getElementById('dark-mode-toggle').innerHTML = "Dark mode: on";
-		localStorage.setItem('dark', 'true');
-		
-	}
-	function darkOff() {
-		setLightMode();
-		darkModeCurrent = "false";
-		//var element = document.body;
-		//element.classList.remove("dark");
-		document.getElementById('dark-mode-toggle').innerHTML = "Dark mode: off";
-		localStorage.setItem('dark', 'false');
-	}
-
-	if (fontMode) {
-			if (fontMode == 'true') {fontOn()} else {fontOff()}
-	}
-	function fontOn() {
-		fontModeCurrent = "true";
-		var element = document.body;
-		element.classList.add("dyslexic");
-		document.getElementById('font-toggle').innerHTML = "Font: OpenDyslexic";
-		localStorage.setItem('font', 'true');
-	}
-	function fontOff() {
-		fontModeCurrent = "false";
-		var element = document.body;
-		element.classList.remove("dyslexic");
-		document.getElementById('font-toggle').innerHTML = "Font: default";
-		localStorage.setItem('font', 'false');
-	}
-	</script>
 	
 </html>

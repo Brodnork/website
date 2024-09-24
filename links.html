@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+	<title>Links - Bumblebee City</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+</head>
+<div class="christmasLights" id="christmasLights"></div>
+<img class="fennel" id="fen" src="tinyfen.png" onclick="fenClick()">
+<body>
+	<center><a href="https://bumblebee.city"><img class="logo" src="bumblebeecitylogo.png"></a></center>
+    <center>
+		<script src="header.js"></script>
+	</center>
+	<main>
+    <center><h2>Places You Can Find Me</h2>
+        <div class="socialsList">
+            <a href="https://twitter.com/brodnork" class="footerIcon"><i class="fa-brands fa-twitter"></i> Twitter</a>
+            <br>
+            <a href="https://bsky.app/profile/brodnork.bsky.social" class="footerIcon"><i class="fa-brands fa-bluesky"></i> Bluesky</a>
+            <br>
+            <a href="https://www.patreon.com/brodnork" class="footerIcon"><i class="fa-brands fa-patreon"></i> Patreon</a>
+            <br>
+            <a href="https://store.steampowered.com/search/?developer=Bee%20Braun" class="footerIcon"><i class="fa-brands fa-steam"> </i> Games I've made on Steam</a>
+            <br>
+        </div>
+    </center>
+    <br>
+    <center>
+        <h2>Other Cool Websites!</h2>
+	<div class="buttonsContainer">
+		<a href="https://blog.radicaldream.land"><img src="https://i.postimg.cc/QxhG798p/dispatchblog-banner.gif"></a>
+		<a href="https://blog.someplace-else.xyz/"><img src="https://natclayton.uk/wp-content/uploads/2024/09/elsewhere.gif"></a>
+		<a href="https://tuxedodragon.art/"><img src="buttons/tuxedodragon 88x31.gif"></a>
+        <a href="https://alloyed.me" target="_blank" rel="noreferrer noopener" >
+            <picture>
+              <source srcset="https://alloyed.me/88x31/alloyed.gif" media="(prefers-reduced-motion: no-preference)" />
+              <img src="https://alloyed.me/88x31/alloyed.png" alt="Kit!" title="Kit!" style="image-rendering: pixelated;" />
+            </picture></a>
+        <a href="https://mooeena.site/"><img src="buttons/mooeena_xbleaxhx.gif"></a>
+        <a href="https://moxiecat.dev" target="_blank" rel="noopener noreferrer"><img src="https://moxiecat.dev/img/MoxieButton-88.gif"/></a>
+	</div>
+    </center>
+    <br>
+    <br>
+    <center>
+    <p>Want to link back to my site? Use this code below!</p>
+    <a href="https://bumblebee.city" style="cursor: url('http://bumblebee.city/beeCursorClick.png'), default;"><img src="https://bumblebee.city/bumblebeecitybutton.gif"></a></center>
+	<div class="codeBlock">
+		<code>&lta href="https://bumblebee.city" style="cursor: url('http://bumblebee.city/beeCursorClick.png'), default;">&ltimg src="https://bumblebee.city/bumblebeecitybutton.gif"&gt&lt/a&gt</code>
+	</div>
+</center>
+</main>
+</body>	
+<script src="footer.js"></script>
+<script src="https://kit.fontawesome.com/9a983606e7.js" crossorigin="anonymous"></script>
+<script src="scripts.js"></script>
+<script>
+	const darkMode = localStorage.getItem('dark') ? localStorage.getItem('dark') : null;
+	var darkModeCurrent = "false";
+	
+	const fontMode = localStorage.getItem('font') ? localStorage.getItem('font') : null;
+	var fontModeCurrent = "false";
+
+
+	if (darkMode) {
+			if (darkMode == 'true') {darkOn()} else {darkOff()}
+	}
+	function toggleDarkMode() {
+		if (darkModeCurrent == 'true'){
+			darkOff();
+		}else{
+			darkOn();
+		}
+	}
+
+	function toggleFont() {
+	   if (fontModeCurrent == 'true'){
+			fontOff();
+		}else{
+			fontOn();
+		}
+	}
+
+	function darkOn() {
+		setDarkMode();
+		darkModeCurrent = "true";
+		//var element = document.body;
+		//element.classList.add("dark");
+		document.getElementById('dark-mode-toggle').innerHTML = "Dark mode: on";
+		localStorage.setItem('dark', 'true');
+		
+	}
+	function darkOff() {
+		setLightMode();
+		darkModeCurrent = "false";
+		//var element = document.body;
+		//element.classList.remove("dark");
+		document.getElementById('dark-mode-toggle').innerHTML = "Dark mode: off";
+		localStorage.setItem('dark', 'false');
+	}
+
+	if (fontMode) {
+			if (fontMode == 'true') {fontOn()} else {fontOff()}
+	}
+	function fontOn() {
+		fontModeCurrent = "true";
+		var element = document.body;
+		element.classList.add("dyslexic");
+		document.getElementById('font-toggle').innerHTML = "Font: OpenDyslexic";
+		localStorage.setItem('font', 'true');
+	}
+	function fontOff() {
+		fontModeCurrent = "false";
+		var element = document.body;
+		element.classList.remove("dyslexic");
+		document.getElementById('font-toggle').innerHTML = "Font: default";
+		localStorage.setItem('font', 'false');
+	}
+	</script>
+</html>

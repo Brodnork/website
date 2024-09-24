@@ -171,10 +171,72 @@ function setDarkMode(){
 
 
 
-
-
 // Create a function for setting a variable value
 function setCSS(property, value) {
     // Set the value of variable --blue to another value (in this case "lightblue")
     r.style.setProperty(property, value);
   }
+
+
+
+  const darkMode = localStorage.getItem('dark') ? localStorage.getItem('dark') : null;
+	var darkModeCurrent = "false";
+	
+	const fontMode = localStorage.getItem('font') ? localStorage.getItem('font') : null;
+	var fontModeCurrent = "false";
+
+
+	if (darkMode) {
+			if (darkMode == 'true') {darkOn()} else {darkOff()}
+	}
+	function toggleDarkMode() {
+		if (darkModeCurrent == 'true'){
+			darkOff();
+		}else{
+			darkOn();
+		}
+	}
+
+	function toggleFont() {
+	   if (fontModeCurrent == 'true'){
+			fontOff();
+		}else{
+			fontOn();
+		}
+	}
+
+	function darkOn() {
+		setDarkMode();
+		darkModeCurrent = "true";
+		//var element = document.body;
+		//element.classList.add("dark");
+		document.getElementById('dark-mode-toggle').innerHTML = "Dark mode: on";
+		localStorage.setItem('dark', 'true');
+		
+	}
+	function darkOff() {
+		setLightMode();
+		darkModeCurrent = "false";
+		//var element = document.body;
+		//element.classList.remove("dark");
+		document.getElementById('dark-mode-toggle').innerHTML = "Dark mode: off";
+		localStorage.setItem('dark', 'false');
+	}
+
+	if (fontMode) {
+			if (fontMode == 'true') {fontOn()} else {fontOff()}
+	}
+	function fontOn() {
+		fontModeCurrent = "true";
+		var element = document.body;
+		element.classList.add("dyslexic");
+		document.getElementById('font-toggle').innerHTML = "Font: OpenDyslexic";
+		localStorage.setItem('font', 'true');
+	}
+	function fontOff() {
+		fontModeCurrent = "false";
+		var element = document.body;
+		element.classList.remove("dyslexic");
+		document.getElementById('font-toggle').innerHTML = "Font: default";
+		localStorage.setItem('font', 'false');
+	}
