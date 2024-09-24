@@ -60,7 +60,7 @@ main {
 footer{
   margin-top: 2em;
   padding-top:auto;
-  padding-bottom:0.5em;
+  padding-bottom:2em;
   font-size: 1.2em;
   text-align: center;
   cursor: url("http://bumblebee.city/beeCursor.png"), default;
@@ -783,7 +783,7 @@ code{
 @media (max-width: 1000px) {
 
 body {
-  padding:2em;
+  padding:1em;
   padding-top:1em;
   background-color: var(--bg-color);
   background-image: var(--bg-image);
@@ -888,12 +888,11 @@ body {
   }
   
   .headbutton {
-    padding-left: 0em;
-    padding-right: 0em;
-    font-size: 1em;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+    font-size: 0.95em;
     font-weight:bold;
     cursor: pointer;
-    width:20%;
     display: inline-grid;
     padding-bottom: 1em;
   }
