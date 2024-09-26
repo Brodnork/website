@@ -747,6 +747,8 @@ code{
 .buttonsContainer{
   margin-top: 2em;
   margin-bottom: -2em;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .project-title img {
@@ -761,6 +763,11 @@ code{
   image-rendering: pixelated;
   /*width: 176px;*/
 }
+
+.buttonsContainer img:hover{
+  transform: scale(1.1);
+}
+
 
 .socialsList{
   margin: auto;
