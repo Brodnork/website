@@ -18,6 +18,7 @@ nav,
 section {
   display: block;
   cursor: url("http://bumblebee.city/beeCursor.png"), default;
+  
 }
 
 li {
@@ -1646,7 +1647,10 @@ textarea {
 .content__comments {
   margin-top: calc(var(--baseline) * 9);
   overflow: hidden;
+  
 }
+
+
 
 .post__image {
   display: inline-block;
@@ -2187,4 +2191,9 @@ textarea {
           box-shadow: none;
   -webkit-transform: none;
           transform: none;
+}
+
+.footnote{
+  font-size: 0.75em;
+  vertical-align: super;
 }
