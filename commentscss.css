@@ -87,6 +87,11 @@ button:hover{
     cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
 }
 
+input,
+textarea{
+    cursor: url("http://bumblebee.city/beeCursorText.png"), default;
+}
+
 legend {
     padding: 0;
 }
