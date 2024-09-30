@@ -322,6 +322,8 @@ label{
 .my-4 {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    background-color: #6a4356;
+    border-radius: 16px;
 }
 .my-8 {
     margin-top: 2rem;
