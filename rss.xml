@@ -5,6 +5,13 @@
     <link>http://bumblebee.city/</link>
     <description>Bee's personal website.</description>
     <item>
+        <title>The blog's got comments now</title>
+        <link>http://bumblebee.city/</link>
+        <guid>bumblebeeRSS7</guid>
+        <pubDate>Sun, 29 September 2024 00:00:00 GMT</pubDate>
+        <description>I have added comments to the blog!</description>
+    </item>
+    <item>
         <title>More  updates!</title>
         <link>http://bumblebee.city/</link>
         <guid>bumblebeeRSS6</guid>
