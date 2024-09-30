@@ -14,6 +14,7 @@ html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     background-color: #4D293B;
+    cursor: url("http://bumblebee.city/beeCursor.png"), default;
 }
 body {
     margin: 0;
@@ -77,6 +78,7 @@ select {
 [type="button"],
 button {
     -webkit-appearance: button;
+    cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
 }
 legend {
     padding: 0;
@@ -270,6 +272,7 @@ div.dark{
 }
 .grid {
     display: grid;
+    cursor: url("http://bumblebee.city/beeCursor.png"), default;
 }
 .items-center {
     align-items: center;
