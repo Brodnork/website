@@ -82,6 +82,11 @@ button {
     -webkit-appearance: button;
     cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
 }
+
+button:hover{
+    cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+}
+
 legend {
     padding: 0;
 }
@@ -217,6 +222,10 @@ video {
 
 div.dark{
     background-color: #4D293B;
+    cursor: url("http://bumblebee.city/beeCursor.png"), default;
+}
+
+label{
     cursor: url("http://bumblebee.city/beeCursor.png"), default;
 }
 
