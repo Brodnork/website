@@ -254,7 +254,7 @@ label{
     background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
 }
 .dark .dark\:bg-transparent {
-    background-color: #AC1C59;
+    background-color: transparent;
 }
 .dark .dark\:bg-gray-500 {
     --tw-bg-opacity: 1;
@@ -347,8 +347,9 @@ label{
     outline: 2px solid transparent;
     outline-offset: 2px;
 }
-.p-2 {
+.p-2 { /* Comment button?*/
     padding: 0.5rem;
+    background-color: #AC1C59;
 }
 .py-0 {
     padding-top: 0;
