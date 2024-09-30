@@ -332,7 +332,8 @@ label{
 }
 .mr-2 { /*name*/
     margin-right: 0.5rem;
-    font-size: 1.2em;
+    font-size: 1.12em;
+    color: #EBCA96;
 }
 .mb-2 {
     margin-bottom: 0.5rem;
@@ -347,9 +348,8 @@ label{
     outline: 2px solid transparent;
     outline-offset: 2px;
 }
-.p-2 { /* Comment button?*/
+.p-2 {
     padding: 0.5rem;
-    background-color: #AC1C59;
 }
 .py-0 {
     padding-top: 0;
@@ -410,11 +410,11 @@ label{
 }
 .dark .dark\:text-gray-100 {
     --tw-text-opacity: 1;
-    color: rgba(243, 244, 246, 1);
+    color: #EBCA96;
 }
 .dark .dark\:text-gray-200 {
     --tw-text-opacity: 1;
-    color: #FDEEBB;
+    color: #fffbee;
 }
 .dark .dark\:text-gray-400 {
     --tw-text-opacity: 1;
