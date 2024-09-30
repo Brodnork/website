@@ -210,7 +210,7 @@ video {
     height: auto;
 }
 
-.dark{
+div.dark{
     background-color: #4D293B;
 }
 
@@ -388,7 +388,7 @@ video {
 }
 .dark .dark\:text-gray-400 {
     --tw-text-opacity: 1;
-    color: rgba(156, 163, 175, 1);
+    color: rgba(156, 163, 175, var(--tw-text-opacity));
 }
 .underline {
     text-decoration: underline;
