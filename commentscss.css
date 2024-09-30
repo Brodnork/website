@@ -224,7 +224,7 @@ video {
     background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
 }
 .dark .dark\:bg-transparent {
-    background-color: transparent;
+    background-color: #AC1C59;
 }
 .dark .dark\:bg-gray-500 {
     --tw-bg-opacity: 1;
@@ -237,7 +237,8 @@ video {
 }
 .dark .dark\:border-gray-100 {
     --tw-border-opacity: 1;
-    border-color: rgba(243, 244, 246, var(--tw-border-opacity));
+    border-color: #ffffff;
+    border-radius: 20px;
 }
 .rounded {
     border-radius: 0.25rem;
