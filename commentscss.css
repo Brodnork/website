@@ -209,6 +209,11 @@ video {
     max-width: 100%;
     height: auto;
 }
+
+div.dark{
+    background-color: #4E2A3C;
+}
+
 .bg-transparent {
     background-color: #0000004b;
 }
