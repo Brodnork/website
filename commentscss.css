@@ -210,11 +210,11 @@ video {
     height: auto;
 }
 .bg-transparent {
-    background-color: transparent;
+    background-color: #0000004b;
 }
 .bg-gray-100 {
     --tw-bg-opacity: 1;
-    background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+    background-color: #4E2A3C;
 }
 .bg-gray-200 {
     --tw-bg-opacity: 1;
@@ -462,11 +462,11 @@ video {
 }
 blockquote {
     --tw-bg-opacity: 1;
-    background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+    background-color: #4E2A3C;
 }
 .dark blockquote {
     --tw-bg-opacity: 1;
-    background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+    background-color: #4E2A3C;
 }
 blockquote {
     margin-top: 1rem;
