@@ -324,7 +324,10 @@ label{
     margin-bottom: 1rem;
     background-color: #553343;
     border-radius: 20px;
-    padding: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 .my-8 {
     margin-top: 2rem;
