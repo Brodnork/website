@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&display=swap');
+
+:root{
+  --bg-color: #0D1219;
+  --font-color: #e1cef4;
+  --font-highlight: #8088ff;
+  --redlink: #e0334a;
+  --link-hover: #ffffff;
+  --body-bg: #131923;
+}
+
+
+@media (min-width: 800px) {
+body {
+    padding:2em;
+    padding-top:2em;
+    padding-left: 120px;
+    padding-right: 120px;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    background-attachment: fixed;
+    background-position: center;
+    line-height: 1.52;
+    margin-top: 1.3%;
+    padding-bottom:2em;
+    background-image: url("wikibgTest.png");
+    
+}
+
+main {
+    padding-left:40px;
+    padding-right:40px;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-right: 40px;
+    margin-left: 270px;
+    padding-bottom:1.2em;
+    color: var(--font-color);
+    z-index: -1;
+    border-radius: 10px;
+    border: 2px solid #22293A;
+    background-image:  linear-gradient(0deg, rgba(19,25,35,0) 92%, rgba(91, 102, 129, 0.126) 100%), url("wikibg.png"); 
+    height: fit-content;
+    min-height: 850px;
+}
+
+/* unvisited link */
+a:link {
+    color: var(--font-highlight);
+    text-decoration: none;
+  }
+
+/* unvisited redlink */
+a.redlink{
+    color: var(--redlink);
+    text-decoration: none;
+  }
+  
+  /* visited link */
+a:visited {
+    color: var(--font-highlight);
+      text-decoration: none;
+  }
+
+  /* mouse over link */
+a:hover {
+    color: var(--link-hover);
+      text-decoration: underline;
+  }
+
+h1{
+    font-size: 2em;
+    font-family: "Arsenal", sans-serif;
+  }
+
+
+  h3{
+    font-size: 1.2em;
+    margin: 0;
+    font-family: "Arsenal", sans-serif;
+    font-weight: bold;
+  }
+
+  h2{
+    font-size: 1.6em;
+    margin: 0;
+    font-family: "Arsenal", sans-serif;
+    font-weight: bold;
+    padding-top: 20px;
+    
+  }
+
+.sidebar{
+    margin-left: 20px;
+    padding: 0;
+    width: 230px;
+    overflow: auto;
+    position: absolute;
+}
+
+.sidebar a{
+    display: block;
+    padding: 7px;
+}
+
+.sidebarSection{
+    padding:15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #22293A;
+    background-image:  linear-gradient(0deg, rgba(19,25,35,0) 92%, rgba(91, 102, 129, 0.126) 100%), url("wikibg.png");
+}
+
+.logo{
+    font-size: 5em;
+    font-weight: bolder;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 27px;
+}
+
+
+.sections{
+    padding: 15px;
+    width: 250px;
+    border-radius: 10px;
+    overflow: auto;
+    display: block;
+    border: 2px solid #22293A;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-image:  linear-gradient(0deg, rgba(19,25,35,0) 92%, rgba(91, 102, 129, 0.126) 100%), url("wikibg.png");
+}
+
+.sectionsContent a{
+    display: block;
+    padding: 7px;
+}
+
+.contentTitle{
+    font-size: 1.2em;
+    margin: 0;
+    font-family: "Arsenal", sans-serif;
+    font-weight: bold;
+  }
+
+.contentTitle i{
+    font-size: 0.8em;
+  }
+
+
+.infoBox{
+    padding: 15px;
+    width: 380px;
+    border-radius: 10px;
+    overflow: auto;
+    display: inline-block;
+    border: 2px solid #22293A;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    float: right;
+    background-image:  linear-gradient(0deg, rgba(19,25,35,0) 92%, rgba(91, 102, 129, 0.126) 100%), url("wikibg.png");
+}
+.infoBox h2{
+    background-color: #0D1219;
+    text-align: center;
+    border: 2px solid #22293A;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-variant: small-caps;
+    padding-top: 0px;
+}
+
+.infoBox table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th{
+    padding: 8px;
+    font-variant: small-caps;
+}
+
+td{
+    padding: 8px;
+    text-align: center;
+    
+}
+
+tr{
+    border-top: 2px solid #0D1219;
+
+}
+
+.infoBox .mainImg{
+    width: 380px;
+}
+
+hr{
+    border-top: 1px solid var(--font-highlight);
+  }
+
+.topnav input[type=text] {
+    width: 70%;
+    border: none;
+    font-size: 1em;
+    border-radius: 5px;
+    background-color: #0D1219;
+    color: var(--font-color);
+    margin: 5px;
+  }
+
+button {
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    color: var(--font-color);
+    background-color: transparent;
+  }
+
+.lastEdited{
+    color: grey;
+    font-style: italic;
+    font-size: 0.76em;
+    margin-top: 3em;
+    margin-bottom: -15px;
+}
+
+table.categories{
+    margin-top: 2em;
+    border-radius: 5px;
+    background-color: #0D1219;
+}
+
+.categories td{
+    padding-left: 20px;
+    padding-right: 20px;
+    border: transparent;
+    border-left: grey;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0px;
+}
+
+
+.deletion{
+    padding:15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: center;
+    border: 2px solid #22293A;
+    background-color: #fd365057;
+    border-radius: 10px;
+    background-image:  linear-gradient(0deg, rgba(19,25,35,0) 92%, rgba(91, 102, 129, 0.126) 100%);
+    font-style: italic;
+}
+
+
+
+.stub{
+    padding:15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: center;
+    border: 2px solid #22293A;
+    background-color: #eb5feb2f;
+    border-radius: 10px;
+    background-image:  linear-gradient(0deg, rgba(19,25,35,0) 92%, rgba(91, 102, 129, 0.126) 100%);
+    font-style: italic;
+}
+
+.deletion i, .stub i{
+    font-size: 1.2em;
+    padding-right: 20px;
+}
+
+
+}
