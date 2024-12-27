@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="ChallengeSeeds" load_steps=2 format=3 uid="uid://5hx3frf0sua3"]
+
+[ext_resource type="Script" path="res://Assets/ChallengeSeeds.gd" id="1_8snqo"]
+
+[resource]
+script = ExtResource("1_8snqo")
+seedsArray = Array[String](["cabbagetowns", "123456789012", "98765432109", "earsplitting", "1a2bc5tpl987", "jacklighters"])
