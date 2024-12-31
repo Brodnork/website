@@ -1,5 +1,10 @@
 [
     {
+        "path": "2024-was-a-year.html",
+        "type": "file",
+        "md5": "777166d2693f25f6ff95a3e30124ffda"
+    },
+    {
         "path": "404.html",
         "type": "file",
         "md5": "100c84a40fb78a4dfa37e1cd421e34c9"
@@ -107,7 +112,7 @@
     {
         "path": "/authors/bee/index.html",
         "type": "file",
-        "md5": "f34acc7478a85334ca8d694eef6aa9ed"
+        "md5": "b88307eef3a6c43ada91403c7cf8ca9d"
     },
     {
         "path": "eggbugs-obituary-goodbye-cohost.html",
@@ -117,22 +122,22 @@
     {
         "path": "feed.json",
         "type": "file",
-        "md5": "b181e23c85d82a52587372cd0079a8a1"
+        "md5": "fdeea9a3cdb3efc0e2c430f14d2c74cc"
     },
     {
         "path": "feed.xml",
         "type": "file",
-        "md5": "5c9251c1970408043f0ac0d2879c39bb"
+        "md5": "ba5b15cc4b1c625d52ca2313ca956f95"
     },
     {
         "path": "frogsong-retrospective.html",
         "type": "file",
-        "md5": "e5c488f24fc801eff6e36532432fcd88"
+        "md5": "a26b353205f56af8bb86c8c9c9622d63"
     },
     {
         "path": "index.html",
         "type": "file",
-        "md5": "f57317d78c939b3d2791e3282268ade3"
+        "md5": "908425eadd3e3f18049501285af83200"
     },
     {
         "path": "media",
@@ -507,7 +512,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "db4084aace3eb3d8066941e6d1592b34"
+        "md5": "286ad4047015d6a9b1f3810585ac5635"
     },
     {
         "path": "sitemap.xsl",
@@ -530,9 +535,19 @@
         "md5": "bd388fad6cd8c02e8dc3a4c09cd94f55"
     },
     {
+        "path": "tags/gamedev",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/tags/gamedev/index.html",
+        "type": "file",
+        "md5": "480bd84336cb5428ca4ef60b67802cf5"
+    },
+    {
         "path": "/tags/index.html",
         "type": "file",
-        "md5": "bc3fd11b25f3cf65fbffdcf63243fb54"
+        "md5": "7a64b26aed85c6c33a29b49992967808"
     },
     {
         "path": "tags/life-stuff",
@@ -542,7 +557,17 @@
     {
         "path": "/tags/life-stuff/index.html",
         "type": "file",
-        "md5": "cd45b949b1d37544068bd3cfc9179f0d"
+        "md5": "ae1f2d2e3810d780191b1a962e04f1c9"
+    },
+    {
+        "path": "tags/year-in-review",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/tags/year-in-review/index.html",
+        "type": "file",
+        "md5": "089f63821f57bec05666b44370c980e8"
     },
     {
         "path": "the-heros-journey-or-how-going-to-a-furry-convention-fixed-my-brain.html",
