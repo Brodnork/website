@@ -2,7 +2,7 @@
     {
         "path": "2024-was-a-year.html",
         "type": "file",
-        "md5": "777166d2693f25f6ff95a3e30124ffda"
+        "md5": "d28c3a3e6be92ecdbc175a9ff62b91df"
     },
     {
         "path": "404.html",
@@ -112,7 +112,27 @@
     {
         "path": "/authors/bee/index.html",
         "type": "file",
-        "md5": "b88307eef3a6c43ada91403c7cf8ca9d"
+        "md5": "041e394bd5ed15dcf58305c5bf419c0f"
+    },
+    {
+        "path": "authors/bee/page",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "authors/bee/page/2",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/authors/bee/page/2/index.html",
+        "type": "file",
+        "md5": "ca05fdb1cea24d85aac0281c5f468783"
+    },
+    {
+        "path": "burnout-and-creation.html",
+        "type": "file",
+        "md5": "5f88ae924ef6323431cb9a6884126c9a"
     },
     {
         "path": "eggbugs-obituary-goodbye-cohost.html",
@@ -122,12 +142,12 @@
     {
         "path": "feed.json",
         "type": "file",
-        "md5": "fdeea9a3cdb3efc0e2c430f14d2c74cc"
+        "md5": "9c558abd73248456b48297b877c483a6"
     },
     {
         "path": "feed.xml",
         "type": "file",
-        "md5": "ba5b15cc4b1c625d52ca2313ca956f95"
+        "md5": "71e35f1a3fdbffaad40aeac9a21d2608"
     },
     {
         "path": "frogsong-retrospective.html",
@@ -137,7 +157,7 @@
     {
         "path": "index.html",
         "type": "file",
-        "md5": "908425eadd3e3f18049501285af83200"
+        "md5": "678b2152efac635ba13e211bbd905a55"
     },
     {
         "path": "media",
@@ -505,6 +525,21 @@
         "md5": "f45f4a6118e9ba2d96a7fcceb4aad5f7"
     },
     {
+        "path": "page",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "page/2",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/page/2/index.html",
+        "type": "file",
+        "md5": "4e42951159b020acdd93ac8b41987bec"
+    },
+    {
         "path": "robots.txt",
         "type": "file",
         "md5": "dbba830e3806a44960cfc57041e42d7e"
@@ -512,7 +547,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "286ad4047015d6a9b1f3810585ac5635"
+        "md5": "e3f56bf417024a5b6289dd76423cee56"
     },
     {
         "path": "sitemap.xsl",

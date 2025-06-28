@@ -11,6 +11,20 @@
     },
     "items": [
         {
+            "id": "https://bumblebee.city/blog/burnout-and-creation.html",
+            "url": "https://bumblebee.city/blog/burnout-and-creation.html",
+            "title": "working with burnout",
+            "summary": "If you aren't following me on social media, you might have missed my little burnout announcement a couple months ago. To summarize... gamedev as a job was starting to crush my soul. I tried making it a job so I could spend as much time&hellip;",
+            "content_html": "<p>If you aren't following me on social media, you might have missed my little burnout announcement a couple months ago. To summarize... gamedev as a job was starting to crush my soul. I tried making it a job so I could spend as much time as I wanted making whatever I wanted, but that stopped being the case pretty quickly. </p>\n<p>There was a point where I was working on and off on 3 different games at once. I wanted to try to get out some smaller games to make money alongside my larger, more \"important\" projects. Working on them all at the same time was really exhausting and stressful, and having money as a primary motivator was kind of miserable. I figured if I kept pushing like this, eventually it would all pay off in the end. </p>\n<p>Then, a couple months ago, there was good news about Silksong, a game I've been excited about for years! This should have been a good thing, but the new game I'm working on is a metroidvania. If what is potentially the most highly anticipated metroidvania of all time released too close to my demo, I'd completely lose any marketing reach I could get from that. If Silksong's out, nobody's gonna pay attention to the tiny little metroidvania nobody's ever heard of. I panicked, chugged an energy drink, and worked for 12 hours straight. That's not what making art is supposed to feel like. That's not why I got into this.</p>\n<p>I wasn't spending as much time making whatever I wanted. I was spending as much time as I felt I <em>had </em>to. </p>\n<p>Between everything that happened last year and pushing myself harder than I ever should have, my brain was being ground into dust.</p>\n<p>The past couple months have been weird. Work has been slow, but I still tinker with my games a fair amount. But I'm making sure I take more breaks, have a better work life balance, and stepping away as soon as I start feeling scared about marketing. I think games are going to stop being my primary source of income, at least for now. I'll probably reevaluate things later down the line.</p>\n<p>I hit a pretty low point mentally and emotionally at the end of April, to the point that I decided to start therapy. It's been good, I'm starting to feel better about my work and less hopeless about my current circumstances. I still don't know how I'm going to make everything work, but I shouldn't let that stop me from trying. After all, I'd never written a single line of code before starting Frogsong. I am not someone with a background that would make me qualified to port a game to Nintendo Switch. I'm <em>constantly </em>figuring out how to solve problems I don't even know where to begin with. </p>\n<p>I'm still probably gonna be picking up pieces for a while. But I think I'll be okay.</p>",
+            "author": {
+                "name": "Bee"
+            },
+            "tags": [
+            ],
+            "date_published": "2025-06-27T22:10:00-07:00",
+            "date_modified": "2025-06-27T22:10:00-07:00"
+        },
+        {
             "id": "https://bumblebee.city/blog/2024-was-a-year.html",
             "url": "https://bumblebee.city/blog/2024-was-a-year.html",
             "title": "2024: The Year of Cringe",
