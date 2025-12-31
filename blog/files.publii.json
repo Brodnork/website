@@ -2,12 +2,17 @@
     {
         "path": "2024-was-a-year.html",
         "type": "file",
-        "md5": "d28c3a3e6be92ecdbc175a9ff62b91df"
+        "md5": "ed043c72db1bfa0e7e645891298e04b9"
+    },
+    {
+        "path": "2025-the-year-of-cool-shit.html",
+        "type": "file",
+        "md5": "227e5c39f9a59e6e9dc16b6db5bb3c4d"
     },
     {
         "path": "404.html",
         "type": "file",
-        "md5": "100c84a40fb78a4dfa37e1cd421e34c9"
+        "md5": "067ca3f7b11d99d5db1db35f615dc27c"
     },
     {
         "path": "assets",
@@ -112,7 +117,7 @@
     {
         "path": "/authors/bee/index.html",
         "type": "file",
-        "md5": "041e394bd5ed15dcf58305c5bf419c0f"
+        "md5": "5c8d7a4c7c10696db76b3da0bdac3b53"
     },
     {
         "path": "authors/bee/page",
@@ -127,37 +132,42 @@
     {
         "path": "/authors/bee/page/2/index.html",
         "type": "file",
-        "md5": "ca05fdb1cea24d85aac0281c5f468783"
+        "md5": "4e055822c9c3bcdf7e36aa4f0f3a748e"
     },
     {
         "path": "burnout-and-creation.html",
         "type": "file",
-        "md5": "5f88ae924ef6323431cb9a6884126c9a"
+        "md5": "a30e8a1e0ad8167fbd3b00919a7e2edf"
     },
     {
         "path": "eggbugs-obituary-goodbye-cohost.html",
         "type": "file",
-        "md5": "8d65ec7c32a3ba9188b67d0f963d0e07"
+        "md5": "e002a1fe2f78aeaaee24ee2b6844ed53"
     },
     {
         "path": "feed.json",
         "type": "file",
-        "md5": "9c558abd73248456b48297b877c483a6"
+        "md5": "c75551704f9ffa380510dde8cce85320"
     },
     {
         "path": "feed.xml",
         "type": "file",
-        "md5": "71e35f1a3fdbffaad40aeac9a21d2608"
+        "md5": "c20b0762e345a9b21308b2a27eec0ce9"
     },
     {
         "path": "frogsong-retrospective.html",
         "type": "file",
-        "md5": "a26b353205f56af8bb86c8c9c9622d63"
+        "md5": "26568a28011586bf5b279623ea3fa0cd"
+    },
+    {
+        "path": "i-have-mixed-feelings-about-silksong.html",
+        "type": "file",
+        "md5": "1a15b4c1c889319e477286097ffbb98d"
     },
     {
         "path": "index.html",
         "type": "file",
-        "md5": "678b2152efac635ba13e211bbd905a55"
+        "md5": "700f355ad88f90d196529de7302cb9aa"
     },
     {
         "path": "media",
@@ -537,7 +547,7 @@
     {
         "path": "/page/2/index.html",
         "type": "file",
-        "md5": "4e42951159b020acdd93ac8b41987bec"
+        "md5": "b36cdca62befce8ee7d2dc4f75f3ae48"
     },
     {
         "path": "robots.txt",
@@ -547,12 +557,12 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "e3f56bf417024a5b6289dd76423cee56"
+        "md5": "2bd581987cdc8cdcbda4995f1b7f67f2"
     },
     {
         "path": "sitemap.xsl",
         "type": "file",
-        "md5": "51a7bcec43fa1ef0366100d5c2edbe75"
+        "md5": "03c2f9a7fdcc46ff05c435907614a0b8"
     },
     {
         "path": "tags",
@@ -567,7 +577,7 @@
     {
         "path": "/tags/furry/index.html",
         "type": "file",
-        "md5": "bd388fad6cd8c02e8dc3a4c09cd94f55"
+        "md5": "9fd3b33c1f55d13a5d1bdcf334d16d60"
     },
     {
         "path": "tags/gamedev",
@@ -577,12 +587,12 @@
     {
         "path": "/tags/gamedev/index.html",
         "type": "file",
-        "md5": "480bd84336cb5428ca4ef60b67802cf5"
+        "md5": "08a1d9ee0ce5f78ad3a083528276dd15"
     },
     {
         "path": "/tags/index.html",
         "type": "file",
-        "md5": "7a64b26aed85c6c33a29b49992967808"
+        "md5": "2ad2a4e203f7749ecbba4b06b3f485c3"
     },
     {
         "path": "tags/life-stuff",
@@ -592,7 +602,7 @@
     {
         "path": "/tags/life-stuff/index.html",
         "type": "file",
-        "md5": "ae1f2d2e3810d780191b1a962e04f1c9"
+        "md5": "2808cb4f335305528a71bff92f55f5cd"
     },
     {
         "path": "tags/year-in-review",
@@ -602,16 +612,16 @@
     {
         "path": "/tags/year-in-review/index.html",
         "type": "file",
-        "md5": "089f63821f57bec05666b44370c980e8"
+        "md5": "3fecdd82adbcb79d4281291ce5bd2dd9"
     },
     {
         "path": "the-heros-journey-or-how-going-to-a-furry-convention-fixed-my-brain.html",
         "type": "file",
-        "md5": "70e0453c3fe0b1e7aa2d25331f166c24"
+        "md5": "4bb1fca5742b5a9ea8063f011106fae6"
     },
     {
         "path": "the-trees-of-my-childhood-are-gone.html",
         "type": "file",
-        "md5": "22ccfc680dfc8527d637fcd87acc5995"
+        "md5": "9cb2138d383046cefdb9b27c3a6ee539"
     }
 ]
