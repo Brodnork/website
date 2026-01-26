@@ -19,9 +19,12 @@ function plookClick() {
 }
 
 function fenClick() {
+    
     var selectedSound = fenSounds[~~(fenSounds.length * Math.random())]
     var audio = new Audio(selectedSound);
-    document.getElementById("fen").src = "fenYap.webp";
+    document.getElementById("fen").src = "fenYap.webp?"  + new Date().getTime();
+    
+   
 
     audio.playbackRate = 1.2
     if(aprilFools){
@@ -35,62 +38,66 @@ function fenClick() {
     audio.play();
 }
 
+function replaceFen(){
+    document.getElementById("fen").src = "tinyfen.png"
+}
+
 
 function getLightBG(){
-    var today = new Date();
-    var theDate = Array(today.getMonth(), today.getDate());
+    // var today = new Date();
+    // var theDate = Array(today.getMonth(), today.getDate());
 
-    //theDate = Array(9,1); //override date for testing. remember months start at 0
+    // //theDate = Array(9,1); //override date for testing. remember months start at 0
 
-    if(theDate[0] == 3 && theDate[1] == 1){ 
-        aprilFools = true;
-        //setCSS("--bg-image", "url('chevrotaincube.gif')");
-        //setCSS("--background-scale", "100px");
-        document.getElementById("logo").style="transform: rotate(-180deg)";
-    }
+    // if(theDate[0] == 3 && theDate[1] == 1){ 
+    //     aprilFools = true;
+    //     //setCSS("--bg-image", "url('chevrotaincube.gif')");
+    //     //setCSS("--background-scale", "100px");
+    //     document.getElementById("logo").style="transform: rotate(-180deg)";
+    // }
 
-    //birthday
-    if(theDate[0] == 8 && theDate[1] == 25) {
-        document.getElementById("logo").src = "bumblebeecitylogoBirthday.png";
-    }
-    else if(theDate[0] == 8 && theDate[1] == 30) { //Cohost
-        //setCSS("--bg-image", "url('')");
-        //setCSS("--bg-color", "#FFE9D5");
-        //setCSS("--font-color", "#1A1A1A");
-        //setCSS("--header", "#83254F");
-        //setCSS("--font-highlight", "#83254F");
-        //setCSS("--status-bg", "#FFF9F2");
-        document.getElementById("logo").src = "bumblebeecitylogoEggbug.png";
-    }
-    else if(theDate[0] == 9 && theDate[1] == 1) { //Cohost
-        //setCSS("--bg-image", "url('')");
-        //setCSS("--bg-color", "#FFE9D5");
-        //setCSS("--font-color", "#1A1A1A");
-        //setCSS("--header", "#83254F");
-        //setCSS("--font-highlight", "#83254F");
-        //setCSS("--status-bg", "#FFF9F2");
-        document.getElementById("logo").src = "bumblebeecitylogoEggbug.png";
-    }
-    else if(theDate[0] == 11 && theDate[1] >= 13) { 
-        setCSS("--bg-color", "#B9DFBE"); //Christmas
-        setCSS("--bg-image", "url('diamondbgChhristmas.png')");
-        setCSS("--font-color", "#210205");
-        setCSS("--status-bg", "#FFF6C5")
-        setCSS("--header", "#D12538");
-        setCSS("--font-highlight", "#D12538");
-        setCSS("--link-hover", "#EEAC50")
-        document.getElementById("logo").src = "bumblebeecitylogoChristmas.png";
-        document.getElementById("christmasLights").style.backgroundImage="url('christmasLights.png')";
-    }else if(theDate[0] == 9 && theDate[1] >= 25){ 
-        setCSS("--bg-color", "#F3C096"); //Halloween
-        setCSS("--bg-image", "url('diamondbgHalloween.png')");
-        setCSS("--font-color", "#210205");
-        setCSS("--status-bg", "#FFDBB2")
-        setCSS("--header", "#ED9039");
-        setCSS("--font-highlight", "#581965");
-        setCSS("--link-hover", "#0E7719")
-        document.getElementById("logo").src = "bumblebeecitylogoHalloween.png";
-    }
+    // //birthday
+    // if(theDate[0] == 8 && theDate[1] == 25) {
+    //     document.getElementById("logo").src = "bumblebeecitylogoBirthday.png";
+    // }
+    // else if(theDate[0] == 8 && theDate[1] == 30) { //Cohost
+    //     //setCSS("--bg-image", "url('')");
+    //     //setCSS("--bg-color", "#FFE9D5");
+    //     //setCSS("--font-color", "#1A1A1A");
+    //     //setCSS("--header", "#83254F");
+    //     //setCSS("--font-highlight", "#83254F");
+    //     //setCSS("--status-bg", "#FFF9F2");
+    //     document.getElementById("logo").src = "bumblebeecitylogoEggbug.png";
+    // }
+    // else if(theDate[0] == 9 && theDate[1] == 1) { //Cohost
+    //     //setCSS("--bg-image", "url('')");
+    //     //setCSS("--bg-color", "#FFE9D5");
+    //     //setCSS("--font-color", "#1A1A1A");
+    //     //setCSS("--header", "#83254F");
+    //     //setCSS("--font-highlight", "#83254F");
+    //     //setCSS("--status-bg", "#FFF9F2");
+    //     document.getElementById("logo").src = "bumblebeecitylogoEggbug.png";
+    // }
+    // else if(theDate[0] == 11 && theDate[1] >= 13) { 
+    //     setCSS("--bg-color", "#B9DFBE"); //Christmas
+    //     //setCSS("--bg-image", "url('diamondbgChhristmas.png')");
+    //     setCSS("--font-color", "#210205");
+    //     setCSS("--status-bg", "#FFF6C5")
+    //     setCSS("--header", "#D12538");
+    //     setCSS("--font-highlight", "#D12538");
+    //     setCSS("--link-hover", "#EEAC50")
+    //     document.getElementById("logo").src = "bumblebeecitylogoChristmas.png";
+    //     document.getElementById("christmasLights").style.backgroundImage="url('christmasLights.png')";
+    // }else if(theDate[0] == 9 && theDate[1] >= 25){ 
+    //     setCSS("--bg-color", "#F3C096"); //Halloween
+    //     //setCSS("--bg-image", "url('diamondbgHalloween.png')");
+    //     setCSS("--font-color", "#210205");
+    //     setCSS("--status-bg", "#FFDBB2")
+    //     setCSS("--header", "#ED9039");
+    //     setCSS("--font-highlight", "#581965");
+    //     setCSS("--link-hover", "#0E7719")
+    //     document.getElementById("logo").src = "bumblebeecitylogoHalloween.png";
+    // }
 }
 
 function getDarkBG(){
@@ -145,14 +152,13 @@ function getDarkBG(){
 
 
 function setLightMode(){
-    setCSS("--bg-image", "url('diamondbg.png')");
-    setCSS("--bg-color", "#FDEEBB");
-    setCSS("--status-bg", "#fff6d9")
-    setCSS("--font-color", "#4D293B");
-    setCSS("--header", "#EBB9A3");
-    setCSS("--font-highlight", "#B22B60");
-    setCSS("--link-hover", "#FF2F75")
-    getLightBG();
+    // //setCSS("--bg-image", "url('diamondbg.png')");
+    // setCSS("--status-bg", "#fff6d9")
+    // setCSS("--font-color", "#4D293B");
+    // setCSS("--header", "#EBB9A3");
+    // setCSS("--font-highlight", "#B22B60");
+    // setCSS("--link-hover", "#FF2F75")
+    // getLightBG();
     
 }
 
@@ -167,6 +173,7 @@ function setDarkMode(){
     getDarkBG();
     
 }
+
 
 
 

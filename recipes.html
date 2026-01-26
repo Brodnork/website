@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:image" content="http://bumblebee.city/preview.png" />
+	<meta property="og:title" content="Bee's Stuff!" />
+	<meta property="og:site_name" content="Bee's Stuff! />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://bumblebee.city/" />
+	<meta property="og:description" content="">
+
+
+<head>
+	<title>The, Recipe Zone - Are you brave enough to enter?</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+</head>
+
+
+
+<div class="helperBubble"><div class="helperText" id="helperFen">TIP: Improve any recipe by adding 12 pounds of fire ants!</div></div>
+<img class="helperFen" src="helperfen.png">
+
+<script>
+    var options = Array("TIP: Improve any recipe by adding 12 pounds of fire ants!", "TIP: Millions will suffer", "TIP: The only thing better than finding a worm in your apple is finding two worms in your apple!", "TIP: Try mixing all these recipes together into a single dish to see what happens!", "TIP: I saw an alien one time I was alone in the forest it was really scary", "TIP: You can substitute a teaspoon of salt with one really big rock you find outside", "TIP: You can fry a kitchen sponge with a little butter and garlic to make something mindblowing!", "TIP: One time I ate an entire lemon. Don't do that", "TIP: Try using Dr. Pepper instead of cooking oil next time you make hashbrowns!", "TIP: If you don't boil your pasta before eating it, you won't be happy");
+    document.getElementById("helperFen").textContent = options[options.length * Math.random() | 0];
+</script>
+
+
+<img class="logo" src="beesstuff.png" id="logo">
+
+
+<script src="sidebar.js"></script>
+
+<div class="bg"></div>
+<div class="bg2"></div>
+<body>
+
+<main>
+	<h2>My Recipes</h2>
+	<p>These are recipes I made and/or tweaked over the years to make my own! A lot of these were made for a Frogsong cookbook idea I had that I never finished. Maybe one day...</p>
+	<ul style="font-size: 1.25em;">
+        <li><a href="recipes/frogbuns.html">Frogbuns</a></li>
+        <li><a href="recipes/steaksandwich.html">Steak Sandwich</a></li>
+        <li><a href="recipes/swirlcake.html">Sweet Berry Swirlcake</a></li>
+		<li><a href="recipes/spaghetti.html">The secrets to my spaghetti</a></li>
+		<li>The beauty of breakfast sandwiches</li>
+    </ul>
+
+
+    <h2>Other Recipes</h2>
+	<p>I didn't make these recipes (the original sources are linked on each page) but I wanted to preseve them cuz I like them and don't want them to disappear if the original sites they were uploaded to suddenly vanish.</p>
+	<ul style="font-size: 1.25em;">
+        <li><a href="recipes/carrotcake.html">My favourite Carrot Cake</a></li>
+    </ul>
+
+
+</main>
+</body>	
+
+
+<script src="footer.js"></script>
+<script src="https://kit.fontawesome.com/9a983606e7.js" crossorigin="anonymous"></script>
+<script src="scripts.js"></script>
+	
+</html>

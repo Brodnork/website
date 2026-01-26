@@ -1,0 +1,969 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Cutive+Mono&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap");
+
+:root{
+
+  --font-color: #282630;
+  --font-highlight: #BA2A63;
+  --header: #2f2d3d;
+  --status-bg: #fff6d9;
+  --link-hover: #FF489C;
+  --fen-scale-mult: 1;
+  --background-scale: auto;
+  --shadow-color: #00000025;
+  --animation-mult: 1;
+  --bgcolor: #cfdde6;
+  background: #6ab3eb;
+background: linear-gradient(339deg,rgba(106, 179, 235, 1) 1%, rgba(62, 151, 207, 1) 11%, rgba(91, 192, 194, 1) 64%, rgba(152, 217, 200, 1) 100%);
+
+background-attachment: fixed;
+
+}
+
+.bg { 
+  
+	 background-image: url("../lilychecker.png");
+	 background-repeat: repeat;
+	 background-position-x: 0;
+   background-position-y: 0;
+   background-size: 18%;
+	 position: fixed; 
+	 z-index: -10;
+	 top: 0;
+	 bottom: 0;
+	 left: 0;
+	 right: 0;
+	 animation: scroll 180s linear infinite; 
+}
+
+.bg2 { 
+  
+	 background-image: url("../lightChecker.png");
+	 background-repeat: repeat;
+	 background-position-x: 0;
+   background-position-y: 0;
+   background-size: 3%;
+	 position: fixed; 
+	 z-index: -10;
+	 top: 0;
+	 bottom: 0;
+	 left: 0;
+	 right: 0;
+	 animation: scroll 290s linear infinite; 
+}
+
+.bg3 { 
+  
+	 background: black;
+	 background-repeat: repeat;
+	 background-position-x: 0;
+   background-position-y: 0;
+   background-size: 3%;
+	 position: fixed; 
+	 z-index: -10;
+	 top: 0;
+	 bottom: 0;
+	 left: 0;
+	 right: 0;
+}
+
+
+.spag{
+  color: red;
+  font-family: "Special Elite", system-ui;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 80%;
+  position: fixed;
+  width: 100%;
+  transform: rotate(-10deg);
+}
+
+
+@keyframes scroll {
+  0% {
+	  background-position-x: 0;
+  }
+  100% {
+	  background-position-x: 2000px;
+    background-position-y: 600px;
+  }
+}
+
+@keyframes marquee {
+  0% {
+	  transform: translate(0, 0);
+  }
+  100% {
+	  transform: translate(-100%, 0);
+  }
+}
+
+.marquee {
+  margin-left: -1%;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+
+  width: 100%;
+  
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 30s linear infinite;
+  font-size: 0.78em;
+  color: white;
+}
+
+.marquee2 span {
+  animation-delay: 15s;
+}
+
+html {
+	cursor: url("http://bumblebee.city/beeCursor.png"), default;
+  text-shadow: 2px 2px 4px var(--shadow-color);
+  scrollbar-color: var(--font-highlight) var(--header);
+}
+
+@font-face{
+  font-family: "OpenDyslexic";
+  src: url("OpenDyslexic-Regular.otf");
+}
+@media (min-width: 800px) {
+body {
+  
+  padding-left: 0%;
+  padding-right: 0%;
+  padding-top:2em;
+  color: var(--font-color);
+	font-family: "Balsamiq Sans", sans-serif;
+	font-size: 1.4em;
+	background-attachment: fixed;
+  background-position: center;
+	line-height: 1.69;
+  margin-top: 1.3%;
+  cursor: url("http://bumblebee.city/beeCursor.png"), default;
+  padding-bottom:0em;
+  margin-bottom: 0;
+}
+.taskie {
+  filter: drop-shadow(-3px 5px 4px #00000080);
+}
+main {
+  padding:2em;
+  padding-top:1em;
+  margin-right: 20vw;
+  margin-left: 20vw;
+  cursor: url("http://bumblebee.city/beeCursor.png"), default;
+  padding-bottom:1.2em;
+  color: var(--font-color);
+  z-index: -1;
+  border-radius: 39px;
+  background-color: var(--bgcolor);
+  margin-top: 0;
+  filter: drop-shadow(6px 6px 4px #00000057);
+  margin-bottom: 2%;
+}
+
+
+
+
+footer{
+  margin-top: 2em;
+  padding-top:auto;
+  padding-bottom:2em;
+  font-size: 1.2em;
+  text-align: center;
+  cursor: url("http://bumblebee.city/beeCursor.png"), default;
+}
+footer-text{
+  margin-top: 2em;
+  padding-top:2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 0.6em;
+  text-align: center;
+  cursor: url("http://bumblebee.city/beeCursor.png"), default;
+  color: var(--font-highlight);
+}
+
+
+.footerIcon{
+  padding:1%;
+}
+
+
+header {
+	padding-top: 10em;
+}
+
+
+/* unvisited link */
+a:link {
+  color: var(--font-highlight);
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: var(--font-highlight);
+	text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: var(--link-hover);
+	text-decoration: none;
+  cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+}
+
+/* selected link */
+a:active {
+  color: white;
+	text-decoration: none;
+}
+
+a img.hover {
+  display: none;
+  vertical-align: sub;
+}
+a img.default {
+  display: inherit;
+  vertical-align: sub;
+}
+a:hover img.hover {
+  display: inherit;
+  vertical-align: sub;
+}
+a:hover img.default {
+  display: none;
+  vertical-align: sub;
+}
+
+.headbutton {
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+  font-size: 1.5em;
+  font-weight:bold;
+  cursor: pointer;
+  width:20%;
+}
+
+h2{
+  margin-bottom: -1%;
+}
+
+
+.writing h2{
+  font-family: 'Itim', sans-serif;
+  text-align: center;
+  color: var(--font-color);
+  font-size: 2.0em;
+}
+.writing{
+	text-indent: 20px;
+  text-align: justify;
+  background-color: #fff6d9;
+  color: #4D293B;
+  padding: 2.3em;
+  font-size: 0.9em;
+  border-radius: 10px;
+}
+
+
+
+::-moz-selection { /* Code for Firefox */
+  color: #9fbed8;
+  background: #2c2944;
+}
+
+::selection {
+  color: #9fbed8;
+  background: #2c2944;
+}
+
+
+
+h1{
+  font-family: 'Itim', sans-serif;
+  font-size: 2.5em;
+  margin-top: 0;
+}
+
+.logo{
+  display: block;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  transform: scale(1);
+  transition: calc(0.2s * var(--animation-mult));
+  width: 50vh;
+  
+}
+
+.logo:hover{
+  transform: scale(1.06);
+  transition: calc(0.2s * var(--animation-mult));
+}
+
+.statusUpdates{
+  background-color: var(--bgcolor);;
+  color: var(--font-color);
+  padding: 0.5em;
+  font-size: 1em;
+  width: 30vw;
+  height:50vh;
+  margin-left: 38vw;
+  margin-right: 30vw;
+  overflow: auto;
+  border-radius: 0px 0px 20px 20px;
+  -webkit-box-shadow: 5px 5px 9px 0px var(--shadow-color); 
+  box-shadow: 5px 5px 9px 0px var(--shadow-color);
+}
+.statusHeader{
+  background-color: var(--header);
+  text-align: center;
+  padding: 0.5em;
+  padding-bottom: 1.2em;
+  font-size: 1em;
+  width: 30vw;
+  height:25px;
+  margin-left: 38vw;
+  margin-right: 30vw;
+  margin-top: 2%;
+  font-weight: 700;
+  border-radius: 20px 20px 0px 0px;
+  -webkit-box-shadow: 5px 5px 9px 0px var(--shadow-color); 
+  box-shadow: 5px 5px 9px 0px var(--shadow-color);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #BA2A63; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4D293B; 
+}
+
+hr.solid {
+  border-top: 2px solid var(--header);
+}
+
+
+.project{
+  background-color: var(--font-color);
+  padding: 0em;
+  font-size: 1em;
+  width: 100%;
+  height:300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px 20px 20px 20px;
+  position: relative;
+  -webkit-box-shadow: 5px 5px 9px 0px var(--shadow-color); 
+  box-shadow: 5px 5px 9px 0px var(--shadow-color);
+  transition: calc(0.2s * var(--animation-mult));
+}
+
+.projectText{
+  color: var(--bg-color);
+  padding: 1em;
+  font-size: 1em;
+  margin-left: 5em;
+  margin-right: 5em;
+  opacity: 0;
+  text-align: justify;
+
+}
+
+
+.project:hover .projectText {
+  visibility: visible;
+  opacity: 1;
+  transition: calc(0.2s * var(--animation-mult));
+}
+
+.project-bg{
+  background-color: var(--font-color);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 218px;
+  border-radius: 0px 0px 20px 20px;
+  -webkit-box-shadow: 5px 5px 9px 0px var(--shadow-color); 
+  box-shadow: 5px 5px 9px 0px var(--shadow-color);
+  transition: calc(0.2s * var(--animation-mult));
+}
+
+.project:hover .project-bg{
+  opacity: 0.1;
+  transition: calc(0.2s * var(--animation-mult));
+}
+
+.project:hover{
+  background-color: var(--font-color);
+  color: #fff6d9;
+  padding: 0em;
+  font-size: 1em;
+  width: 100%;
+  height:300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px 20px 20px 20px;
+  position: relative;
+  cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+  transition: calc(0.2s * var(--animation-mult));
+  transform: scale(1.05,1.05 );
+}
+
+
+.character{
+  position: absolute;
+  cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+}
+
+.project-header{
+  background-color: var(--header);
+  color: var(--font-color);
+  font-size: 2em;
+  width: 100%;
+  height:82px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Itim', sans-serif;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.project-title {
+  color: var(--font-color);
+  font-size: 0.7em;
+  text-align: left;
+  float: left;
+  margin-top: 1.25%;
+  margin-left: 40px;
+}
+
+.project-date {
+  color: var(--font-color);
+  font-size: 0.6em;
+  text-align: right;
+  float: right;
+  line-height: 1.25;
+  margin-right: 40px;
+  font-style: italic;
+}
+
+
+
+
+.gallery{
+
+  display: flex; 
+  flex-direction: row-reverse; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.gallery-image{
+  
+}
+
+
+.row > .column {
+  display:block;
+}
+
+.row:after {
+  display:flex;
+  line-height: 0;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  display:block;
+  width: 1%;
+  line-height: 0;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(12, 10, 24, 0.9);
+  z-index: 100;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 32px;
+  margin-top: -50px;
+  color: #FDEEBB;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0s ease;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  z-index: 200;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 10px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  color: #FDEEBB;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0s;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  -webkit-box-shadow: 5px 5px 9px 0px var(--shadow-color); 
+  box-shadow: 5px 5px 9px 0px var(--shadow-color);
+}
+
+.hover-shadow:hover {
+  opacity: 0.7;
+  cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+}
+
+img.hover-shadow-project {
+  transition: 0s;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.hover-shadow-project:hover {
+  opacity: 0.7;
+  
+}
+
+
+.galleryDisplay{
+  max-height: 75vh;
+  max-width: 82vw;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 5px 5px 9px 0px black; 
+  box-shadow: 5px 5px 9px 0px black;
+
+}
+
+
+
+
+.christmasLights{
+  position: fixed;
+  margin-top: -4%;
+  left: -2%;
+  background-size: 250px;
+  width: 110%;
+  height: 80px;
+  pointer-events: none
+}
+
+.fennel{
+  position: fixed;
+  bottom: 1%;
+  left: 2%;
+  width: calc(8% * var(--fen-scale-mult));
+  cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+  filter: drop-shadow(5px 5px 6px #00000057);
+  transition: 0.2s;
+  z-index: 20;
+}
+
+.fennel:hover{
+  position: fixed;
+
+  cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+  filter: drop-shadow(5px 5px 6px #00000057);
+  z-index: 20;
+  animation: fenSquish 0.5s;
+}
+
+
+.sidebar{
+  display: grid;
+  padding-left: 16vw;
+  position: absolute;
+  margin-top: -5%;
+  font-weight: 700;
+  font-size: 29px;
+}
+
+.sidebar img{
+  display: inline;
+  margin: 0;
+  height: 60px;
+  vertical-align:middle;
+  padding-left: 8%;
+  padding-right: 3%;
+}
+
+.sidebar .head{
+  text-align: center;
+  line-height: 80px;
+  height: 80px;
+  margin-bottom: -20px;
+}
+
+.sidebar a{
+  color: var(--bgcolor);
+  transition: 0.2s;
+}
+
+.sidebar a:hover{
+  color: rgb(255, 166, 166);
+  transition: 0.2s;
+}
+
+.sidebarButton1{
+  background-image: url("sidebarButton.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: local;
+  display: inline-block;
+  text-align: left;
+  width: 240px;
+  height: 80px;
+  line-height: 80px;
+  filter: drop-shadow(4px 5px 2px #00000057);
+  transition: 0.2s;
+  animation-play-state: paused;
+  margin-bottom: 3%;
+}
+
+
+
+
+.sidebarButton1:hover{
+  background: transparent;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: local;
+  display: inline-block;
+  text-align: left;
+  width: 240px;
+  height: 80px;
+  line-height: 80px;
+  transition: 0.2s;
+}
+
+.sidebarButton1:hover span{
+   background-image: url("sidebarButton.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: local;
+  display: inline-block;
+  text-align: left;
+  transition: 0.2s;
+  width: 100%;
+  animation-play-state: running;
+  animation: navSquish 0.47s;
+}
+
+.sidebarButton2{
+  background-image: url("sidebarButton2.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: local;
+  display: inline-block;
+  text-align: left;
+  width: 240px;
+  height: 80px;
+  line-height: 80px;
+  filter: drop-shadow(4px 5px 2px #00000057);
+  transition: 0.2s;
+  animation-play-state: paused;
+  margin-bottom: 3%;
+}
+
+.sidebarButton2:hover{
+  background: transparent;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: local;
+  display: inline-block;
+  text-align: left;
+  width: 240px;
+  height: 80px;
+  line-height: 80px;
+  transition: 0.2s;
+}
+
+.sidebarButton2:hover span{
+   background-image: url("sidebarButton2.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: local;
+  display: inline-block;
+  text-align: left;
+  transition: 0.2s;
+  width: 100%;
+  animation-play-state: running;
+  animation: navSquish 0.47s;
+}
+
+@keyframes navSquish {
+  
+  0%, 100% {
+    transition-time-function: ease-in;
+    transform-origin: 50% 50%;
+  }
+  
+  0% {
+    transform:  scaleX(1) scaleY(1) ;
+  }
+  10% {
+    transform:  scaleX(0.9) scaleY(1.1);
+  }
+  25% {
+    transform:  scaleX(1.05) scaleY(0.95) ;
+  }
+  60% {
+    transform:  scaleX(0.97) scaleY(1.03) ;
+  }
+
+  100% {
+    transform: inherit;
+  }
+}
+
+@keyframes fenSquish {
+  
+  0%, 100% {
+    transition-time-function: ease-in;
+    transform-origin: 50% 100%;
+  }
+  
+  0% {
+    transform:  scaleX(1) scaleY(1) ;
+  }
+  10% {
+    transform:  scaleX(1.1) scaleY(0.9);
+  }
+  25% {
+    transform:  scaleX(0.95) scaleY(1.05) ;
+  }
+  60% {
+    transform:  scaleX(1.03) scaleY(0.97) ;
+  }
+
+  100% {
+    transform: scaleX(1) scaleY(1);
+  }
+}
+
+
+.fennel:hover{
+  transition: 0.2s;
+}
+
+.fennelPlatform{
+  position: fixed;
+  bottom: -2%;
+  left: -5%;
+  width: 20%;
+  display: none;
+}
+
+@keyframes squish {
+  0% {transform: scale(1,1);}
+  50% {transform: scale(1.06,1.06);}
+  100% {transform: scale(1,1);}
+}
+
+code{
+  font-size: 0.9em;
+}
+
+.codeBlock{
+  background-color: var(--status-bg);
+  color: var(--font-color);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  font-size: 1em;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: scroll;
+  text-wrap: nowrap;
+  overflow-y: hidden;
+  border-radius: 20px 20px 20px 20px;
+  -webkit-box-shadow: inset 5px 5px 9px 0px var(--shadow-color); 
+  box-shadow: inset 5px 5px 9px 0px var(--shadow-color);
+}
+
+.buttonsContainer{
+  margin-top: 2em;
+  margin-bottom: -2em;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.project-title img {
+  position: absolute;
+  width: 35%;
+  top: -1em;
+  filter: drop-shadow(5px 5px 6px #00000057);
+  z-index: 10;
+}
+
+.buttonsContainer img{
+  image-rendering: pixelated;
+  /*width: 176px;*/
+}
+
+.buttonsContainer img:hover{
+  transform: scale(1.1);
+}
+
+
+.socialsList{
+  margin: auto;
+  font-size: 1.3em;
+  line-height: 1.8em;
+  margin-top: -0.8em;
+}
+
+
+.backToHome {
+    padding: 1%;
+  margin-right: 10%;
+  margin-left: 17%;
+  color: var(--font-color);
+  z-index: 20;
+  border-radius: 29px;
+  background-color: rgb(14, 22, 43);
+  margin-top: 2%;
+  filter: drop-shadow(6px 6px 4px #00000057);
+  color: white;
+  transition: 0.2s;
+  width: 10%;
+  text-align: center;
+  transform: rotate(-2deg);
+  position: absolute;
+  margin-top: -2%;
+}
+
+
+.photos{
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    border-radius: 20px;
+    filter: drop-shadow(6px 6px 4px #00000057);
+}
+
+.photos p{
+    font-size: 0.9em;
+    margin-top: -1.5%;
+}
+
+
+}
+
+
+/*------------------------------------------------------------------------------------*/
+
+
+
+/* MOBILE CSS */
+@media (max-width: 1000px) {
+

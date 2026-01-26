@@ -3,96 +3,215 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
-	<title>Projects - Welcome to Bumblebee City</title>
+	<title>Projects</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
 </head>
-<div class="christmasLights" id="christmasLights"></div>
-<img class="fennel" id="fen" src="tinyfen.png" onclick="fenClick()">
+
+<img class="logo" src="beesstuff.png" id="logo">
+
+<div class="bg"></div>
+<div class="bg2"></div>
+
 <body>
-	<center><a href="https://bumblebee.city"><img class="logo" src="bumblebeecitylogo.png" id="logo"></a></center>
-    <center>
-		<script src="header.js"></script>
-	</center>
+
+
+    <script src="sidebar.js"></script>
+
+
 	<main>
-    <center><h1>Major Projects</h1></center>
-    <a href="https://frogsonggame.com"><div class="project">
-        <div class="project-header">
-            <div class="project-title"><b>FROGSONG</b></div> <!-- maybe switch to be a logo. idk how i feel about it -->
-            <div class="project-date">June 10, 2023<br>Game for PC & Nintendo Switch</div>
+        <h1>Projects</h1>
+        <p>I've made a whole bunch of random things!! Comics, Minecraft mods, and more... a lot of these were uhh never finished. </p>
+        <div class="gallery">
+        <div class="row">
+
+            <div class="game-shadow" onclick="openModal();currentSlide(6)" style="background-image: url(projects/chevrotain.png);">
+                <div class="gamefill"></div>
+                <div class="game-text">
+                    <p>Chevrotain Direct (2024)</p>
+                    <p class="gamedesc">Enter the world of the news of the chevrotain, earth's dearest little creatures, presented by celebrity guest star Baxter Mud.</p>
+                </div>
+            </div>
+
+            <div class="game-shadow" onclick="openModal();currentSlide(5)" style="background-image: url(projects/sludgepaintThumb.png);">
+                <div class="gamefill"></div>
+                <div class="game-text">
+                    <p>Sludgepaint (2024)</p>
+                    <p class="gamedesc">An unfinished art toy where you must embrace messiness.</p>
+                </div>
+            </div>
+
+            <div class="game-shadow" onclick="openModal();currentSlide(4)" style="background-image: url(projects/taskieThumb.png);">
+                <div class="gamefill"></div>
+                <div class="game-text">
+                    <p>Taskie (2023)</p>
+                    <p class="gamedesc">An unfinished virtual helper to make reminders fun.</p>
+                </div>
+            </div>
+
+            <div class="game-shadow" onclick="openModal();currentSlide(3)" style="background-image: url(projects/glunchthumb.png);">
+                <div class="gamefill"></div>
+                <div class="game-text">
+                    <p>The Glunch (2022)</p>
+                    <p class="gamedesc">the glunch</p>
+                </div>
+            </div>
+
+            <div class="game-shadow" onclick="openModal();currentSlide(2)" style="background-image: url(projects/kestral/kestralss2.png);">
+                <div class="gamefill"></div>
+                <div class="game-text">
+                    <p>The Kestral (2020)</p>
+                    <p class="gamedesc">An unfinished Minecraft mod that added a strange and desolate world to the game.</p>
+                </div>
+            </div>
+
+            <div class="game-shadow" onclick="openModal();currentSlide(1)" style="background-image: url(projects/stompThumb2.png);">
+                <div class="gamefill"></div>
+                <div class="game-text">
+                    <p>STOMP! (2016 - 2019)</p>
+                    <p class="gamedesc">A webcomic I worked on as a teen, before realizing the story was WAY too long and also not that great? But it was a big part of my journey as an artist.</p>
+                </div>
+            </div>
+
+            
+           
         </div>
-        <div class="project-bg" style="background-image: url('frogsong.png');"></div>
-        <div class="projectText">Frogsong is a heartfelt adventure where it's okay to be small. Explore a lush world filled with strange frogs, vicious bugs, and towering plants on your journey to find your place in the world.</div>
-    </div></a>
-    <br>
-    <center><h1>Other Projects</h1></center>
-	<a href="""><div class="project">
-        <div class="project-header">
-            <div class="project-title"><b>SLUDGEPAINT</b></div>
-            <div class="project-date">WIP<br>Digital Art Toy</div>
         </div>
-        <div class="project-bg" style="background-image: url('projects/sludgepaintThumb.png');"></div>
-        <div class="projectText">I discovered Godot can detect tablet pen pressure, so obviously the first thing I did was make a weird little paint program. I still have to make some changes to make it ready for the public.</div>
-    </div></a>
-    <br>
-	<a href="""><div class="project">
-        <div class="project-header">
-            <div class="project-title"><b>TASKIE</b></div>
-            <div class="project-date">WIP<br>Virtual Friend</div>
-        </div>
-        <div class="project-bg" style="background-image: url('projects/taskieThumb.png');"></div>
-        <div class="projectText">Initially created as a tool to help me remember to do tasks I often forgot thanks to ADHD, Taskie is a little virtual friend who will pop up to help keep you on track. The public release is still a work in progress.</div>
-    </div></a>
-    <br>
-	<!--<img src="taskTest.gif" class="taskie"> test. make a taskie gif that's got a transparent background. randomize each time the page loads-->
-	<!--
-	<a href="https://brodnork.itch.io/creaturesworld-the-creatures-world"><div class="project">
-        <div class="project-header">
-            <div class="project-title"><b><font size="6">CREATURESWORLD: THE CREATURE'S WORLD</font></b></div>
-            <div class="project-date">April 1, 2024<br>Game for PC</div>
-        </div>
-        <div class="project-bg" style="background-image: url('projects/creaturesworldThumb.png');"></div>
-        <div class="projectText">An April Fools game made for a friend's stream. Collect 65 weird creatures!</div>
-    </div></a>
-    <br>-->
-	<a href="https://brodnork.itch.io/shwubbo"><div class="project">
-        <div class="project-header">
-            <div class="project-title"><b>SHWUBBO VS THE INSTALLATION WIZARD</b></div>
-            <div class="project-date">Oct. 2, 2023<br>Game for PC</div>
-        </div>
-        <div class="project-bg" style="background-image: url('projects/shwubboThumb.png');"></div>
-        <div class="projectText">Shwubbo vs the Installation Wizard was created in 3 days for Ludum Dare 54. It's a little platformer where you can rotate your window to see what's out of view! While making this I learned that human beings were not meant to make a game in 3 days.</div>
-    </div></a>
-    <br>
-    <a href="glunch.html"><div class="project">
-        <div class="project-header">
-            <div class="project-title"><b>THE GLUNCH</b></div>
-            <div class="project-date">Sept. 28, 2022<br>Minecraft Mod</div>
-        </div>
-        <div class="project-bg" style="background-image: url('projects/glunchthumb.png');"></div>
-        <div class="projectText">The Glunch.</div>
-    </div></a>
-    <br>
-    <a href="kestral.html"><div class="project">
-        <div class="project-header">
-            <div class="project-title"><b>THE KESTRAL</b></div>
-            <div class="project-date">Unfinished<br>Minecraft Mod</div>
-        </div>
-        <div class="project-bg" style="background-image: url('projects/kestral/kestralss2.png');"></div>
-        <div class="projectText">An unfinished Minecraft mod that adds a desolate new world to explore full of strange and terrifying creatures.</div>
-    </div></a>
-    <br>
-    <a href=""><div class="project">
-        <div class="project-header">
-            <div class="project-title"><b>STOMP!</b></div>
-            <div class="project-date">Dec. 2016 - Feb. 2019 (Cancelled)<br>Webcomic</div>
-        </div>
-        <div class="project-bg" style="background-image: url('projects/stompThumb2.png');"></div>
-        <div class="projectText">A webcomic I drew as a teen, before realizing the story was WAY too long and also not that good. It's easy for me to look back at it and cringe, but it was a big part of my journey as an artist and storyteller. I'm trying to set up an archive of the old site, so for now, this link leads nowhere.</div>
-    </div></a>
+
+
+
+
+        <script>
+            // Open the Modal
+            function openModal() {
+            document.getElementById("myModal").style.display = "block";
+            }
+            
+            // Close the Modal
+            function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+            }
+            
+            function setCaption(){
+                let greeting = document.getElementById("greeting");
+            }
+            
+            var slideIndex = 0;
+            showSlides(slideIndex);
+            
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n * -1);
+            }
+            
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("hover-shadow");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slides.length - slideIndex].alt;
+            }
+        </script>
+
+
 	</main>
+
+
+<!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+
+    <div class="modal-content">
+
+        <div class="mySlides">
+            <div class="project" style="background-color: rgb(107, 72, 172);">
+                <h2>STOMP!</h2>
+                <h3>December 16 2016 - April 11 2019</h3>
+                <img class="mainimg" src="projects/stompThumb.png">
+                <p>The first big project I ever worked on, Stomp was a webcomic I drew as a teen. One day I realized the story was way too long and convoluted and not very good, so I cancelled it. A few years later I took a better version of the story and started turning it into a game!</p>
+                <p>One day I'm hoping to get an archive of the comic up, but I want to wait until the game is done.</p>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="project" style="background-color: rgb(94, 66, 94);">
+                <h2>The Kestral</h2>
+                <h3>2020 (unfinished)</h3>
+                <img class="mainimg" src="projects/kestral/kestralss1.png">
+                <p>The Kestral was a Minecraft mod I started working on back in 2020 that adds a desolate and lonely new dimension to explore full of strange and terrifying creatures. The project was inspired by the feelings that beta Minecraft gave me, exploring an empty and sometimes unnerving world.</p>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="project" style="background-color: rgb(53, 47, 44);">
+                <h2>The Glunch</h2>
+                <h3>September 28 2022</h3>
+                <iframe width="560" height="315" class="mainimg" src="https://www.youtube.com/embed/o2XfLZTpkI8?si=9MjtzYo_i0vNoLa-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>A Minecraft mod that finally adds the ultimate Minecraft companion! All your problems will be solved with its soggy body.</p>
+                <p>Don't let it wither.</p>
+                <div class="projectbuttons">
+                    <a href="https://www.curseforge.com/minecraft/mc-mods/glunch" class="button" style="background-color: #ac7b7f;">Download mod</a>
+                </div>
+            </div>
+            <img src="glunchpeek.png" class="footerGlunch"></img>
+        </div>
+
+        <div class="mySlides">
+            <div class="project" style="background-color: rgb(151, 103, 58);">
+                <h2>Taskie</h2>
+                <h3>2023 (unfinished)</h3>
+                <img class="mainimg" src="projects/taskieThumb.png">
+                <p>Taskie is a cute little virtual helper I made to make reminders fun. I'd like to make a public release one day, but I haven't really had the time to polish it up yet.</p>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="project" style="background-color: rgb(43, 63, 56);">
+                <h2>Sludgepaint</h2>
+                <h3>2024 (unfinished)</h3>
+                <img class="mainimg" src="projects/sludgepaintThumb.png">
+                <p>I learned Godot could read pen pressure, so obviously the first thing I did was experiment with making a weird painting program. This one isn't finished, but I'd like to get it ready for the public some day...</p>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="project" style="background-color: rgb(102, 98, 94);">
+                <h2>Chevrotain Direct</h2>
+                <h3>September 28 2024</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NnWQYM5cIHY?si=DIzvn5uqzgAZ5B53" class="mainimg" ititle="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>A 20 minute presentation on the latest news and updates to come out of chevrotains. You will leave this broadcast smiling at the sun and wearing warm wishes on your sleeve. A rat is below you.</p>
+    
+                <div class="projectbuttons">
+                    <a href="https://chevrotains.com/" class="button" style="background-color: #13185e;">chevrotains.com</a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+
 </body>	
-<script src="footer.js"></script>
+
 <script src="https://kit.fontawesome.com/9a983606e7.js" crossorigin="anonymous"></script>
 <script src="scripts.js"></script>
 

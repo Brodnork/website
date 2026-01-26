@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+	<title>Games</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+</head>
+
+<img class="logo" src="beesstuff.png" id="logo">
+
+<div class="bg"></div>
+<div class="bg2"></div>
+
+<body>
+
+
+    <script src="sidebar.js"></script>
+
+
+	<main>
+        <h1>Games I've Made</h1>
+        <div class="gallery">
+        <div class="row">
+
+            <div class="game-shadow" onclick="openModal();currentSlide(9)" style="background-image: url(games/stompkeyart.png);">
+                <div class="gamefill"></div>
+                <div class="game-text">
+                    <p>Stomp and the Sword of Miracles (Coming Soon)</p>
+                    <p class="gamedesc">Embark on a mission to save the world from the god of chaos!</p>
+                </div>
+            </div>
+
+            <div class="game-shadow" onclick="openModal();currentSlide(8)" style="background-image: url(games/screenshot4.png);">
+                <div class="gamefill"></div>
+                <div class="game-text">
+                    <p>MOONROT (2026)</p>
+                    <p class="gamedesc">A short horror game about piloting a rover across a distant alien moon.</p>
+                </div>
+            </div>
+
+            <div class="game-shadow" onclick="openModal();currentSlide(7)" style="background-image: url(games/feebz.png);">
+                <div class="gamefill"></div>
+                <div class="game-text">
+                    <p>Feebz (2025)</p>
+                    <p class="gamedesc">Everything lives forever online.</p>
+                </div>
+            </div>
+
+            <div class="game-shadow" onclick="openModal();currentSlide(6)" style="background-image: url(projects/creaturesworldThumb.png);">
+                <div class="gamefill"></div>
+                <div class="game-text">
+                    <p>Creaturesworld: the creature's world (2024)</p>
+                    <p class="gamedesc">Look at your creatures and smile. Get creatures from the Egg Machine. You can do it! That's so cool!</p>
+                </div>
+            </div>
+
+            <div class="game-shadow" onclick="openModal();currentSlide(5)" style="background-image: url(projects/shwubboThumb.png);">
+                <div class="gamefill"></div>
+                <div class="game-text">
+                    <p>Shwubbo vs the Installation Wizard (2023)</p>
+                    <p class="gamedesc">A platformer where you rotate the game's window!</p>
+                </div>
+            </div>
+
+            <div class="game-shadow" onclick="openModal();currentSlide(4)" style="background-image: url(projects/frogsong/frogsongkeyart.png);">
+                <div class="gamefill"></div>
+                <div class="game-text">
+                    <p>Frogsong (2023)</p>
+                    <p class="gamedesc">A heartfelt adventure where it's okay to be small.</p>
+                </div>
+            </div>
+
+            <div class="game-shadow" onclick="openModal();currentSlide(3)" style="background-image: url(games/assessment.png);">
+                <div class="gamefill"></div>
+                <div class="game-text">
+                    <p>Assessment (2020)</p>
+                    <p class="gamedesc">A short horror game made in two days for a game jam.</p>
+                </div>
+            </div>
+
+            <div class="game-shadow" onclick="openModal();currentSlide(2)" style="background-image: url(games/dyingInSpace.png);">
+                <div class="gamefill"></div>
+                <div class="game-text">
+                    <p>Dying in Space (2017)</p>
+                    <p class="gamedesc">You're dying in space.</p>
+                </div>
+            </div>
+
+            <div class="game-shadow" onclick="openModal();currentSlide(1)" style="background-image: url(games/jellyfishonatrain2.png);">
+                <div class="gamefill"></div>
+                <div class="game-text">
+                    <p>Jellyfish on a Train (2015)</p>
+                    <p class="gamedesc">The first game I made, back when I was a teenager. There's jellyfish on a train.</p>
+                </div>
+            </div>
+           
+        </div>
+        </div>
+
+
+
+
+        <script>
+            // Open the Modal
+            function openModal() {
+            document.getElementById("myModal").style.display = "block";
+            }
+            
+            // Close the Modal
+            function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+            }
+            
+            function setCaption(){
+                let greeting = document.getElementById("greeting");
+            }
+            
+            var slideIndex = 0;
+            showSlides(slideIndex);
+            
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n * -1);
+            }
+            
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("hover-shadow");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slides.length - slideIndex].alt;
+            }
+        </script>
+
+
+	</main>
+
+
+<!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+
+    <div class="modal-content">
+
+        <div class="mySlides">
+            <div class="project" style="background-color: rgb(22, 1, 1);">
+                <h2>Jellyfish on a Train: Look Again</h2>
+                <h3>October 31 2015</h3>
+                <img class="mainimg" src="games/jellyfishonatrain.png">
+                <p>The first game I ever made, an RPG Maker horror game. It's about some jellyfish on a train and bad stuff happens. What more is there to say</p>
+                <div class="projectbuttons">
+                    <a href="https://brodnork.itch.io/jellyfish-on-a-train" class="button" style="background-color: #875cc0;">itch.io</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="project" style="background-color: rgb(10, 18, 26);">
+                <h2>Dying In Space</h2>
+                <h3>May 9 2017</h3>
+                <img class="mainimg" src="games/dyingInSpace.png">
+                <p>You're an astronaut in space. You're running out of oxygen, and you're dying. You're dying.</p>
+                <div class="projectbuttons">
+                    <a href="games/DyingInSpace/index.html" class="button" style="background-color: #415458;">Play in browser</a> <a href="https://brodnork.itch.io/dying-in-space" class="button" style="background-color: #415458;">itch.io</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="project" style="background-color: rgb(0, 0, 0);">
+                <h2>Assessment</h2>
+                <h3>May 9 2017</h3>
+                <img class="mainimg" src="games/assessment2.png">
+                <p>A short horror game I made in two days for a game jam.</p>
+                <div class="projectbuttons">
+                    <a href="https://brodnork.itch.io/assessment" class="button" style="background-color: #727272;">itch.io</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="project" style="background-color: rgb(44, 87, 116);">
+                <h2>Frogsong</h2>
+                <h3>June 10 2023</h3>
+                <!--<img class="mainimg" src="frogsong.png">-->
+                <iframe class="mainimg" width="560" height="315" src="https://www.youtube.com/embed/8I3RznkR35Q?si=w-wAvJaw_13jx84p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>A heartfelt adventure in a fantasy world of frogs! Talk to weird and wonderful characters, fight vicious bugs, and explore a vibrant world in this action RPG.</p>
+                <p>Frogsong was my first major release, and I learned a lot about making games while I developed it.</p>
+                <div class="projectbuttons">
+                    <a href="https://store.steampowered.com/app/1281860/Frogsong/" class="button" style="background-color: #159FA7;">Steam</a>
+                    <a href="https://www.nintendo.com/store/products/frogsong-switch/" class="button" style="background-color: #159FA7;">Nintendo Switch</a>
+                    <a href="https://brodnork.itch.io/frogsong" class="button" style="background-color: #159FA7;">itch.io</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="project" style="background-color: rgb(112, 63, 67);">
+                <h2>Shwubbo vs the Installation Wizard</h2>
+                <h3>October 2 2023</h3>
+                <img class="mainimg" src="projects/shwubboThumb.png">
+                <p>A silly little game I made in 3 days for the Ludum Dare 54 game jam. Rotate your game's window to see what's hidden out of sight!</p>
+                <div class="projectbuttons">
+                    <a href="https://brodnork.itch.io/shwubbo" class="button" style="background-color: #f06407;">itch.io</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="project" style="background-color: rgb(54, 129, 35);">
+                <h2>Creaturesworld: the creature's world</h2>
+                <h3>April 1 2024</h3>
+                <img class="mainimg" src="games/creaturesworld.png">
+                <p>A game I made for my pal Indie's April Fools stream.</p>
+                <p>Collect amazing creatures known as Creatures, buy them stuff, and look at them for as long as you want! Yay! That's so cool!</p>
+                <div class="projectbuttons">
+                    <a href="https://brodnork.itch.io/creaturesworld-the-creatures-world" class="button" style="background-color: #00ffff;">itch.io</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="project" style="background-color: rgb(43, 44, 46);">
+                <h2>Feebz</h2>
+                <h3>November 23 2025</h3>
+                <img class="mainimg" src="games/feebz2.png">
+                <p>Explore the ghost of your favourite website and bring back your lost pet. Everything lives forever online.</p>
+                <p>A tiny game I made with my friend <a href="https://princesspengy.space/">Pengy</a> for the Godot Wild Jam, to help her learn Godot. We put a lot of love and thought into this little thing, and I think it became something special.</p>
+                <div class="projectbuttons">
+                    <a href="games/Feebz/index.html" class="button" style="background-color: #eeb12c;">Play in browser</a> <a href="https://brodnork.itch.io/feebz" class="button" style="background-color: #eeb12c;">itch.io</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="project" style="background-color: rgb(0, 0, 0);">
+                <h2>MOONROT</h2>
+                <h3>2026</h3>
+                <img class="mainimg" src="games/screenshot4.png">
+                <p>A short horror game about piloting a rover across a distant alien moon. Take grainy photos, record crackly signals, keep your battery charged, and uncover the source of the anomaly that led you here.</p>
+                <div class="projectbuttons">
+                    <a href="https://store.steampowered.com/app/3622230/MOONROT/" class="button" style="background-color: #4f4953;">Wishlist on Steam</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="project" style="background-color: rgb(70, 17, 70);">
+                <h2>Stomp and the Sword of Miracles</h2>
+                <h3>Coming Soon!</h3>
+                <img class="mainimg" src="games/screenshot6.png">
+                <p>Embark on a mission to save the world from the god of chaos in this metroidvania! Explore a world full of lost secrets, make new friends, and use creatures to your advantage to reach new heights in Stomp and the Sword of Miracles!</p>  
+                <div class="projectbuttons">
+                    <a href="https://store.steampowered.com/app/2837590/Stomp_and_the_Sword_of_Miracles/" class="button" style="background-color: #86134d;">Try the demo on Steam</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+
+</body>	
+
+<script src="https://kit.fontawesome.com/9a983606e7.js" crossorigin="anonymous"></script>
+<script src="scripts.js"></script>
+
+</html>

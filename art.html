@@ -3,24 +3,36 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
-	<title>Art - Welcome to Bumblebee City</title>
+	<title>Art</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
 </head>
 <div class="christmasLights" id="christmasLights"></div>
 <img class="fennel" id="fen" src="tinyfen.png" onclick="fenClick()">
+<img class="logo" src="beesstuff.png" id="logo">
+<div class="bg"></div>
+<div class="bg2"></div>
 <body>
-	<center><a href="https://bumblebee.city"><img class="logo" src="bumblebeecitylogo.png" id="logo"></a></center>
     <center>
-      <script src="header.js"></script>
+      <script src="sidebar.js"></script>
 	</center>
   <main>
-    <center><div class="gallery">
-        </div></center>
+    
+    <h1>Art</h1>
+
 <center>
-  <center><h1>Art</h1></center>
+<div class="gallery">
 <!-- Images used to open the lightbox -->
 <div class="row">
+  
+  <img src="art/sorrel2025.png" alt="Also redesigned Sorrel!" onclick="openModal();currentSlide(39)" class="hover-shadow">
+  <img src="art/fennel2025ref.png" alt="Redesigned Fennel again, to look more like me" onclick="openModal();currentSlide(38)" class="hover-shadow">
+  <img src="art/slimefen.png" alt="Slime Fennel!" onclick="openModal();currentSlide(37)" class="hover-shadow">
+  <img src="art/christmasFennel.png" alt="Christmas Fennel" onclick="openModal();currentSlide(36)" class="hover-shadow">
+  <img src="art/Mipli and homunculus.png" alt="My Pathfinder character Mipli and her homunculus, Dollop." onclick="openModal();currentSlide(35)" class="hover-shadow">
+  <img src="art/jellyrobot.png" alt="Robot I doodled that has 'skin' made of that squishy stressball type material." onclick="openModal();currentSlide(34)" class="hover-shadow">
+  <img src="art/fennelmeshi.png" alt="What if the party from Dungeon Meshi killed and ate Fennel" onclick="openModal();currentSlide(33)" class="hover-shadow">
+   <img src="art/eggbug.png" alt="Goodbye Cohost." onclick="openModal();currentSlide(32)" class="hover-shadow">
     <img src="art/evilfennel.png" alt="Felt like drawing an edgy Shadow the Hedgehog style evil version of Fennel. They're named Sorrel." onclick="openModal();currentSlide(31)" class="hover-shadow">
     <img src="art/fennelNEW.png" alt="Updated art for my fursona." onclick="openModal();currentSlide(30)" class="hover-shadow">
     <img src="art/bweeooowww.png" alt="Had some artblock so I did something weird and different." onclick="openModal();currentSlide(29)" class="hover-shadow">
@@ -53,9 +65,64 @@
     <img src="art/eraserhead.jpg" alt="Eraserhead Baby" onclick="openModal();currentSlide(2)" class="hover-shadow" >
     <img src="art/Video Game.png" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow" >
   </div>
+</div>
 </center>
 <br>
 <p>I have way more art than this but most of it is super old (I've been posting online since 2011!) and I don't like it and I have improved so much since then, so I just didn't feel like putting it on here!</p>
+<p>These days the vast majority of what I draw is assets for my games, so my output for individual pieces has kinda slowed down a lot over the years.</p>
+
+    <!-- Trigger the Modal -->
+
+</div>
+
+<script>
+    // Open the Modal
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    // Close the Modal
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    function setCaption(){
+        let greeting = document.getElementById("greeting");
+    }
+    
+    var slideIndex = 0;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n * -1);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("hover-shadow");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slides.length - slideIndex].alt;
+    }
+    </script>
+</main>
+
 <!-- The Modal/Lightbox -->
   <div id="myModal" class="modal">
     <center>
@@ -155,6 +222,30 @@
       <div class="mySlides">
         <img src="art/evilfennel.png" class="galleryDisplay">
       </div>
+      <div class="mySlides">
+        <img src="art/eggbug.png" class="galleryDisplay">
+      </div>
+      <div class="mySlides">
+        <img src="art/fennelmeshi.png" class="galleryDisplay">
+      </div>
+      <div class="mySlides">
+        <img src="art/jellyrobot.png" class="galleryDisplay">
+      </div>
+      <div class="mySlides">
+        <img src="art/Mipli and homunculus.png" class="galleryDisplay">
+      </div>
+      <div class="mySlides">
+        <img src="art/christmasFennel.png" class="galleryDisplay">
+      </div>
+      <div class="mySlides">
+        <img src="art/slimefen.png" class="galleryDisplay">
+      </div>
+      <div class="mySlides">
+        <img src="art/fennel2025ref.png" class="galleryDisplay">
+      </div>
+      <div class="mySlides">
+        <img src="art/sorrel2025.png" class="galleryDisplay">
+      </div>
        <!-- Caption text -->
        <div class="caption-container">
         <p id="caption"></p>
@@ -169,58 +260,6 @@
     </div>
     
   </div>
-
-    <!-- Trigger the Modal -->
-
-</div>
-
-<script>
-    // Open the Modal
-    function openModal() {
-      document.getElementById("myModal").style.display = "block";
-    }
-    
-    // Close the Modal
-    function closeModal() {
-      document.getElementById("myModal").style.display = "none";
-    }
-    
-    function setCaption(){
-        let greeting = document.getElementById("greeting");
-    }
-    
-    var slideIndex = 0;
-    showSlides(slideIndex);
-    
-    // Next/previous controls
-    function plusSlides(n) {
-      showSlides(slideIndex += n * -1);
-    }
-    
-    // Thumbnail image controls
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("hover-shadow");
-      var captionText = document.getElementById("caption");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-      captionText.innerHTML = dots[slides.length - slideIndex].alt;
-    }
-    </script>
-</main>
 </body>	
 <script src="footer.js"></script>
 <script src="https://kit.fontawesome.com/9a983606e7.js" crossorigin="anonymous"></script>
