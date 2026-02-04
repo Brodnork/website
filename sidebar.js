@@ -1,6 +1,8 @@
 
 (function(){
     var sidebarHTML = `
+
+
     <div class="sidebar">
 		<span class="head">Main Stuff</span>
 		<a href="index.html" class="sidebarButton1">
@@ -35,8 +37,10 @@
 			<span><img src="iconLinks.png">Favourites</span>
 		</a>
 		
-
 	</div>
+
+	</details>
+
     `;
     document.write(sidebarHTML);
 })();

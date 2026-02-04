@@ -645,7 +645,6 @@ img.hover-shadow-project {
 
 
 
-
 .sidebarButton1:hover{
   background: transparent;
   background-repeat: no-repeat;
@@ -845,6 +844,11 @@ code{
   margin-top: 6%;
   transition: 0.3s;
   width: 350px;
+
+}
+
+.aboutfenMobile{
+  display: none;
 }
 
 .aboutfen:hover{
@@ -1067,10 +1071,10 @@ body {
   filter: drop-shadow(-3px 5px 4px #00000080);
 }
 main {
-  padding:1.5em;
-  padding-top:1em;
-  margin-right: 8vw;
-  margin-left: 8vw;
+  padding:1em;
+  padding-top:0.5em;
+  margin-right: 2vw;
+  margin-left: 34vw;
   cursor: url("http://bumblebee.city/beeCursor.png"), default;
   padding-bottom:1.2em;
   color: var(--font-color);
@@ -1203,9 +1207,13 @@ a:hover img.default {
 
 
 h1{
-  font-family: 'Itim', sans-serif;
-  font-size: 2.5em;
-  margin-top: 0;
+  font-size: 1.7em;
+  margin-top: 1;
+}
+
+h2{
+  font-size: 1.2em;
+  margin-top: 1;
 }
 
 .logo{
@@ -1232,8 +1240,8 @@ h1{
   padding: 0.5em;
   font-size: 1em;
   height:50vh;
-  margin-right: 8vw;
-  margin-left: 8vw;
+  margin-right: 2vw;
+  margin-left: 34vw;
   overflow: auto;
   border-radius: 0px 0px 20px 20px;
   -webkit-box-shadow: 5px 5px 9px 0px var(--shadow-color); 
@@ -1246,8 +1254,8 @@ h1{
   padding-bottom: 1.2em;
   font-size: 1em;
   height:25px;
-  margin-right: 8vw;
-  margin-left: 8vw;
+  margin-right: 2vw;
+  margin-left: 34vw;
   margin-top: 2%;
   font-weight: 700;
   border-radius: 20px 20px 0px 0px;
@@ -1532,17 +1540,22 @@ img.hover-shadow-project {
 
 .sidebar{
   display: grid;
-  padding-left: 16vw;
+  padding-left: 4%;
   position: absolute;
+  margin-left: -3%;
   margin-top: -5%;
   font-weight: 700;
-  font-size: 29px;
+  font-size: 1.2em;
+
+  z-index: 10;
+  padding: 6%;
 }
+
 
 .sidebar img{
   display: inline;
   margin: 0;
-  height: 60px;
+  height: 40px;
   vertical-align:middle;
   padding-left: 8%;
   padding-right: 3%;
@@ -1553,7 +1566,11 @@ img.hover-shadow-project {
   line-height: 80px;
   height: 80px;
   margin-bottom: -20px;
+  font-size: 1.2em;
+
 }
+
+
 
 .sidebar a{
   color: var(--bgcolor);
@@ -1572,13 +1589,13 @@ img.hover-shadow-project {
   background-attachment: local;
   display: inline-block;
   text-align: left;
-  width: 240px;
-  height: 80px;
+  width: 150px;
   line-height: 80px;
   filter: drop-shadow(4px 5px 2px #00000057);
   transition: 0.2s;
   animation-play-state: paused;
   margin-bottom: 3%;
+  margin: -7%;
 }
 
 
@@ -1591,8 +1608,7 @@ img.hover-shadow-project {
   background-attachment: local;
   display: inline-block;
   text-align: left;
-  width: 240px;
-  height: 80px;
+  width: 150px;
   line-height: 80px;
   transition: 0.2s;
 }
@@ -1608,6 +1624,7 @@ img.hover-shadow-project {
   width: 100%;
   animation-play-state: running;
   animation: navSquish 0.47s;
+  margin: -7%;
 }
 
 .sidebarButton2{
@@ -1617,13 +1634,13 @@ img.hover-shadow-project {
   background-attachment: local;
   display: inline-block;
   text-align: left;
-  width: 240px;
-  height: 80px;
+  width: 150px;
   line-height: 80px;
   filter: drop-shadow(4px 5px 2px #00000057);
   transition: 0.2s;
   animation-play-state: paused;
   margin-bottom: 3%;
+  margin: -7%;
 }
 
 .sidebarButton2:hover{
@@ -1633,8 +1650,7 @@ img.hover-shadow-project {
   background-attachment: local;
   display: inline-block;
   text-align: left;
-  width: 240px;
-  height: 80px;
+  width: 150px;
   line-height: 80px;
   transition: 0.2s;
 }
@@ -1650,6 +1666,7 @@ img.hover-shadow-project {
   width: 100%;
   animation-play-state: running;
   animation: navSquish 0.47s;
+  margin: -7%;
 }
 
 @keyframes navSquish {
@@ -1772,16 +1789,16 @@ code{
 
 
 .aboutfen{
-  float: right;
+  display: none;
+}
+
+.aboutfenMobile{
   margin-top: 6%;
   transition: 0.3s;
   width: 150px;
+  position: relative;
 }
 
-.aboutfen:hover{
-  transform: scale(1.04);
-  transition: 0.3s;
-}
 
 @keyframes fenAnim {
   0%, 100% {
@@ -1806,6 +1823,7 @@ code{
   width: 120px;
   transform: rotate(-5deg);
   margin-left: 20%;
+  display: none;
 
 }
 
