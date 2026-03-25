@@ -33,9 +33,9 @@
 		<a href="links.html" class="sidebarButton1">
 			<span><img src="iconLinks.png"> Links</span>
 		</a>
-        <a href="links.html" class="sidebarButton2">
+        <!---<a href="links.html" class="sidebarButton2">
 			<span><img src="iconLinks.png">Favourites</span>
-		</a>
+		</a>--->
 		
 	</div>
 
