@@ -2,8 +2,10 @@
 (function(){
     var sidebarHTML = `
 
+	<div class="sidebarMenuButton" id="menuBars" onclick="sidebarMenuButton()"><i class="fa-solid fa-ellipsis"></i></div>
 
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
+		<div class="sidebarMenuButton2" id="menuBars2" onclick="sidebarMenuButton2()"><i class="fa-solid fa-square-caret-left"></i></div>
 		<span class="head">Main Stuff</span>
 		<a href="index.html" class="sidebarButton1">
 			<span><img src="iconAbout.png"> Home</span>

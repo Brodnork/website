@@ -7,6 +7,8 @@ var aprilFools = false;
 
 var fenScale = 1;
 
+var sidebarOut = false;
+
 function plookClick() {
     if (plook == 1){
         document.getElementById("plookClickable").src = "plook1.gif";
@@ -40,6 +42,20 @@ function fenClick() {
 
 function replaceFen(){
     document.getElementById("fen").src = "tinyfen.png"
+}
+
+
+function sidebarMenuButton(){
+    var elementStyle = document.getElementById("sidebar").style;
+
+    elementStyle.left = "0%";
+}
+
+function sidebarMenuButton2(){
+    var elementStyle = document.getElementById("sidebar").style;
+
+    elementStyle.left = "-100%";
+
 }
 
 
