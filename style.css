@@ -1550,9 +1550,9 @@ img.hover-shadow-project {
   display: grid;
   position: fixed;
   overflow-y: scroll;
-  height: 100vh;
+  height: 80vh;
   margin-left: -3%;
-  top: -1%;
+  top: 2%;
   font-weight: 700;
   font-size: 1em;
   z-index: 101;
@@ -1562,6 +1562,13 @@ img.hover-shadow-project {
   justify-items: center;
   left: -100%;
   transition: 0.2s;
+  filter: drop-shadow(5px 5px 6px #0f041857);
+  -webkit-border-top-right-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  -moz-border-radius-bottomright: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 
