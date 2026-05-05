@@ -1058,7 +1058,7 @@ body {
   padding-top:1em;
   color: var(--font-color);
 	font-family: "Balsamiq Sans", sans-serif;
-	font-size: 1em;
+	font-size: 0.96em;
 	background-attachment: fixed;
   background-position: center;
 	line-height: 1.69;
@@ -1074,7 +1074,7 @@ main {
   padding:1em;
   padding-top:0.5em;
   margin-right: 2vw;
-  margin-left: 34vw;
+  margin-left: 32vw;
   cursor: url("http://bumblebee.city/beeCursor.png"), default;
   padding-bottom:1.2em;
   color: var(--font-color);
@@ -1223,7 +1223,7 @@ h2{
   position: relative;
   transform: scale(1);
   transition: calc(0.2s * var(--animation-mult));
-  width: 60vh;
+  width: 34vh;
   filter: drop-shadow(6px 6px 4px #00000057);
   
 }
@@ -1241,7 +1241,7 @@ h2{
   font-size: 1em;
   height:50vh;
   margin-right: 2vw;
-  margin-left: 34vw;
+  margin-left: 32vw;
   overflow: auto;
   border-radius: 0px 0px 20px 20px;
   -webkit-box-shadow: 5px 5px 9px 0px var(--shadow-color); 
@@ -1255,7 +1255,7 @@ h2{
   font-size: 1em;
   height:25px;
   margin-right: 2vw;
-  margin-left: 34vw;
+  margin-left: 32vw;
   margin-top: 2%;
   font-weight: 700;
   border-radius: 20px 20px 0px 0px;
@@ -1543,9 +1543,9 @@ img.hover-shadow-project {
   padding-left: 4%;
   position: absolute;
   margin-left: -3%;
-  margin-top: -5%;
+  margin-top: -10%;
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1em;
 
   z-index: 10;
   padding: 6%;
@@ -1553,9 +1553,9 @@ img.hover-shadow-project {
 
 
 .sidebar img{
-  display: inline;
+  display: none;
   margin: 0;
-  height: 40px;
+  height: 20px;
   vertical-align:middle;
   padding-left: 8%;
   padding-right: 3%;
@@ -1588,9 +1588,9 @@ img.hover-shadow-project {
   background-size: 100% 100%;
   background-attachment: local;
   display: inline-block;
-  text-align: left;
-  width: 150px;
-  line-height: 80px;
+  text-align: center;
+  width: 120px;
+  line-height: 66px;
   filter: drop-shadow(4px 5px 2px #00000057);
   transition: 0.2s;
   animation-play-state: paused;
@@ -1607,9 +1607,9 @@ img.hover-shadow-project {
   background-size: 100% 100%;
   background-attachment: local;
   display: inline-block;
-  text-align: left;
-  width: 150px;
-  line-height: 80px;
+  text-align: center;
+  width: 120px;
+  line-height: 66px;
   transition: 0.2s;
 }
 
@@ -1619,7 +1619,7 @@ img.hover-shadow-project {
   background-size: 100% 100%;
   background-attachment: local;
   display: inline-block;
-  text-align: left;
+  text-align: center;
   transition: 0.2s;
   width: 100%;
   animation-play-state: running;
@@ -1633,9 +1633,9 @@ img.hover-shadow-project {
   background-size: 100% 100%;
   background-attachment: local;
   display: inline-block;
-  text-align: left;
-  width: 150px;
-  line-height: 80px;
+  text-align: center;
+  width: 120px;
+  line-height: 66px;
   filter: drop-shadow(4px 5px 2px #00000057);
   transition: 0.2s;
   animation-play-state: paused;
@@ -1649,9 +1649,9 @@ img.hover-shadow-project {
   background-size: 100% 100%;
   background-attachment: local;
   display: inline-block;
-  text-align: left;
-  width: 150px;
-  line-height: 80px;
+  text-align: center;
+  width: 120px;
+  line-height: 66px;
   transition: 0.2s;
 }
 
@@ -1661,7 +1661,7 @@ img.hover-shadow-project {
   background-size: 100% 100%;
   background-attachment: local;
   display: inline-block;
-  text-align: left;
+  text-align: center;
   transition: 0.2s;
   width: 100%;
   animation-play-state: running;
