@@ -8,7 +8,7 @@
 		<div class="sidebarMenuButton2" id="menuBars2" onclick="sidebarMenuButton2()"><i class="fa-solid fa-square-caret-left"></i></div>
 		<span class="head">Main Stuff</span>
 		<a href="index.html" class="sidebarButton1">
-			<span><img src="iconAbout.png"> Home</span>
+			<span><img src="iconHome.png"> Home</span>
 		</a>
 		<a href="about.html" class="sidebarButton2">
 			<span><img src="iconAbout.png"> About Me</span>
