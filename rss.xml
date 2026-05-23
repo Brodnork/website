@@ -2,8 +2,15 @@
 <rss version="2.0">
 <channel>
     <title>Welcome to Bumble Bee City!</title>
-    <link>http://bumblebee.city/</link>
+    <link>http://pupbeedog.world/</link>
     <description>Bee's personal website.</description>
+    <item>
+        <title>First updates in forever!!!</title>
+        <link>http://pupbeedog.world/</link>
+        <guid>bumblebeeRSS8</guid>
+        <pubDate>Sat, 23 May 2026 00:00:00 GMT</pubDate>
+        <description>I've basically completely recreated the entire website!'</description>
+    </item>
     <item>
         <title>The blog's got comments now</title>
         <link>http://bumblebee.city/</link>
