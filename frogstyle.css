@@ -1008,3 +1008,167 @@ code{
 /* MOBILE CSS */
 @media (max-width: 1000px) {
 
+body {
+  
+  padding-left: 0%;
+  padding-right: 0%;
+  padding-top:2em;
+  color: var(--font-color);
+	font-family: "Balsamiq Sans", sans-serif;
+	font-size: 1em;
+	background-attachment: fixed;
+  background-position: center;
+	line-height: 1.69;
+  margin-top: 1.3%;
+  cursor: url("http://bumblebee.city/beeCursor.png"), default;
+  padding-bottom:0em;
+  margin-bottom: 0;
+}
+.taskie {
+  filter: drop-shadow(-3px 5px 4px #00000080);
+}
+main {
+  padding:0.5em;
+  padding-top:1em;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  cursor: url("http://bumblebee.city/beeCursor.png"), default;
+  padding-bottom:1.2em;
+  color: var(--font-color);
+  z-index: -1;
+  border-radius: 39px;
+  background-color: var(--bgcolor);
+  margin-top: 0;
+  filter: drop-shadow(6px 6px 4px #00000057);
+  margin-bottom: 2%;
+}
+
+
+
+
+.frogprofile {
+    padding: 3%;
+  margin-bottom: 3%;
+  padding-bottom: 6%;
+  color: var(--font-color);
+  z-index: -1;
+  border-radius: 39px;
+  background-color: rgb(14, 22, 43);
+  margin-top: 2%;
+  filter: drop-shadow(6px 6px 4px #00000057);
+
+  width: 75vw;
+  color: white;
+  transition: 0.2s;
+}
+
+
+.frogprofile:hover {
+    transform: rotate(-0.5deg) scale(1.03);
+  transition: 0.2s;
+}
+
+.profileContent{
+  text-align: center;
+    font-size: 0.8em;
+}
+
+.frogprofile h1{
+    font-size: 2em;
+    margin-bottom: -3%;
+}
+
+.stats{
+    text-align: center;
+    float: left;
+    margin-left: 25%;
+    color: rgb(44, 255, 114);
+}
+
+.values{
+    text-align: center;
+  
+    color: rgb(175, 255, 70);
+}
+
+.frogprofile h2{
+    font-size: 0.9em;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    font-style: italic;
+    color: #99bbcf;
+}
+
+.frogprofile p{
+    margin: auto;
+}
+
+.frogimg{
+   height: 300px;
+   width: 100%;
+   border-radius: 39px;
+   object-fit: cover;
+    margin: auto;
+}
+
+.backToHome {
+  padding: 1%;
+  color: var(--font-color);
+  z-index: 20;
+  border-radius: 29px;
+  background-color: rgb(14, 22, 43);
+  margin-top: 2%;
+  filter: drop-shadow(6px 6px 4px #00000057);
+  color: white;
+  transition: 0.2s;
+  width: 30%;
+  text-align: center;
+  transform: rotate(-2deg);
+  position: absolute;
+  margin-top: -2%;
+}
+
+
+.photos{
+    text-align: center;
+   
+}
+
+.photos p{
+    font-size: 0.9em;
+    margin-top: -1.5%;
+    
+}
+
+.photos img{
+
+  max-width: 50vw;
+}
+
+/* unvisited link */
+a:link {
+  color: var(--font-highlight);
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: var(--font-highlight);
+	text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: var(--link-hover);
+	text-decoration: none;
+  cursor: url("http://bumblebee.city/beeCursorClick.png"), default;
+}
+
+/* selected link */
+a:active {
+  color: white;
+	text-decoration: none;
+}
+
+
+}  

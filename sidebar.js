@@ -38,6 +38,7 @@
         <!---<a href="links.html" class="sidebarButton2">
 			<span><img src="iconLinks.png">Favourites</span>
 		</a>--->
+		<div class="sidebarPadding"></div>
 		
 	</div>
 
